@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../components/Images/logo.png";
+// import logo from "../components/Images/code.png";
+import logo from "../components/Images/manLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 

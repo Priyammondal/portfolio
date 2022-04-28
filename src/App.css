@@ -28,8 +28,7 @@ body {
   align-items: center;
 }
 .navbar-brand > img {
-  width: 10rem;
-  height: 4rem;
+  width: 4rem;
 }
 
 nav a.nav-link {
@@ -115,8 +114,45 @@ nav ul li {
   justify-content: center;
   align-items: center;
   color: var(--primary-white);
-  background-color: var(--primary-orange);
-  z-index: 14;
+  background-color: rgb(47, 49, 49);
+}
+.resume > a {
+  text-decoration: none;
+  color: var(--primary-white);
+}
+.resume > a:hover {
+  text-decoration: none;
+  color: var(--primary-white);
+}
+#downloadResume {
+  border: 1px solid var(--primary-white);
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  width: fit-content;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+}
+#downloadResume:hover {
+  color: var(--primary-white);
+  background-color: rgb(92, 91, 91);
+  transition: 0.2 ease-in-out;
+}
+.fa-download {
+  margin-top: 3%;
+}
+.fa-facebook,
+.fa-twitter,
+.fa-whatsapp,
+.fa-linkedin,
+.fa-instagram {
+  color: var(--primary-white);
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-whatsapp:hover,
+.fa-linkedin:hover,
+.fa-instagram:hover {
+  color: rgb(21, 64, 156);
 }
 
 /* services css  */
@@ -125,9 +161,59 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   color: var(--primary-white);
-  background-color: #f33501;
-  z-index: 14;
+  background: url(./components/Images/servicesBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgb(47, 49, 49); */
+}
+#services > .allServices {
+  height: 50vh;
+  width: 20vw;
+  color: var(--primary-white);
+  border: 1px solid var(--primary-white);
+  transition: 0.3s;
+  padding: 5px;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#services > .allServices:hover,
+.allServices:focus,
+.allServices:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#services > .allServices > .innerCard {
+  height: 70%;
+  background-color: #f9ab00;
+}
+#services > .allServices > #innerCardOne {
+  background: url(./components/Images/webdevlopment.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#services > .allServices > #innerCardTwo {
+  background: url(./components/Images/webdesign.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#services > .allServices > #innerCardThree {
+  background: url(./components/Images/apidevelopment.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 /* projects css  */
@@ -137,8 +223,11 @@ nav ul li {
   justify-content: center;
   align-items: center;
   color: var(--primary-white);
-  background-color: blueviolet;
-  z-index: 14;
+  background: url(./components/Images/projectsBackground.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-color: rgb(47, 49, 49); */
 }
 
 /* contacts css  */
@@ -156,6 +245,11 @@ nav ul li {
 
 /* footer css  */
 #footer {
-  background-color: aqua;
-  height: 20vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--primary-white);
+  background-color: rgb(47, 49, 49);
+  height: 10vh !important;
 }
