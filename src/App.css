@@ -220,6 +220,7 @@ nav ul li {
 #projects {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: var(--primary-white);
@@ -227,7 +228,16 @@ nav ul li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-color: rgb(47, 49, 49); */
+}
+
+#projects > .projects > a > img:hover,
+.projects > a > img:focus,
+.projects > a > img:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+#projects > .projects > a > img {
+  transition: 0.3s;
 }
 
 /* contacts css  */
