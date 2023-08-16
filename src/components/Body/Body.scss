@@ -1,0 +1,40 @@
+.body-main {
+  background-color: #1a202c;
+  .body-wrapper {
+    #about,
+    #skills,
+    #projects,
+    #activity,
+    #contact {
+      height: 100dvh;
+    }
+  }
+  #scrollToTop {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s ease-in-out;
+    animation: upanddown 1s infinite linear alternate;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 1;
+    z-index: 100;
+    &:hover {
+      opacity: 0.8;
+    }
+    svg {
+      font-size: 1.5rem;
+      color: #f26440;
+    }
+  }
+}
+@keyframes upanddown {
+  to {
+    transform: translateY(-5px);
+  }
+}

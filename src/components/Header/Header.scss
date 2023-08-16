@@ -1,0 +1,33 @@
+.navbar {
+  background-color: #2d3748;
+  min-height: 50px;
+  color: white;
+  padding: 5.5px 0px !important;
+
+  .logo {
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  div section a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(-2px);
+      color: inherit;
+    }
+  }
+  .navbar-nav .nav-link.active {
+    color: inherit;
+  }
+  .mode {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+}
