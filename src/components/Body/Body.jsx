@@ -7,15 +7,25 @@ import Activity from "./Activity";
 import Contact from "./Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { AiOutlineArrowUp } from "react-icons/ai";
+import { AiOutlineArrowUp, AiOutlineProject } from "react-icons/ai";
+import { FcAbout } from "react-icons/fc";
+import { GiTechnoHeart } from "react-icons/gi";
+import { TbActivity } from "react-icons/tb";
+import { MdContactPhone } from "react-icons/md";
 
 const Body = ({ theme }) => {
   const [showScrollButton, setShowScrollButton] = useState(false);
+  const [showSideNav, setShowsideNav] = useState(false);
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setShowScrollButton(true);
     } else {
       setShowScrollButton(false);
+    }
+    if (window.scrollY > 150) {
+      setShowsideNav(true);
+    } else {
+      setShowsideNav(false);
     }
   };
   useEffect(() => {
@@ -57,8 +67,31 @@ const Body = ({ theme }) => {
         </div>
       </div>
       {showScrollButton && (
-        <div id="scrollToTop" onClick={scrollToTop}>
+        <div
+          id="scrollToTop"
+          onClick={scrollToTop}
+          style={{ border: theme === "light" && "1px solid" }}
+        >
           <AiOutlineArrowUp />
+        </div>
+      )}
+      {showSideNav && window.innerWidth > 992 && (
+        <div id="sideNav" data-aos="fade-left">
+          <a href="#about">
+            <FcAbout size={32} title="About me" />
+          </a>
+          <a href="#skills">
+            <GiTechnoHeart color="pink" size={32} title="Skills" />
+          </a>{" "}
+          <a href="#projects">
+            <AiOutlineProject color="#00919b" size={32} title="Projects" />
+          </a>
+          <a href="#activity">
+            <TbActivity color="#c53030" size={32} title="Activity" />
+          </a>{" "}
+          <a href="#contact">
+            <MdContactPhone color="#38a169" size={32} title="Contact Me" />
+          </a>
         </div>
       )}
     </div>
