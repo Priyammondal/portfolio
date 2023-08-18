@@ -5,12 +5,11 @@ import typescript from "./skills/typescript.png";
 import html5 from "./skills/html-5.png";
 import css3 from "./skills/css3.png";
 import bootstrap from "./skills/bootstrap.png";
-import chakraUI from "./skills/chakraUI.png";
-import heroku from "./skills/heroku.png";
 import vscode from "./skills/vscode.png";
 import figma from "./skills/figma.png";
 import mysql from "./skills/mysql.png";
 import mongodb from "./skills/mongodb.png";
+import express from "./skills/express.png";
 
 export const projects = [
   {
@@ -105,6 +104,13 @@ export const skills = [
     link: "https://www.typescriptlang.org/",
     type: "development",
     image: typescript,
+  },
+  {
+    name: "Express.js",
+    description: "Web development",
+    link: "https://expressjs.com/",
+    type: "development",
+    image: express,
   },
   {
     name: "HTML5",

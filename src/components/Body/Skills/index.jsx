@@ -18,7 +18,10 @@ const Skill = ({ theme }) => {
         <div
           className="skill_label"
           onClick={() => setSkillType("all")}
-          style={{ backgroundColor: skillType === "all" && "#c6f6d5" }}
+          style={{
+            backgroundColor: skillType === "all" && "#c6f6d5",
+            color: skillType === "all" && "#22543d",
+          }}
         >
           <AiTwotoneThunderbolt />
           All
@@ -26,7 +29,20 @@ const Skill = ({ theme }) => {
         <div
           className="skill_label"
           onClick={() => setSkillType("development")}
-          style={{ backgroundColor: skillType === "development" && "#edf2f7" }}
+          style={{
+            backgroundColor:
+              skillType === "development" && theme === "dark"
+                ? "#edf2f7"
+                : skillType === "development" && theme === "light"
+                ? "#171923"
+                : null,
+            color:
+              skillType === "development" && theme === "dark"
+                ? "#1a202c"
+                : skillType === "development" && theme === "light"
+                ? "#edf2f7"
+                : "unset",
+          }}
         >
           <BiDesktop />
           Web Development
@@ -34,7 +50,10 @@ const Skill = ({ theme }) => {
         <div
           className="skill_label"
           onClick={() => setSkillType("design")}
-          style={{ backgroundColor: skillType === "design" && "#c6f6d5" }}
+          style={{
+            backgroundColor: skillType === "design" && "#c6f6d5",
+            color: skillType === "design" && "#22543d",
+          }}
         >
           <GiSpiderWeb />
           Web Design
@@ -42,7 +61,10 @@ const Skill = ({ theme }) => {
         <div
           className="skill_label"
           onClick={() => setSkillType("database")}
-          style={{ backgroundColor: skillType === "database" && "#fed7d7" }}
+          style={{
+            backgroundColor: skillType === "database" && "#fed7d7",
+            color: skillType === "database" && "#822727",
+          }}
         >
           <AiOutlineDatabase />
           Database
