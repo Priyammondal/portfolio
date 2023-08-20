@@ -1,5 +1,10 @@
 .projects {
   width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   .card-wrapper {
     height: 400px;
     display: flex !important;

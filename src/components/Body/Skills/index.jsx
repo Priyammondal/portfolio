@@ -70,7 +70,7 @@ const Skill = ({ theme }) => {
           Database
         </div>
       </section>
-      <section className="skill_list mx-auto d-flex flex-wrap justify-content-between gap-3">
+      <section className="skill_list mx-auto">
         {skillType === "all" &&
           skills.map((item, index) => (
             <SkillCard

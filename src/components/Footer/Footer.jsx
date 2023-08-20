@@ -14,7 +14,7 @@ import "./index.scss";
 const Footer = ({ theme }) => {
   return (
     <footer
-      className="p-3"
+      className="p-3 footer"
       style={{
         backgroundColor: theme === "dark" ? "#1a202c" : "white",
         color: theme === "dark" ? "white" : "#1a202c",
