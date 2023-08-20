@@ -3,6 +3,7 @@ import "./App.scss";
 import Header from "./components/Header/Header";
 import Body from "./components/Body/Body";
 import Footer from "./components/Footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
@@ -12,6 +13,7 @@ const App = () => {
       <Header theme={theme} setTheme={setTheme} />
       <Body theme={theme} />
       <Footer theme={theme} />
+      <Toaster position="top-center"/>
     </div>
   );
 };

@@ -70,9 +70,9 @@ const Body = ({ theme }) => {
         <div
           id="scrollToTop"
           onClick={scrollToTop}
-          style={{ border: theme === "light" && "1px solid" }}
+          style={{ backgroundColor: theme === "light" ? "#f26440" : "white" }}
         >
-          <AiOutlineArrowUp />
+          <AiOutlineArrowUp color={theme === "dark" ? "#f26440" : "white"} />
         </div>
       )}
       {showSideNav && window.innerWidth > 992 && (
