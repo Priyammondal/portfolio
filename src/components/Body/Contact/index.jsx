@@ -35,10 +35,10 @@ const Contact = ({ theme }) => {
   const submit = (e) => {
     emailjs
       .sendForm(
-        "service_2mqtxrg",
-        "template_1wq0v2j",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        "HNJzPohnYeYh8DxPF"
+        import.meta.env.VITE_PUBLIC_KEY
       )
       .then(
         (result) => {
