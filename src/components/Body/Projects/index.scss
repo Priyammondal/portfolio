@@ -1,10 +1,22 @@
 .projects {
-    width: 85%;
+  width: 85%;
   .card-wrapper {
+    height: 400px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     .card {
-      height: 60vh;
+      height: 95%;
       width: 95%;
       margin: auto;
+      background-color: inherit;
+      color: inherit;
+      border: none;
+      box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        transform: translateY(-5px);
+      }
       .img-wrapper {
         height: 30%;
         img {
@@ -14,6 +26,32 @@
           border-radius: 0.375rem;
         }
       }
+      .card-body {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        .github {
+          background-color: #2c313d;
+          color: white;
+        }
+        .external {
+          background-color: #81e6d9;
+          color: #1a202c;
+        }
+      }
     }
+  }
+}
+
+.light {
+  .slick-prev:before,
+  .slick-next:before {
+    color: #1a202c;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .projects {
+    width: 75%;
   }
 }
