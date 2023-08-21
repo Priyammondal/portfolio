@@ -55,7 +55,7 @@ export const projects = [
     title: "PORTFOLIO",
     description:
       "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-    url: "/",
+    url: "https://priyammondal.github.io/portfolio/",
     imgSrc:
       "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg",
   },

@@ -15,23 +15,26 @@ const Activity = ({ theme }) => {
           <img
             className=""
             alt="Priyam Mondal"
-            src="https://github-readme-activity-graph.vercel.app/graph?username=Priyammondal&bg_color=000000&color=ae9f37&line=578e62&point=137000&area=true&hide_border=true"
+            src={`https://github-readme-activity-graph.vercel.app/graph?username=Priyammondal&bg_color=${
+              theme === "dark" ? "000000" : "fff"
+            }&color=ae9f37&line=578e62&point=137000&area=true&hide_border=true`}
           />
         </a>
       </section>
       <section className="contribution_info py-2">
         <a href="https://github.com/Priyammondal">
-          <img src="https://streak-stats.demolab.com/?user=Priyammondal&theme=dark" />
+          <img
+            src={`https://streak-stats.demolab.com/?user=Priyammondal&theme=${theme}`}
+          />
         </a>
         <a href="https://github.com/Priyammondal">
-          <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Priyammondal&layout=compact&langs_count=5&theme=dark" />
+          <img
+            src={`https://github-readme-stats.vercel.app/api/top-langs/?username=Priyammondal&layout=compact&langs_count=5&theme=${theme}`}
+          />
         </a>
       </section>
       <section className="github_push mx-auto">
-        <GitHubCalendar
-          username="Priyammondal"
-          colorScheme={theme === "dark" ? "light" : "dark"}
-        >
+        <GitHubCalendar username="Priyammondal" colorScheme={theme}>
           {/* <ReactTooltip html /> */}
         </GitHubCalendar>
       </section>
