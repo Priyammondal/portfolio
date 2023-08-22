@@ -59,10 +59,25 @@ const Project = ({ theme }) => {
                     <p className="card-text">{item.description}</p>
                   </section>
                   <section className="d-flex justify-content-between">
-                    <a href="#" className="btn github">
+                    <a
+                      href="#"
+                      className="btn github"
+                      style={{
+                        backgroundColor: theme === "light" && "#edf2f7",
+                        color: theme === "light" && "black",
+                      }}
+                    >
                       <FaGithub /> Github
                     </a>
-                    <a href={item.url} target="_blank" className="btn external">
+                    <a
+                      href={item.url}
+                      target="_blank"
+                      className="btn external"
+                      style={{
+                        backgroundColor: theme === "light" && "#319795",
+                        color: theme === "light" && "white",
+                      }}
+                    >
                       <FaExternalLinkAlt /> Demo
                     </a>
                   </section>

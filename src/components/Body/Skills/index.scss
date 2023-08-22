@@ -30,7 +30,7 @@
     }
   }
   .skill_list {
-    width: 65%;
+    width: 70%;
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     padding: 1rem 0;
@@ -43,15 +43,13 @@
     align-items: flex-start;
     align-content: flex-start;
     gap: 15px;
+    padding: 5px;
   }
 }
 @media screen and (max-width: 992px) {
   .skills {
     padding-top: 10vh !important;
     .skill_catagory {
-      width: 70%;
-    }
-    .skill_list {
       width: 70%;
     }
   }
