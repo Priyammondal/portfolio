@@ -1,3 +1,4 @@
+// Skill pictures
 import javascript from "./skills/javascript.png";
 import react from "./skills/react.png";
 import nodeJs from "./skills/nodeJs.png";
@@ -11,53 +12,97 @@ import mysql from "./skills/mysql.png";
 import mongodb from "./skills/mongodb.png";
 import express from "./skills/express.png";
 
+// Project pictures
+import project1 from "./projects/p1.png";
+import project2 from "./projects/p2.png";
+import project3 from "./projects/p3.png";
+import project4 from "./projects/p4.png";
+import project5 from "./projects/p5.png";
+import project6 from "./projects/p6.png";
+import project7 from "./projects/p7.png";
+import project8 from "./projects/p8.png";
+
 export const projects = [
   {
     date: "07/10/2022",
     title: "TECHY STAR",
     description:
-      "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "Simple website with modern design using React.js. Fully Responsive",
     url: "https://zippy-squirrel-c54721.netlify.app",
-    imgSrc:
-      "https://cdn.pixabay.com/photo/2018/06/07/16/49/virtual-3460451_960_720.jpg",
+    imgSrc: project5,
+    github: "",
   },
-
   {
     date: "11/10/2022",
-    title: "VIDEO HUB",
+    title: "Form Validation - Formik",
     description:
-      "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-    url: "https://react-video-app-eight.vercel.app",
-    imgSrc:
-      "https://cdn.pixabay.com/photo/2016/11/21/12/51/mobile-phone-1845233__340.jpg",
+      "This is a demonstration of form validation using formik and yup in React",
+    url: "https://formvalidation-formik-yup.netlify.app/",
+    imgSrc: project6,
+    github: "https://github.com/Priyammondal/formvalidation-react-formik-yup",
   },
   {
     date: "15/10/2022",
     title: "XCrypto",
     description:
-      "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "Basic crypto tracking application. All the data are coming from apis.",
     url: "https://shiny-treacle-c3eec1.netlify.app",
-    imgSrc:
-      "https://cdn.pixabay.com/photo/2017/12/12/12/44/bitcoin-3014614_960_720.jpg",
+    imgSrc: project8,
+    github: "https://github.com/Priyammondal/xcrypto",
   },
-
+  {
+    date: "11/10/2022",
+    title: "Form Validation - React-Hook-Form",
+    description:
+      "This is a demonstration of form validation using React-Hook-Form and yup in React",
+    url: "https://formvalidation-react-hook-form-yup.netlify.app/",
+    imgSrc: project6,
+    github:
+      "https://github.com/Priyammondal/formvalidation-react-hook-form-yup",
+  },
   {
     date: "17/10/2022",
-    title: "REACT CART",
+    title: "Basic Cart",
     description:
-      "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
+      "Demonstration of a basic cart section of e-commerce sites. Built using React.Js",
     url: "https://peppy-torrone-10ff8f.netlify.app",
-    imgSrc:
-      "https://cdn.pixabay.com/photo/2019/12/14/08/36/shopping-4694470_960_720.jpg",
+    imgSrc: project3,
+    github: "",
   },
   {
     date: "20/10/2022",
-    title: "PORTFOLIO",
+    title: "Demo Portfolio",
+    description: "My previous demo portfolio. Now not to be followed.",
+    url: "https://priyammondal.netlify.app/",
+    imgSrc: project1,
+    github: "https://github.com/Priyammondal/priyam-portfolio",
+  },
+  {
+    date: "20/10/2022",
+    title: "Employee Details",
     description:
-      "This is the sample description about the project details. The more details the more details and evenually more details because I don't have anything to write",
-    url: "https://priyammondal.github.io/portfolio/",
-    imgSrc:
-      "https://cdn.pixabay.com/photo/2020/03/19/21/25/cactus-4948833_960_720.jpg",
+      "Employee Details Card with modern design fully responsive built using React.js and vanilla Css",
+    url: "https://innsighttask.netlify.app/",
+    imgSrc: project2,
+    github: "",
+  },
+  {
+    date: "20/10/2022",
+    title: "Todo - Redux Toolkit",
+    description:
+      "Simple demonstration of CRUD functionality through Todo application build with React.js and Redux Toolkit",
+    url: "https://redux-toolkit-todo-app-implementation.netlify.app/",
+    imgSrc: project4,
+    github: "https://github.com/Priyammondal/redux-toolkit-implementation",
+  },
+  {
+    date: "20/10/2022",
+    title: "Map Implementation",
+    description:
+      "In this project map-box is used to create a dynamic map component. Different apis were used to implement directioin between two places",
+    url: "https://map-box-react.netlify.app/",
+    imgSrc: project7,
+    github: "https://github.com/Priyammondal/map-box-react",
   },
 ];
 

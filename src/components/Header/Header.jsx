@@ -17,7 +17,7 @@ const Header = ({ theme, setTheme }) => {
         <div className="d-flex justify-content-between px-2 px-lg-0">
           <a
             className="navbar-flex justify-content-center align-items-center navbar-brand"
-            href="/"
+            href="/portfolio"
           >
             <img className="logo" src={logo} alt="logo" />
           </a>

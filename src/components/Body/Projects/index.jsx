@@ -60,11 +60,13 @@ const Project = ({ theme }) => {
                   </section>
                   <section className="d-flex justify-content-between">
                     <a
-                      href="#"
+                      href={item.github}
                       className="btn github"
+                      target="_blank"
                       style={{
                         backgroundColor: theme === "light" && "#edf2f7",
                         color: theme === "light" && "black",
+                        pointerEvents: item?.github?.length === 0 && "none",
                       }}
                     >
                       <FaGithub /> Github
