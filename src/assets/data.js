@@ -11,6 +11,7 @@ import figma from "./skills/figma.png";
 import mysql from "./skills/mysql.png";
 import mongodb from "./skills/mongodb.png";
 import express from "./skills/express.png";
+import styledComponents from "./skills/styled-components.svg";
 
 // Project pictures
 import project1 from "./projects/p1.png";
@@ -170,6 +171,13 @@ export const skills = [
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
     type: "design",
     image: css3,
+  },
+  {
+    name: "Styled Components",
+    description: "Web design",
+    link: "https://styled-components.com/",
+    type: "design",
+    image: styledComponents,
   },
   {
     name: "Bootstrap",
