@@ -52,7 +52,7 @@ const Header = ({ theme, setTheme }) => {
           <div className="d-flex justify-content-between flex-column flex-lg-row align-items-start w-100 ps-0 ps-lg-3">
             <section>
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
+                <li className="nav-item" title="About Me">
                   <a
                     className="nav-link active px-2"
                     aria-current="page"
@@ -61,27 +61,27 @@ const Header = ({ theme, setTheme }) => {
                     About Me
                   </a>
                 </li>
-                <li className="nav-item px-2">
+                <li className="nav-item px-2" title="Skills">
                   <a className="nav-link" href="#skills">
                     Skills
                   </a>
                 </li>
-                <li className="nav-item px-2">
+                <li className="nav-item px-2" title="Projects">
                   <a className="nav-link" aria-current="page" href="#projects">
                     Projects
                   </a>
                 </li>
-                <li className="nav-item px-2">
+                <li className="nav-item px-2" title="Activity">
                   <a className="nav-link" href="#activity">
                     Activity
                   </a>
                 </li>
-                <li className="nav-item px-2">
+                <li className="nav-item px-2" title="Contact Me">
                   <a className="nav-link" href="#contact">
                     Contact Me
                   </a>
                 </li>
-                <li className="nav-item px-2">
+                <li className="nav-item px-2" title="Resume">
                   <a className="nav-link" href={resume} download>
                     Resume
                   </a>
@@ -97,6 +97,7 @@ const Header = ({ theme, setTheme }) => {
                 onClick={() =>
                   theme === "light" ? setTheme("dark") : setTheme("light")
                 }
+                title={theme === "dark" ? "Dark Mode" : "Light Mode"}
               >
                 {theme === "dark" ? <FaSun /> : <FaMoon />}
               </div>
