@@ -30,7 +30,7 @@ const About = ({ theme }) => {
           forward to honing my skills in a challenging work environment.
         </p>
         <div className="d-flex gap-3 gap-lg-3 align-items-center main_buttons mt-3 mt-lg-0">
-          <a target="_blank" href={resume} download>
+          <a target="_blank" href={resume} download title="Resume">
             <button className="btn btn-success">Resume</button>
           </a>
           <div class="d-flex gap-3 align-items-center">
@@ -38,6 +38,7 @@ const About = ({ theme }) => {
               target="_blank"
               rel="noopener"
               href="https://github.com/Priyammondal"
+              title="Github"
             >
               <svg
                 stroke="currentColor"
@@ -54,6 +55,7 @@ const About = ({ theme }) => {
             <a
               target="_blank"
               href="https://www.linkedin.com/in/priyam-mondal/"
+              title="Linkedin"
             >
               <svg
                 stroke="currentColor"
@@ -67,7 +69,11 @@ const About = ({ theme }) => {
                 <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
               </svg>
             </a>
-            <a target="_blank" href="https://medium.com/@priyam_mondal">
+            <a
+              target="_blank"
+              href="https://medium.com/@priyam_mondal"
+              title="Medium"
+            >
               <BsMedium
                 size={30}
                 color={theme === "light" ? "black" : "white"}
@@ -76,6 +82,7 @@ const About = ({ theme }) => {
             <a
               target="_blank"
               href="https://api.whatsapp.com/send?phone=8328709274"
+              title="Whatsapp"
             >
               <svg
                 stroke="currentColor"
@@ -89,7 +96,7 @@ const About = ({ theme }) => {
                 <path d="M260.062 32C138.605 32 40.134 129.701 40.134 250.232c0 41.23 11.532 79.79 31.559 112.687L32 480l121.764-38.682c31.508 17.285 67.745 27.146 106.298 27.146C381.535 468.464 480 370.749 480 250.232 480 129.701 381.535 32 260.062 32zm109.362 301.11c-5.174 12.827-28.574 24.533-38.899 25.072-10.314.547-10.608 7.994-66.84-16.434-56.225-24.434-90.052-83.844-92.719-87.67-2.669-3.812-21.78-31.047-20.749-58.455 1.038-27.413 16.047-40.346 21.404-45.725 5.351-5.387 11.486-6.352 15.232-6.413 4.428-.072 7.296-.132 10.573-.011 3.274.124 8.192-.685 12.45 10.639 4.256 11.323 14.443 39.153 15.746 41.989 1.302 2.839 2.108 6.126.102 9.771-2.012 3.653-3.042 5.935-5.961 9.083-2.935 3.148-6.174 7.042-8.792 9.449-2.92 2.665-5.97 5.572-2.9 11.269 3.068 5.693 13.653 24.356 29.779 39.736 20.725 19.771 38.598 26.329 44.098 29.317 5.515 3.004 8.806 2.67 12.226-.929 3.404-3.599 14.639-15.746 18.596-21.169 3.955-5.438 7.661-4.373 12.742-2.329 5.078 2.052 32.157 16.556 37.673 19.551 5.51 2.989 9.193 4.529 10.51 6.9 1.317 2.38.901 13.531-4.271 26.359z"></path>
               </svg>
             </a>
-            <a href="mailto:priyammondal096@gmail.com">
+            <a href="mailto:priyammondal096@gmail.com" title="Email">
               <svg
                 stroke="currentColor"
                 fill="#c53030"
