@@ -1,17 +1,20 @@
 import React from "react";
 import "./index.scss";
 import { experiences } from "../../../assets/data";
-const Experience = () => {
+const Experience = ({ theme }) => {
   console.log("experiences-->", experiences);
   return (
     <div id="timeline">
       <div className="timelineBox">
         {experiences.map((item, index) => (
           <TimeLineItems
-            heading={item.company}
-            text={item.date}
-            index={index}
             key={index}
+            company={item.company}
+            jobTitle={item.jobTitle}
+            date={item.date}
+            url={item.url}
+            index={index}
+            theme={theme}
           />
         ))}
       </div>
@@ -19,16 +22,19 @@ const Experience = () => {
   );
 };
 
-const TimeLineItems = ({ heading, text, index }) => (
+const TimeLineItems = ({ company, jobTitle, date, url, index, theme }) => (
   <div
-    className={`timelineItem ${
-      index % 2 == 0 ? "leftTimeLine" : "rightTimeLine"
-    }`}
+    className={`${
+      theme === "dark" ? "timelineItemDark" : "timelineItemLight"
+    } ${index % 2 == 0 ? "leftTimeLine" : "rightTimeLine"}`}
   >
-    <div>
-      <h2>{heading}</h2>
-      <p>{text}</p>
-    </div>
+    <a href={url} target="blank">
+      <div style={{ color: theme === "light" && "#1a202c" }}>
+        <h4>{company}</h4>
+        <p className="m-0">{jobTitle}</p>
+        <p className="m-0">{date}</p>
+      </div>
+    </a>
   </div>
 );
 
