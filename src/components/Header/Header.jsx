@@ -61,6 +61,11 @@ const Header = ({ theme, setTheme }) => {
                     About Me
                   </a>
                 </li>
+                <li className="nav-item px-2" title="Experience">
+                  <a className="nav-link" href="#experience">
+                    Experience
+                  </a>
+                </li>
                 <li className="nav-item px-2" title="Skills">
                   <a className="nav-link" href="#skills">
                     Skills

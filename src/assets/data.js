@@ -110,15 +110,18 @@ export const projects = [
 export const experiences = [
   {
     date: "24/03/2021 - 12/10/2021",
-    title: "PwC",
+    company: "PwC",
+    jobTitle: "Associate",
   },
   {
     date: "20/10/2021 - 30/04/2022",
-    title: "BDIPlus",
+    company: "BDIPlus",
+    jobTitle: "Software Engineer",
   },
   {
-    date: "01/05/2022- Present",
-    title: "Freelance",
+    date: "01/03/2023- Present",
+    company: "INNSight",
+    jobTitle: "React.Js Developer",
   },
 ];
 

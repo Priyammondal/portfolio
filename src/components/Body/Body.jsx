@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Body.scss";
 import About from "./About";
+import Experiences from "./Experiences";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Activity from "./Activity";
@@ -52,6 +53,9 @@ const Body = ({ theme }) => {
       <div className="body-wrapper col-12 col-lg-8 mx-auto">
         <div id="about">
           <About theme={theme} />
+        </div>
+        <div id="experience">
+          <Experiences theme={theme} />
         </div>
         <div id="skills">
           <Skills theme={theme} />
