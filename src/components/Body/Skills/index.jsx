@@ -22,6 +22,7 @@ const Skill = ({ theme }) => {
             backgroundColor: skillType === "all" && "#c6f6d5",
             color: skillType === "all" && "#22543d",
           }}
+          title="All"
         >
           <AiTwotoneThunderbolt />
           All
@@ -43,6 +44,7 @@ const Skill = ({ theme }) => {
                 ? "#edf2f7"
                 : "unset",
           }}
+          title="Web Development"
         >
           <BiDesktop />
           Web Development
@@ -54,6 +56,7 @@ const Skill = ({ theme }) => {
             backgroundColor: skillType === "design" && "#c6f6d5",
             color: skillType === "design" && "#22543d",
           }}
+          title="Web Design"
         >
           <GiSpiderWeb />
           Web Design
@@ -65,6 +68,7 @@ const Skill = ({ theme }) => {
             backgroundColor: skillType === "database" && "#fed7d7",
             color: skillType === "database" && "#822727",
           }}
+          title="Database"
         >
           <AiOutlineDatabase />
           Database

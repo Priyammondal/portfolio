@@ -29,7 +29,7 @@ const TimeLineItems = ({ company, jobTitle, date, url, index, theme }) => (
     } ${index % 2 == 0 ? "leftTimeLine" : "rightTimeLine"}`}
   >
     <a href={url} target="blank">
-      <div style={{ color: theme === "light" && "#1a202c" }}>
+      <div style={{ color: theme === "light" && "#1a202c" }} title={company}>
         <h4>{company}</h4>
         <p className="m-0">{jobTitle}</p>
         <p className="m-0">{date}</p>

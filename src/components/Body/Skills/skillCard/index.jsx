@@ -9,6 +9,7 @@ const index = ({ name, description, link, type, image, theme }) => {
       target="_blank"
       className="skillCard"
       style={{ borderColor: theme === "dark" ? "#2D3748" : "#EDF2F7" }}
+      title={name}
     >
       <img src={image} alt={name} />
       <p
