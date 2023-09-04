@@ -9,6 +9,13 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 const Project = ({ theme }) => {
   console.log("Projects-->", projects);
 
+  useEffect(() => {
+    const prev = document.querySelector(".slick-prev");
+    const next = document.querySelector(".slick-next");
+    prev.title = "Previous";
+    next.title = "Next";
+  }, []);
+
   const settings = {
     // dots: true,
     arrows: true,
@@ -40,6 +47,7 @@ const Project = ({ theme }) => {
       },
     ],
   };
+
   return (
     <div className="projects mx-auto">
       <section className="text-center">
@@ -48,7 +56,13 @@ const Project = ({ theme }) => {
       <section className={theme === "light" && "light"}>
         <Slider {...settings}>
           {projects.map((item, index) => (
-            <div key={index} className="card-wrapper">
+            <div
+              key={index}
+              className="card-wrapper"
+              title={item.title
+                .toLowerCase()
+                .replace(/(^|\s)\S/g, (match) => match.toUpperCase())}
+            >
               <div className="card">
                 <div className="img-wrapper">
                   <img src={item.imgSrc} alt={item.title} />
@@ -68,6 +82,7 @@ const Project = ({ theme }) => {
                         color: theme === "light" && "black",
                         pointerEvents: item?.github?.length === 0 && "none",
                       }}
+                      title="Github"
                     >
                       <FaGithub /> Github
                     </a>
@@ -79,6 +94,7 @@ const Project = ({ theme }) => {
                         backgroundColor: theme === "light" && "#319795",
                         color: theme === "light" && "white",
                       }}
+                      title="Demo"
                     >
                       <FaExternalLinkAlt /> Demo
                     </a>
