@@ -22,6 +22,7 @@ import project5 from "./projects/p5.png";
 import project6 from "./projects/p6.png";
 import project7 from "./projects/p7.png";
 import project8 from "./projects/p8.png";
+import project9 from "./projects/p9.png";
 
 export const projects = [
   {
@@ -104,6 +105,15 @@ export const projects = [
     url: "https://map-box-react.netlify.app/",
     imgSrc: project7,
     github: "https://github.com/Priyammondal/map-box-react",
+  },
+  {
+    date: "16/09/2023",
+    title: "Delta",
+    description:
+      "This is a simple website made using React with styled components",
+    url: "https://delta123.netlify.app/",
+    imgSrc: project9,
+    github: "https://github.com/Priyammondal/delta",
   },
 ];
 
