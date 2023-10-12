@@ -120,7 +120,7 @@ export const projects = [
 export const experiences = [
   {
     date: "01/03/2023 - Present",
-    company: "INNSight",
+    company: "INNsight",
     jobTitle: "React.Js Developer",
     url: "https://www.innsight.com/",
   },
