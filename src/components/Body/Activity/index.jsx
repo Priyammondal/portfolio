@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.scss";
 import GitHubCalendar from "react-github-calendar";
-import { Tooltip as ReactTooltip } from "react-tooltip";
 
 const Activity = ({ theme }) => {
   return (
@@ -37,7 +36,6 @@ const Activity = ({ theme }) => {
 
       <section className="github_push mx-auto">
         <GitHubCalendar username="Priyammondal" colorScheme={theme}>
-          <ReactTooltip html />
         </GitHubCalendar>
       </section>
     </div>
