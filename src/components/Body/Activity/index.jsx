@@ -1,7 +1,8 @@
 import React from "react";
 import "./index.scss";
 import GitHubCalendar from "react-github-calendar";
-// import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from "react-tooltip";
+import 'react-tooltip/dist/react-tooltip.css'
 
 const Activity = ({ theme }) => {
   return (
@@ -21,6 +22,7 @@ const Activity = ({ theme }) => {
           />
         </a>
       </section>
+
       <section className="contribution_info py-2">
         <a href="https://github.com/Priyammondal">
           <img
@@ -33,9 +35,10 @@ const Activity = ({ theme }) => {
           />
         </a>
       </section>
+
       <section className="github_push mx-auto">
         <GitHubCalendar username="Priyammondal" colorScheme={theme}>
-          {/* <ReactTooltip html /> */}
+          <ReactTooltip html />
         </GitHubCalendar>
       </section>
     </div>

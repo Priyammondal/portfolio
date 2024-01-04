@@ -71,14 +71,14 @@ export const projects = [
     imgSrc: project3,
     github: "",
   },
-  {
-    date: "20/10/2022",
-    title: "Demo Portfolio",
-    description: "My previous demo portfolio. Now not to be followed.",
-    url: "https://priyammondal.netlify.app/",
-    imgSrc: project1,
-    github: "https://github.com/Priyammondal/priyam-portfolio",
-  },
+  // {
+  //   date: "20/10/2022",
+  //   title: "Demo Portfolio",
+  //   description: "My previous demo portfolio. Now not to be followed.",
+  //   url: "https://priyammondal.netlify.app/",
+  //   imgSrc: project1,
+  //   github: "https://github.com/Priyammondal/priyam-portfolio",
+  // },
   {
     date: "20/10/2022",
     title: "Employee Details",

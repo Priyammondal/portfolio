@@ -4,6 +4,7 @@ import About from "./About";
 import Experiences from "./Experiences";
 import Skills from "./Skills";
 import Projects from "./Projects";
+import Certificates from "./Certificates";
 import Activity from "./Activity";
 import Contact from "./Contact";
 import AOS from "aos";
@@ -64,6 +65,9 @@ const Body = ({ theme }) => {
         <div id="projects">
           <Projects theme={theme} />
         </div>
+        <div id="certificates">
+          <Certificates theme={theme} />
+        </div>
         <div id="activity">
           <Activity theme={theme} />
         </div>
@@ -81,7 +85,7 @@ const Body = ({ theme }) => {
           <AiOutlineArrowUp color={theme === "dark" ? "#f26440" : "white"} />
         </div>
       )}
-      {showSideNav && window.innerWidth > 992 && (
+      {/* {showSideNav && window.innerWidth > 992 && (
         <div id="sideNav" data-aos="fade-left">
           <a href="#about">
             <FcAbout size={32} title="About me" />
@@ -102,7 +106,7 @@ const Body = ({ theme }) => {
             <MdContactPhone color="#38a169" size={32} title="Contact Me" />
           </a>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
