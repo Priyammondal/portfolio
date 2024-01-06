@@ -65,7 +65,7 @@ const Body = ({ theme }) => {
         <div id="projects">
           <Projects theme={theme} />
         </div>
-        <div id="certificates">
+        <div id="certificates" className="d-none">
           <Certificates theme={theme} />
         </div>
         <div id="activity">
@@ -107,6 +107,7 @@ const Body = ({ theme }) => {
           </a>
         </div>
       )} */}
+      
     </div>
   );
 };

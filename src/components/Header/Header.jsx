@@ -76,7 +76,7 @@ const Header = ({ theme, setTheme }) => {
                     Projects
                   </a>
                 </li>
-                <li className="nav-item px-2" title="Certificates">
+                <li className="nav-item px-2 d-none" title="Certificates">
                   <a className="nav-link" aria-current="page" href="#certificates">
                     Certificates
                   </a>
