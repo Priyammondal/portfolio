@@ -4,13 +4,13 @@
   background-color: inherit;
   .timelineBox {
     width: 100%;
+    height: 100%;
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
     &::after {
       content: "";
       position: absolute;

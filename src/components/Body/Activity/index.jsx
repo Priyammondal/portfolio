@@ -34,7 +34,7 @@ const Activity = ({ theme }) => {
         </a>
       </section>
 
-      <section className="github_push mx-auto">
+      <section className="github_push w-70 w-lg-100">
         <GitHubCalendar username="Priyammondal" colorScheme={theme}>
         </GitHubCalendar>
       </section>
