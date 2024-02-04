@@ -25,17 +25,17 @@ import project8 from "./projects/p8.png";
 import project9 from "./projects/p9.png";
 
 // Certificate pictures 
-import certificate1 from "./certificates/css_greatlearning.jpg"
-import certificate2 from "./certificates/datascience_greycampus.png"
-import certificate3 from "./certificates/fullstack_greycampus.png"
-import certificate4 from "./certificates/html_greatlearning.jpg"
-import certificate5 from "./certificates/Javascript Algorithms And Data Structures.png"
-import certificate6 from "./certificates/javascript_basic.png"
+import certificate1 from "./certificates/Javascript Algorithms And Data Structures.png"
+import certificate2 from "./certificates/namaste-react-certificate.png"
+import certificate3 from "./certificates/react_basic.png"
+import certificate4 from "./certificates/javascript_basic.png"
+import certificate5 from "./certificates/python_basic.png"
+import certificate6 from "./certificates/fullstack_greycampus.png"
+import certificate10 from "./certificates/css_greatlearning.jpg"
+import certificate11 from "./certificates/datascience_greycampus.png"
+import certificate8 from "./certificates/html_greatlearning.jpg"
 import certificate7 from "./certificates/kshitij_robotics.png"
-import certificate8 from "./certificates/namaste-react-certificate.png"
 import certificate9 from "./certificates/Problem_solving_through_C.jpeg"
-import certificate10 from "./certificates/python_basic.png"
-import certificate11 from "./certificates/react_basic.png"
 import certificate12 from "./certificates/smartjob.png"
 import certificate13 from "./certificates/Speaking_efectively.jpeg"
 
