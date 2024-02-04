@@ -2,9 +2,11 @@ import React from "react";
 import "./index.scss";
 import { experiences } from "../../../assets/data";
 const Experience = ({ theme }) => {
-  console.log("experiences-->", experiences);
   return (
-    <div id="timeline">
+    <div id="timeline" className="my-5">
+      <section className="text-center mb-5">
+        <h2 id="experienceHeading">Experiences</h2>
+      </section>
       <div className="timelineBox">
         {experiences.map((item, index) => (
           <TimeLineItems

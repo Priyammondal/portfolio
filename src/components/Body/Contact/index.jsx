@@ -57,8 +57,10 @@ const Contact = ({ theme }) => {
       );
   };
   return (
-    <div className="contact">
-      <h2 className="text-center">Get in Touch</h2>
+    <div className="contact pb-5">
+      <h2 className="text-center" id="contactHeading">
+        Get in Touch
+      </h2>
       <section className="contact_body mx-auto">
         <form ref={form} onSubmit={handleSubmit(submit)}>
           <section>

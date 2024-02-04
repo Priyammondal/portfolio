@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const Project = ({ theme }) => {
-  console.log("Projects-->", projects);
 
   useEffect(() => {
     const prev = document.querySelector(".slick-prev");
@@ -18,10 +17,10 @@ const Project = ({ theme }) => {
 
   const settings = {
     // dots: true,
-    arrows: true,
     // fade: true,
-    infinite: true,
     // autoplay: true,
+    arrows: true,
+    infinite: true,
     speed: 500,
     autoplaySpeed: 5000,
     slidesToShow: 3,
@@ -49,9 +48,9 @@ const Project = ({ theme }) => {
   };
 
   return (
-    <div className="projects mx-auto">
-      <section className="text-center">
-        <h2>Projects</h2>
+    <div className="projects mx-auto my-5">
+      <section className="text-center mb-5">
+        <h2 id="projectsHeading">Projects</h2>
       </section>
       <section className={theme === "light" && "light"}>
         <Slider {...settings}>

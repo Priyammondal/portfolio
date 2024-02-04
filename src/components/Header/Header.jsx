@@ -5,6 +5,31 @@ import logo from "../../assets/priyam_m.png";
 import resume from "../../assets/Priyam.pdf";
 
 const Header = ({ theme, setTheme }) => {
+  const scrollToSection = (HeadingId) => {
+    if (window.innerWidth > 992) {
+      const navbarHeight = document.querySelector(".navbar").offsetHeight;
+      const heading = document.getElementById(HeadingId);
+      const skillsSectionPosition = heading.offsetTop - navbarHeight;
+
+      window.scrollTo({
+        top: skillsSectionPosition,
+        behavior: "smooth",
+      });
+    } else {
+      const element = document.getElementById("navbarNav");
+      if (element.classList.contains("show")) {
+        element.classList.remove("show");
+      }
+      const navbarHeight = document.querySelector(".navbar").offsetHeight;
+      const heading = document.getElementById(HeadingId);
+      const skillsSectionPosition = heading.offsetTop - navbarHeight;
+
+      window.scrollTo({
+        top: skillsSectionPosition,
+        behavior: "smooth",
+      });
+    }
+  };
   return (
     <nav
       className="navbar navbar-expand-lg shadow"
@@ -55,39 +80,84 @@ const Header = ({ theme, setTheme }) => {
                 <li className="nav-item" title="About Me">
                   <a
                     className="nav-link active px-2"
-                    aria-current="page"
-                    href="#about"
+                    onClick={() => {
+                      if (window.innerWidth > 992) {
+                        window.scroll({
+                          top: 0,
+                          behavior: "smooth",
+                        });
+                      } else {
+                        const element = document.getElementById("navbarNav");
+                        if (element.classList.contains("show")) {
+                          element.classList.remove("show");
+                        }
+                        window.scroll({
+                          top: 0,
+                          behavior: "smooth",
+                        });
+                      }
+                    }}
                   >
                     About Me
                   </a>
                 </li>
                 <li className="nav-item px-2" title="Experience">
-                  <a className="nav-link" href="#experience">
+                  <a
+                    className="nav-link"
+                    onClick={() => {
+                      scrollToSection("experienceHeading");
+                    }}
+                  >
                     Experience
                   </a>
                 </li>
                 <li className="nav-item px-2" title="Skills">
-                  <a className="nav-link" href="#skills">
+                  <a
+                    className="nav-link"
+                    onClick={() => {
+                      scrollToSection("skillsHeading");
+                    }}
+                  >
                     Skills
                   </a>
                 </li>
                 <li className="nav-item px-2" title="Projects">
-                  <a className="nav-link" aria-current="page" href="#projects">
+                  <a
+                    className="nav-link"
+                    onClick={() => {
+                      scrollToSection("projectsHeading");
+                    }}
+                  >
                     Projects
                   </a>
                 </li>
-                <li className="nav-item px-2 d-none" title="Certificates">
-                  <a className="nav-link" aria-current="page" href="#certificates">
+                <li className="nav-item px-2" title="Certificates">
+                  <a
+                    className="nav-link"
+                    onClick={() => {
+                      scrollToSection("certificatesHeading");
+                    }}
+                  >
                     Certificates
                   </a>
                 </li>
                 <li className="nav-item px-2" title="Activity">
-                  <a className="nav-link" href="#activity">
+                  <a
+                    className="nav-link"
+                    onClick={() => {
+                      scrollToSection("activityHeading");
+                    }}
+                  >
                     Activity
                   </a>
                 </li>
                 <li className="nav-item px-2" title="Contact Me">
-                  <a className="nav-link" href="#contact">
+                  <a
+                    className="nav-link"
+                    onClick={() => {
+                      scrollToSection("contactHeading");
+                    }}
+                  >
                     Contact Me
                   </a>
                 </li>

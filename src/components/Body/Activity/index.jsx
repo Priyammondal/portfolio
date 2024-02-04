@@ -4,7 +4,10 @@ import GitHubCalendar from "react-github-calendar";
 
 const Activity = ({ theme }) => {
   return (
-    <div className="activity">
+    <div className="activity my-5">
+      <section className="text-center mb-5">
+        <h2 id="activityHeading">Activity</h2>
+      </section>
       <section className="activity_graph">
         <a
           href="https://github.com/Priyammondal"
@@ -34,7 +37,7 @@ const Activity = ({ theme }) => {
         </a>
       </section>
 
-      <section className="github_push w-70 w-lg-100">
+      <section className="github_push w-100">
         <GitHubCalendar username="Priyammondal" colorScheme={theme}>
         </GitHubCalendar>
       </section>

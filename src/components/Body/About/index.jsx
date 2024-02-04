@@ -7,7 +7,7 @@ import { SiLeetcode } from "react-icons/si";
 
 const About = ({ theme }) => {
   return (
-    <div className="about d-flex flex-column flex-lg-row">
+    <div className="about d-flex flex-column flex-lg-row vh-100">
       <section className="dp">
         <picture>
           <img src={priyam_logo} alt="priyam_logo" />

@@ -53,27 +53,13 @@ const Body = ({ theme }) => {
       }}
     >
       <div className="body-wrapper col-12 col-lg-8 mx-auto">
-        <div id="about">
           <About theme={theme} />
-        </div>
-        <div id="experience">
           <Experiences theme={theme} />
-        </div>
-        <div id="skills">
           <Skills theme={theme} />
-        </div>
-        <div id="projects">
           <Projects theme={theme} />
-        </div>
-        <div id="certificates" className="d-none">
           <Certificates theme={theme} />
-        </div>
-        <div id="activity">
           <Activity theme={theme} />
-        </div>
-        <div id="contact">
           <Contact theme={theme} />
-        </div>
       </div>
       {showScrollButton && (
         <div
@@ -107,7 +93,6 @@ const Body = ({ theme }) => {
           </a>
         </div>
       )} */}
-      
     </div>
   );
 };

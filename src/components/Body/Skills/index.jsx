@@ -10,8 +10,8 @@ const Skill = ({ theme }) => {
   const [skillType, setSkillType] = useState("all");
   return (
     <div className="skills">
-      <section className="text-center">
-        <h2 className="">Skills</h2>
+      <section className="text-center mb-5">
+        <h2 id="skillsHeading">Skills</h2>
         <p>A list of technologies that I use on a regular basis.</p>
       </section>
       <section className="skill_catagory mx-auto d-flex flex-wrap justify-content-between">

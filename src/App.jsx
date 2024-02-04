@@ -7,7 +7,6 @@ import { Toaster } from "react-hot-toast";
 
 const App = () => {
   const [theme, setTheme] = useState("dark");
-  console.log("Theme-->", theme);
   return (
     <div className="main-component">
       <Header theme={theme} setTheme={setTheme} />

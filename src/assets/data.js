@@ -24,6 +24,21 @@ import project7 from "./projects/p7.png";
 import project8 from "./projects/p8.png";
 import project9 from "./projects/p9.png";
 
+// Certificate pictures 
+import certificate1 from "./certificates/css_greatlearning.jpg"
+import certificate2 from "./certificates/datascience_greycampus.png"
+import certificate3 from "./certificates/fullstack_greycampus.png"
+import certificate4 from "./certificates/html_greatlearning.jpg"
+import certificate5 from "./certificates/Javascript Algorithms And Data Structures.png"
+import certificate6 from "./certificates/javascript_basic.png"
+import certificate7 from "./certificates/kshitij_robotics.png"
+import certificate8 from "./certificates/namaste-react-certificate.png"
+import certificate9 from "./certificates/Problem_solving_through_C.jpeg"
+import certificate10 from "./certificates/python_basic.png"
+import certificate11 from "./certificates/react_basic.png"
+import certificate12 from "./certificates/smartjob.png"
+import certificate13 from "./certificates/Speaking_efectively.jpeg"
+
 export const projects = [
   {
     date: "07/10/2022",
@@ -232,3 +247,71 @@ export const skills = [
     image: mongodb,
   },
 ];
+
+export const certificates =[
+  {
+    id: 1,
+    name: "",
+    image: certificate1
+  },
+  {
+    id: 2,
+    name: "",
+    image: certificate2
+  },
+  {
+    id: 3,
+    name: "",
+    image: certificate3
+  },
+  {
+    id: 4,
+    name: "",
+    image: certificate4
+  },
+  {
+    id: 5,
+    name: "",
+    image: certificate5
+  },
+  {
+    id: 6,
+    name: "",
+    image: certificate6
+  },
+  {
+    id: 7,
+    name: "",
+    image: certificate7
+  },
+  {
+    id: 8,
+    name: "",
+    image: certificate8
+  },
+  {
+    id: 9,
+    name: "",
+    image: certificate9
+  },
+  {
+    id: 10,
+    name: "",
+    image: certificate10
+  },
+  {
+    id: 11,
+    name: "",
+    image: certificate11
+  },
+  {
+    id: 12,
+    name: "",
+    image: certificate12
+  },
+  {
+    id: 13,
+    name: "",
+    image: certificate13
+  },
+]

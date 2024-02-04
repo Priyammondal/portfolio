@@ -24,7 +24,6 @@
   .github_push {
     display: flex;
     justify-content: center;
-    width: 90%;
   }
 
   @media screen and (max-width: 767px) {
@@ -47,6 +46,9 @@
           height: unset;
         }
       }
+    }
+    .github_push {
+      width: 90% !important;
     }
   }
 }
