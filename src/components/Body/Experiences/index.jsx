@@ -5,7 +5,7 @@ const Experience = ({ theme }) => {
   return (
     <div id="timeline" className="my-5">
       <section className="text-center mb-5">
-        <h2 id="experienceHeading">Experiences</h2>
+        <h2 id="experienceHeading" className="invisible">Experiences</h2>
       </section>
       <div className="timelineBox">
         {experiences.map((item, index) => (

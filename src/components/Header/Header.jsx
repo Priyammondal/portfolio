@@ -38,7 +38,7 @@ const Header = ({ theme, setTheme }) => {
         color: theme === "dark" ? "white" : "#2d3748",
       }}
     >
-      <div className="col-12 col-lg-8 mx-auto d-block d-lg-flex">
+      <div className="col-12 col-lg-9 mx-auto d-block d-lg-flex">
         <div className="d-flex justify-content-between px-2 px-lg-0">
           <a
             className="navbar-flex justify-content-center align-items-center navbar-brand"
@@ -74,7 +74,7 @@ const Header = ({ theme, setTheme }) => {
         </div>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          <div className="d-flex justify-content-between flex-column flex-lg-row align-items-start w-100 ps-0 ps-lg-3">
+          <div className="d-flex justify-content-around flex-column flex-lg-row align-items-start w-100 ps-0 ps-lg-3">
             <section>
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item" title="About Me">

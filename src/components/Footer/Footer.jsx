@@ -6,15 +6,15 @@ import {
   AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
-  AiFillTwitterCircle,
 } from "react-icons/ai";
-import { SiMedium } from "react-icons/si";
+import { BsTwitterX } from "react-icons/bs";
+import { SiMedium, SiLeetcode } from "react-icons/si";
 import "./index.scss";
 
 const Footer = ({ theme }) => {
   return (
     <footer
-      className="p-3 footer"
+      className="p-5 footer"
       style={{
         backgroundColor: theme === "dark" ? "#1a202c" : "white",
         color: theme === "dark" ? "white" : "#1a202c",
@@ -26,7 +26,7 @@ const Footer = ({ theme }) => {
       </section>
 
       <div>
-        <img src={pm} alt="Priyam" />
+        {/* <img src={pm} alt="Priyam" /> */}
         <h3>Priyam Mondal</h3>
         <p>I have stood on a mountain of no’s for one yes.</p>
       </div>
@@ -53,13 +53,13 @@ const Footer = ({ theme }) => {
             />
           </a>
           <a href="https://leetcode.com/priyam_mondal/" target={"blank"}>
-            <AiFillCode
-              size={25}
+            <SiLeetcode
+              size={20}
               color={theme === "dark" ? "white" : "black"}
             />
           </a>
           <a href="https://twitter.com/priyam_jsx" target={"blank"}>
-            <AiFillTwitterCircle size={25} color="#00acee" />
+            <BsTwitterX size={20} color="#000000" />
           </a>
           <a href="https://medium.com/@priyam_mondal" target={"blank"}>
             <SiMedium size={25} color={theme === "dark" ? "white" : "black"} />

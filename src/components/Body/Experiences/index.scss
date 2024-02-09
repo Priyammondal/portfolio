@@ -45,11 +45,11 @@
     &::after {
       content: "";
       position: absolute;
-      width: 25px;
-      height: 25px;
-      right: -13px;
+      width: 20px;
+      height: 20px;
+      right: -11px;
       background-color: inherit;
-      border: 5px solid white;
+      border: 3px solid rgb(45, 55, 72);
       border-radius: 50%;
       z-index: 1;
     }
@@ -57,12 +57,17 @@
       text-decoration: none;
       color: white;
       div {
-        padding: 10px 15px;
+        padding: 20px;
         background-color: inherit;
         color: white;
-        border-radius: 6px;
+        border-radius: 10px;
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
           0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        border: 1px solid rgb(45, 55, 72);
+        transition: all 0.5s ease;
+        &:hover{
+          transform: translateY(-5px);
+        }
       }
     }
   }
@@ -90,11 +95,11 @@
     &::after {
       content: "";
       position: absolute;
-      width: 25px;
-      height: 25px;
-      right: -13px;
+      width: 20px;
+      height: 20px;
+      right: -11px;
       background-color: inherit;
-      border: 5px solid #1a202c;
+      border: 3px solid #1a202c;
       border-radius: 50%;
       z-index: 1;
     }
@@ -102,12 +107,17 @@
       color: #1a202c;
       text-decoration: none;
       div {
-        padding: 10px 15px;
+        padding: 20px;
         background-color: inherit;
-        border-radius: 6px;
+        border-radius: 10px;
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
           0 10px 10px -5px rgba(0, 0, 0, 0.04);
         color: #1a202c;
+        border: 1px solid rgb(45, 55, 72);
+        transition: all 0.5s ease;
+        &:hover{
+          transform: translateY(-5px);
+        }
       }
     }
   }

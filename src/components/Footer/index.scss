@@ -1,5 +1,5 @@
 .footer {
-  box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   position: relative;
   min-height: 100px;
   display: flex;
@@ -14,8 +14,8 @@
   div {
     flex: 2;
     width: 100%;
-    border-left: 2px solid;
-    border-right: 2px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
     img {
       width: 100px;
       height: 100px;

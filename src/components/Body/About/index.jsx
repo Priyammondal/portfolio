@@ -7,14 +7,14 @@ import { SiLeetcode } from "react-icons/si";
 
 const About = ({ theme }) => {
   return (
-    <div className="about d-flex flex-column flex-lg-row vh-100">
-      <section className="dp">
+    <div className="about d-flex flex-column justify-content-center align-items-center">
+      <section className="dp mt-5">
         <picture>
           <img src={priyam_logo} alt="priyam_logo" />
         </picture>
       </section>
-      <section className="description px-3 px-md-4 pb-4 pt-0 pt-lg-4">
-        <h3 className="d-flex">
+      <section className="description p-5">
+        <h3 className="d-flex justify-content-center">
           <div className="handWave me-2 pt-2 pt-lg-0">👋</div>
           <div className="d-flex flex-column flex-lg-row">
             <p className="hellow">
@@ -23,14 +23,13 @@ const About = ({ theme }) => {
             <p className="name">I'm Priyam Mondal</p>
           </div>
         </h3>
-        <p>
+        <p className="text-center">
           Passionate full stack developer from INDIA 🇮🇳 with a specialization in
           MERN stack.
-          <br />
           <br />I like to solve problems and make user-centric products, Looking
           forward to honing my skills in a challenging work environment.
         </p>
-        <div className="d-flex flex-column flex-md-row gap-3 gap-lg-3 align-items-center main_buttons mt-3 mt-lg-0">
+        <div className="d-flex flex-column flex-md-row gap-3 align-items-center justify-content-center main_buttons mt-3 mt-lg-0">
           <a target="_blank" href={resume} download title="Resume">
             <button className="btn btn-success">Resume</button>
           </a>

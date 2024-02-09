@@ -36,7 +36,7 @@ const Certificates = ({ theme }) => {
   return (
     <div className="certificates mx-auto">
       <section className="text-center mb-5">
-        <h2 id="certificatesHeading">Certificates</h2>
+        <h2 id="certificatesHeading" className="invisible">Certificates</h2>
       </section>
       <section className={theme === "light" && "light"}>
         <Slider {...settings}>
