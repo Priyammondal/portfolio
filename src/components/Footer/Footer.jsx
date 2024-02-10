@@ -27,7 +27,7 @@ const Footer = ({ theme }) => {
 
       <div>
         {/* <img src={pm} alt="Priyam" /> */}
-        <h3>Priyam Mondal</h3>
+        {/* <h3>Priyam Mondal</h3> */}
         <p>I have stood on a mountain of no’s for one yes.</p>
       </div>
 

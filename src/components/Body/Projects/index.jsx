@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const Project = ({ theme }) => {
-
   useEffect(() => {
     const prev = document.querySelector(".slick-prev");
     const next = document.querySelector(".slick-next");
@@ -62,8 +61,16 @@ const Project = ({ theme }) => {
                 .toLowerCase()
                 .replace(/(^|\s)\S/g, (match) => match.toUpperCase())}
             >
-              <div className="card">
-                <div className="img-wrapper">
+              <div
+                className="card"
+                style={{
+                  border: theme === "light" && "1px solid #ccc",
+                }}
+              >
+                <div className="img-wrapper" style={{
+                  border: theme === "light" && "1px solid #ccc",
+                  borderRadius: "5px"
+                }}>
                   <img src={item.imgSrc} alt={item.title} />
                 </div>
                 <div className="card-body pb-3">

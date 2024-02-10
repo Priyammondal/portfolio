@@ -61,7 +61,12 @@ const Contact = ({ theme }) => {
       <h2 className="text-center" id="contactHeading">
         Get in Touch
       </h2>
-      <section className="contact_body mx-auto">
+      <section
+        className="contact_body mx-auto"
+        style={{
+          border: theme === "light" && "1px solid #ccc",
+        }}
+      >
         <form ref={form} onSubmit={handleSubmit(submit)}>
           <section>
             <label htmlFor="name">Name</label>

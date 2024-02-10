@@ -47,7 +47,7 @@
       position: absolute;
       width: 20px;
       height: 20px;
-      right: -11px;
+      right: -10px;
       background-color: inherit;
       border: 3px solid rgb(45, 55, 72);
       border-radius: 50%;
@@ -81,7 +81,6 @@
     width: 50%;
     &:nth-child(odd) {
       text-align: right;
-
       &::after {
         animation: upanddown 0.3s infinite ease-in alternate;
       }
@@ -97,7 +96,7 @@
       position: absolute;
       width: 20px;
       height: 20px;
-      right: -11px;
+      right: -10px;
       background-color: inherit;
       border: 3px solid #1a202c;
       border-radius: 50%;
@@ -113,7 +112,7 @@
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
           0 10px 10px -5px rgba(0, 0, 0, 0.04);
         color: #1a202c;
-        border: 1px solid rgb(45, 55, 72);
+        border: 1px solid #ccc;
         transition: all 0.5s ease;
         &:hover{
           transform: translateY(-5px);

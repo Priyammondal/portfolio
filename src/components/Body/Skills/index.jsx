@@ -30,18 +30,8 @@ const Skill = ({ theme }) => {
           className="skill_label"
           onClick={() => setSkillType("development")}
           style={{
-            backgroundColor:
-              skillType === "development" && theme === "dark"
-                ? "#edf2f7"
-                : skillType === "development" && theme === "light"
-                ? "#171923"
-                : null,
-            color:
-              skillType === "development" && theme === "dark"
-                ? "#1a202c"
-                : skillType === "development" && theme === "light"
-                ? "#edf2f7"
-                : "unset",
+            backgroundColor: skillType === "development" && "#fed7d7",
+            color: skillType === "development" && "#822727",
           }}
           title="Web Development"
         >

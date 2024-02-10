@@ -13,7 +13,12 @@ const About = ({ theme }) => {
           <img src={priyam_logo} alt="priyam_logo" />
         </picture>
       </section>
-      <section className="description p-5">
+      <section
+        className="description p-2 p-md-5"
+        style={{
+          border: theme === "light" && "1px solid #ccc",
+        }}
+      >
         <h3 className="d-flex justify-content-center">
           <div className="handWave me-2 pt-2 pt-lg-0">👋</div>
           <div className="d-flex flex-column flex-lg-row">
