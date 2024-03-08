@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.scss";
 import priyam_logo from "../../../assets/priyam_m.png";
-import resume from "../../../assets/Priyam.pdf";
+import resume from "../../../assets/resume.pdf";
 import { BsMedium } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
 
