@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Header.scss";
 import { FaSun, FaMoon } from "react-icons/fa";
 import logo from "../../assets/priyam_m.png";
-import resume from "../../assets/Priyam.pdf";
+import resume from "../../assets/resume.pdf";
 
 const Header = ({ theme, setTheme }) => {
   const scrollToSection = (HeadingId) => {
