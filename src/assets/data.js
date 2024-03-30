@@ -14,121 +14,76 @@ import express from "./skills/express.png";
 import styledComponents from "./skills/styled-components.svg";
 
 // Project pictures
-import project1 from "./projects/p1.png";
-import project2 from "./projects/p2.png";
-import project3 from "./projects/p3.png";
-import project4 from "./projects/p4.png";
-import project5 from "./projects/p5.png";
-import project6 from "./projects/p6.png";
-import project7 from "./projects/p7.png";
-import project8 from "./projects/p8.png";
-import project9 from "./projects/p9.png";
 
-// Certificate pictures 
-import certificate1 from "./certificates/Javascript Algorithms And Data Structures.png"
-import certificate2 from "./certificates/namaste-react-certificate.png"
-import certificate3 from "./certificates/react_basic.png"
-import certificate4 from "./certificates/javascript_basic.png"
-import certificate5 from "./certificates/python_basic.png"
-import certificate6 from "./certificates/fullstack_greycampus.png"
-import certificate10 from "./certificates/css_greatlearning.jpg"
-import certificate11 from "./certificates/datascience_greycampus.png"
-import certificate8 from "./certificates/html_greatlearning.jpg"
-import certificate7 from "./certificates/kshitij_robotics.png"
-import certificate9 from "./certificates/Problem_solving_through_C.jpeg"
-import certificate12 from "./certificates/smartjob.png"
-import certificate13 from "./certificates/Speaking_efectively.jpeg"
+import todoReduxToolkit from "./projects/todoReduxToolkit.png";
+import techyStar from "./projects/techyStar.png";
+import XCrypto from "./projects/XCrypto.png";
+import delta from "./projects/delta.png";
+import taskify from "./projects/taskify.png";
+
+// Certificate pictures
+import certificate1 from "./certificates/Javascript Algorithms And Data Structures.png";
+import certificate2 from "./certificates/namaste-react-certificate.png";
+import certificate3 from "./certificates/react_basic.png";
+import certificate4 from "./certificates/javascript_basic.png";
+import certificate5 from "./certificates/python_basic.png";
+import certificate6 from "./certificates/fullstack_greycampus.png";
+import certificate10 from "./certificates/css_greatlearning.jpg";
+import certificate11 from "./certificates/datascience_greycampus.png";
+import certificate8 from "./certificates/html_greatlearning.jpg";
+import certificate7 from "./certificates/kshitij_robotics.png";
+import certificate9 from "./certificates/Problem_solving_through_C.jpeg";
+import certificate12 from "./certificates/smartjob.png";
+import certificate13 from "./certificates/Speaking_efectively.jpeg";
 
 export const projects = [
   {
-    date: "07/10/2022",
-    title: "TECHY STAR",
+    date: "29/03/2024",
+    title: "Taskify",
     description:
-      "Simple website with modern design using React.js. Fully Responsive",
-    url: "https://zippy-squirrel-c54721.netlify.app",
-    imgSrc: project5,
-    github: "",
+      "This project is an advanced todo application built using React and TypeScript, showcasing the seamless integration of these technologies to create a robust and intuitive user experience. The core feature of this application is its drag-and-drop functionality, allowing users to effortlessly organize their tasks with a simple drag of the mouse.",
+    url: "https://taskify123.netlify.app/",
+    imgSrc: taskify,
+    github: "https://github.com/Priyammondal/taskify",
   },
-  {
-    date: "11/10/2022",
-    title: "Form Validation - Formik",
-    description:
-      "This is a demonstration of form validation using formik and yup in React",
-    url: "https://formvalidation-formik-yup.netlify.app/",
-    imgSrc: project6,
-    github: "https://github.com/Priyammondal/formvalidation-react-formik-yup",
-  },
+
   {
     date: "15/10/2022",
     title: "XCrypto",
     description:
-      "Basic crypto tracking application. All the data are coming from apis.",
+      "Dynamic cryptocurrency tracking and trading interface with React.js, integrating real-time exchange data from third-party APIs. Utilized Chakra UI for responsive design, enabling intuitive usability across devices, and incorporated interactive coin value graphs for comprehensive tracking.",
     url: "https://shiny-treacle-c3eec1.netlify.app",
-    imgSrc: project8,
+    imgSrc: XCrypto,
     github: "https://github.com/Priyammondal/xcrypto",
   },
-  {
-    date: "11/10/2022",
-    title: "Form Validation - React-Hook-Form",
-    description:
-      "This is a demonstration of form validation using React-Hook-Form and yup in React",
-    url: "https://formvalidation-react-hook-form-yup.netlify.app/",
-    imgSrc: project6,
-    github:
-      "https://github.com/Priyammondal/formvalidation-react-hook-form-yup",
-  },
-  {
-    date: "17/10/2022",
-    title: "Basic Cart",
-    description:
-      "Demonstration of a basic cart section of e-commerce sites. Built using React.Js",
-    url: "https://peppy-torrone-10ff8f.netlify.app",
-    imgSrc: project3,
-    github: "",
-  },
-  // {
-  //   date: "20/10/2022",
-  //   title: "Demo Portfolio",
-  //   description: "My previous demo portfolio. Now not to be followed.",
-  //   url: "https://priyammondal.netlify.app/",
-  //   imgSrc: project1,
-  //   github: "https://github.com/Priyammondal/priyam-portfolio",
-  // },
-  {
-    date: "20/10/2022",
-    title: "Employee Details",
-    description:
-      "Employee Details Card with modern design fully responsive built using React.js and vanilla Css",
-    url: "https://innsighttask.netlify.app/",
-    imgSrc: project2,
-    github: "",
-  },
+
   {
     date: "20/10/2022",
     title: "Todo - Redux Toolkit",
     description:
-      "Simple demonstration of CRUD functionality through Todo application build with React.js and Redux Toolkit",
+      "Todo application highlighting CRUD operations, developed with React.js and Redux Toolkit. Experience seamless task management with Create, Read, Update, and Delete functionalities, all within a modern and responsive user interface.",
     url: "https://redux-toolkit-todo-app-implementation.netlify.app/",
-    imgSrc: project4,
+    imgSrc: todoReduxToolkit,
     github: "https://github.com/Priyammondal/redux-toolkit-implementation",
   },
-  {
-    date: "20/10/2022",
-    title: "Map Implementation",
-    description:
-      "In this project map-box is used to create a dynamic map component. Different apis were used to implement directioin between two places",
-    url: "https://map-box-react.netlify.app/",
-    imgSrc: project7,
-    github: "https://github.com/Priyammondal/map-box-react",
-  },
+
   {
     date: "16/09/2023",
     title: "Delta",
     description:
-      "This is a simple website made using React with styled components",
+      "Streamlined website using React and Styled Components, employing React's component-based architecture for modular code and implementing responsive design principles for enhanced accessibility across devices.",
     url: "https://delta123.netlify.app/",
-    imgSrc: project9,
+    imgSrc: delta,
     github: "https://github.com/Priyammondal/delta",
+  },
+  {
+    date: "07/10/2022",
+    title: "TECHY STAR",
+    description:
+      "Sleek website with modern design aesthetics using React.js. Employed responsive design principles for seamless adaptability across devices, ensuring a user-friendly experience.",
+    url: "https://zippy-squirrel-c54721.netlify.app",
+    imgSrc: techyStar,
+    github: "",
   },
 ];
 
@@ -248,70 +203,70 @@ export const skills = [
   },
 ];
 
-export const certificates =[
+export const certificates = [
   {
     id: 1,
     name: "",
-    image: certificate1
+    image: certificate1,
   },
   {
     id: 2,
     name: "",
-    image: certificate2
+    image: certificate2,
   },
   {
     id: 3,
     name: "",
-    image: certificate3
+    image: certificate3,
   },
   {
     id: 4,
     name: "",
-    image: certificate4
+    image: certificate4,
   },
   {
     id: 5,
     name: "",
-    image: certificate5
+    image: certificate5,
   },
   {
     id: 6,
     name: "",
-    image: certificate6
+    image: certificate6,
   },
   {
     id: 7,
     name: "",
-    image: certificate7
+    image: certificate7,
   },
   {
     id: 8,
     name: "",
-    image: certificate8
+    image: certificate8,
   },
   {
     id: 9,
     name: "",
-    image: certificate9
+    image: certificate9,
   },
   {
     id: 10,
     name: "",
-    image: certificate10
+    image: certificate10,
   },
   {
     id: 11,
     name: "",
-    image: certificate11
+    image: certificate11,
   },
   {
     id: 12,
     name: "",
-    image: certificate12
+    image: certificate12,
   },
   {
     id: 13,
     name: "",
-    image: certificate13
+    image: certificate13,
   },
-]
+];

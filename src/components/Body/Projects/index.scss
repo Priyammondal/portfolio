@@ -6,7 +6,8 @@
   justify-content: center;
 
   .card-wrapper {
-    height: 400px;
+    // height: 400px;
+    height: 500px;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -65,6 +66,9 @@
 
 @media screen and (max-width: 992px) {
   .projects {
-    width: 75%;
+    width: 85%;
+    .card-wrapper{
+      height: 550px;
+    }
   }
 }

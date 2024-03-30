@@ -22,23 +22,11 @@ const Project = ({ theme }) => {
     infinite: true,
     speed: 500,
     autoplaySpeed: 5000,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 770,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
+        breakpoint: 767,
         settings: {
           slidesToShow: 1,
         },
@@ -67,10 +55,13 @@ const Project = ({ theme }) => {
                   border: theme === "light" && "1px solid #ccc",
                 }}
               >
-                <div className="img-wrapper" style={{
-                  border: theme === "light" && "1px solid #ccc",
-                  borderRadius: "5px"
-                }}>
+                <div
+                  className="img-wrapper"
+                  style={{
+                    border: theme === "light" && "1px solid #ccc",
+                    borderRadius: "5px",
+                  }}
+                >
                   <img src={item.imgSrc} alt={item.title} />
                 </div>
                 <div className="card-body pb-3">
