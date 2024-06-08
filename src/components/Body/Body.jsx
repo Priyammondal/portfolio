@@ -31,6 +31,7 @@ const Body = ({ theme }) => {
       setShowsideNav(false);
     }
   };
+
   useEffect(() => {
     AOS.init();
     window.addEventListener("scroll", handleScroll);
@@ -38,12 +39,14 @@ const Body = ({ theme }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
+  
   return (
     <div
       className="body-main"
