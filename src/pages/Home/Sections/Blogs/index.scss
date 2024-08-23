@@ -1,0 +1,13 @@
+.blogs {
+  .blogCardWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .blogCardWrapper {
+    grid-template-columns: unset !important;
+  }
+}

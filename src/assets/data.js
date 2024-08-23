@@ -15,9 +15,11 @@ import styledComponents from "./skills/styled-components.svg";
 
 // Project pictures
 
-import todoReduxToolkit from "./projects/todoReduxToolkit.png";
+import XCrypto from "./projects/xcrypto.png";
+import byteJournal from "./projects/bytejournal.png";
+import ecommerceMF from "./projects/ecommerce-mf.png";
+import employeeManagement from "./projects/employe-management.png";
 import techyStar from "./projects/techyStar.png";
-import XCrypto from "./projects/XCrypto.png";
 import delta from "./projects/delta.png";
 import taskify from "./projects/taskify.png";
 
@@ -28,59 +30,85 @@ import certificate3 from "./certificates/react_basic.png";
 import certificate4 from "./certificates/javascript_basic.png";
 import certificate5 from "./certificates/python_basic.png";
 import certificate6 from "./certificates/fullstack_greycampus.png";
-import certificate10 from "./certificates/css_greatlearning.jpg";
-import certificate11 from "./certificates/datascience_greycampus.png";
+import certificate7 from "./certificates/datascience_greycampus.png";
 import certificate8 from "./certificates/html_greatlearning.jpg";
-import certificate7 from "./certificates/kshitij_robotics.png";
-import certificate9 from "./certificates/Problem_solving_through_C.jpeg";
+import certificate9 from "./certificates/css_greatlearning.jpg";
+import certificate10 from "./certificates/Problem_solving_through_C.jpeg";
+import certificate11 from "./certificates/Speaking_efectively.jpeg";
+import certificate13 from "./certificates/kshitij_robotics.png";
 import certificate12 from "./certificates/smartjob.png";
-import certificate13 from "./certificates/Speaking_efectively.jpeg";
 
 export const projects = [
   {
+    id: 1,
+    date: "",
+    title: "XCrypto",
+    description:
+      "A dynamic cryptocurrency tracker and trading interface in React.js. Integrates real-time exchange data from APIs, uses Chakra UI for responsive design, and features interactive coin value graphs for thorough tracking across devices.",
+    url: "https://shiny-treacle-c3eec1.netlify.app",
+    imgSrc: XCrypto,
+    github: "https://github.com/Priyammondal/xcrypto",
+  },
+  {
+    id: 2,
+    date: "",
+    title: "ByteJournal",
+    description:
+      "ByteJournal is a MERN stack blog application featuring a Reach Editor for creating posts. It includes a login and registration system with JWT authentication, providing secure access and a seamless user experience.",
+    url: "https://bytejournal.netlify.app/",
+    imgSrc: byteJournal,
+    github: "https://github.com/Priyammondal/ByteJournal",
+  },
+  {
+    id: 3,
+    date: "",
+    title: "Shop.",
+    description:
+      "An e-commerce application utilizing React with a microfrontend architecture and module federation. This approach ensures scalable, independent modules, enhancing flexibility and maintainability throughout the application.",
+    url: "https://e-commerce-module-federation.netlify.app/",
+    imgSrc: ecommerceMF,
+    github:
+      "https://github.com/Priyammondal/e-commerce-micro-frontend-react-application",
+  },
+  {
+    id: 4,
+    date: "",
+    title: "Employee Directory",
+    description:
+      "An employee DB management project using pure HTML, CSS, and JS. Features a clean interface for efficient employee data handling and management.",
+    url: "https://employee-database-management-js.netlify.app/",
+    imgSrc: employeeManagement,
+    github:
+      "https://github.com/Priyammondal/Frontend-machine-coding/tree/main/Employee%20Database%20Management",
+  },
+
+  {
+    id: 5,
     date: "29/03/2024",
     title: "Taskify",
     description:
-      "This project is an advanced todo application built using React and TypeScript, showcasing the seamless integration of these technologies to create a robust and intuitive user experience. The core feature of this application is its drag-and-drop functionality, allowing users to effortlessly organize their tasks with a simple drag of the mouse.",
+      "An advanced to-do application built with React and TypeScript. Features drag-and-drop functionality, enabling users to easily organize tasks by dragging them, showcasing the seamless integration of these technologies for a robust user experience.",
     url: "https://taskify123.netlify.app/",
     imgSrc: taskify,
     github: "https://github.com/Priyammondal/taskify",
   },
 
   {
-    date: "15/10/2022",
-    title: "XCrypto",
-    description:
-      "Dynamic cryptocurrency tracking and trading interface with React.js, integrating real-time exchange data from third-party APIs. Utilized Chakra UI for responsive design, enabling intuitive usability across devices, and incorporated interactive coin value graphs for comprehensive tracking.",
-    url: "https://shiny-treacle-c3eec1.netlify.app",
-    imgSrc: XCrypto,
-    github: "https://github.com/Priyammondal/xcrypto",
-  },
-
-  {
-    date: "20/10/2022",
-    title: "Todo - Redux Toolkit",
-    description:
-      "Todo application highlighting CRUD operations, developed with React.js and Redux Toolkit. Experience seamless task management with Create, Read, Update, and Delete functionalities, all within a modern and responsive user interface.",
-    url: "https://redux-toolkit-todo-app-implementation.netlify.app/",
-    imgSrc: todoReduxToolkit,
-    github: "https://github.com/Priyammondal/redux-toolkit-implementation",
-  },
-
-  {
+    id: 6,
     date: "16/09/2023",
     title: "Delta",
     description:
-      "Streamlined website using React and Styled Components, employing React's component-based architecture for modular code and implementing responsive design principles for enhanced accessibility across devices.",
+      "A streamlined website built with React and Styled Components. It leverages React's component-based architecture for modular code and implements responsive design principles to ensure enhanced accessibility across devices.",
     url: "https://delta123.netlify.app/",
     imgSrc: delta,
     github: "https://github.com/Priyammondal/delta",
   },
   {
+    id: 7,
     date: "07/10/2022",
     title: "TECHY STAR",
     description:
-      "Sleek website with modern design aesthetics using React.js. Employed responsive design principles for seamless adaptability across devices, ensuring a user-friendly experience.",
+      "A sleek website with modern design aesthetics built using React.js. It employs responsive design principles for seamless adaptability across devices, ensuring a user-friendly experience.",
     url: "https://zippy-squirrel-c54721.netlify.app",
     imgSrc: techyStar,
     github: "",
@@ -206,67 +234,93 @@ export const skills = [
 export const certificates = [
   {
     id: 1,
-    name: "",
+    name: "Javascript Algorithms and Data Structures",
+    organization: "freeCodeCamp",
     image: certificate1,
+    credential: "",
   },
   {
     id: 2,
-    name: "",
+    name: "Namaste React",
+    organization: "NamasteDev.com",
     image: certificate2,
+    credential: "",
   },
   {
     id: 3,
-    name: "",
+    name: "React(Basic)",
+    organization: "HackarRank",
     image: certificate3,
+    credential: "",
   },
   {
     id: 4,
-    name: "",
+    name: "JavaScript(Basic)",
+    organization: "HackarRank",
     image: certificate4,
+    credential: "",
   },
   {
     id: 5,
-    name: "",
+    name: "Python(Basic)",
+    organization: "HackarRank",
     image: certificate5,
+    credential: "",
   },
   {
     id: 6,
-    name: "",
+    name: "A Foundation Program in full Stack",
+    organization: "GreyCampus",
     image: certificate6,
+    credential: "",
   },
   {
     id: 7,
-    name: "",
+    name: "A Foundation Program in data science",
+    organization: "GreyCampus",
     image: certificate7,
+    credential: "",
   },
   {
     id: 8,
-    name: "",
+    name: "Front end Development - HTML",
+    organization: "greatlearning",
     image: certificate8,
+    credential: "",
   },
   {
     id: 9,
-    name: "",
+    name: "Front end Development - CSS",
+    organization: "greatlearning",
     image: certificate9,
+    credential: "",
   },
   {
     id: 10,
-    name: "",
+    name: "Problem Solving Through Programming in C",
+    organization: "NPTEL",
     image: certificate10,
+    credential: "",
   },
   {
     id: 11,
-    name: "",
+    name: "Speaking Effectively",
+    organization: "NPTEL",
     image: certificate11,
+    credential: "",
   },
   {
     id: 12,
-    name: "",
+    name: "Aptitude, Verbal Ability and Technical tests",
+    organization: "IEM America",
     image: certificate12,
+    credential: "",
   },
   {
     id: 13,
-    name: "",
+    name: "Robotics Workshop",
+    organization: "KSHITIJ, IIT Kharagpur",
     image: certificate13,
+    credential: "",
   },
 ];

@@ -1,0 +1,21 @@
+.projects {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .projectCardWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .projects {
+    width: 90% !important;
+    .projectCardWrapper {
+      grid-template-columns: unset;
+    }
+  }
+}

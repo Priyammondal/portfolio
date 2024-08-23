@@ -1,0 +1,37 @@
+.BlogCard {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  .thumbnail {
+    flex: 1;
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 70px;
+    }
+  }
+  .title {
+    flex: 4;
+  }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 767px) {
+  .BlogCard {
+    .thumbnail {
+      flex: 2;
+      img {
+        height: 90px;
+      }
+    }
+    .title {
+      flex: 3;
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.projectCard {
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease-in-out;
+  background-color: #252a2f;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-5px);
+    .card-image {
+      opacity: 0;
+      width: 0%;
+      height: 0%;
+    }
+    .card-content {
+      opacity: 1;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .card-content {
+    transition: opacity 0.5s ease-in-out;
+  }
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .card-title {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .card-description {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  .card-content {
+    background-color: #2d3748;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    .card-buttons {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      .input-group {
+        display: flex;
+        width: fit-content;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .projectCard {
+    .card-buttons {
+      gap: 15px !important;
+    }
+  }
+}
