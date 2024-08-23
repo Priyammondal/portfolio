@@ -2,6 +2,7 @@ import "./Header.scss";
 import logo from "../../assets/priyam_m.png";
 import resume from "../../assets/resume.pdf";
 import { useLocation, useNavigate } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Header = () => {
   const location = useLocation();
@@ -56,7 +57,9 @@ const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon">
+                <RxHamburgerMenu size={25} color="white" />
+              </span>
             </button>
           </div>
         </div>

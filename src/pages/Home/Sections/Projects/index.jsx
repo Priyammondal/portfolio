@@ -15,7 +15,7 @@ const Project = () => {
         ))}
       </section>
       <Link to="/projects" className="mx-auto mt-5">
-        <button title="View More Projects" className="btn btn-outline-light">See More</button>
+        <button title="View More Projects" className="btn btn-outline-light">View More</button>
       </Link>
     </div>
   );

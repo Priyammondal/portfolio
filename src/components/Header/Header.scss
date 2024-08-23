@@ -11,6 +11,15 @@
     overflow: hidden;
     border-radius: 50%;
   }
+  .navbar-toggler {
+    border: 1px solid white;
+    &:focus {
+      box-shadow: none;
+    }
+    .navbar-toggler-icon{
+      background-image: none;
+    }
+  }
   div section a {
     text-decoration: none;
     color: inherit;

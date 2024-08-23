@@ -6,7 +6,7 @@ const Certificates = ({ theme }) => {
   return (
     <div className="certificates">
       <section className="text-center mb-5">
-        <h2 id="certificatesHeading" className="invisible">
+        <h2 id="certificatesHeading">
           Certificates
         </h2>
       </section>
