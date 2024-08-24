@@ -56,4 +56,14 @@
 .App {
   min-height: 100vh;
   background-color: #1a202c;
+  #skillsHeading,
+  #projectsHeading,
+  #blogsHeading,
+  #certificatesHeading,
+  #contactHeading {
+    border-bottom: 2px solid white;
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 5px;
+  }
 }

@@ -117,7 +117,7 @@ export const projects = [
 
 export const experiences = [
   {
-    date: "13/09/2024 - Present",
+    date: "16/09/2024 - Present",
     company: "Rebel Foods",
     jobTitle: "Software Development Engineer - I ",
     url: "https://www.rebelfoods.com/",

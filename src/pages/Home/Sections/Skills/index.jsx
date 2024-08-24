@@ -4,13 +4,13 @@ import { skills } from "../../../../assets/data";
 import { GiSpiderWeb } from "react-icons/gi";
 import { BiDesktop } from "react-icons/bi";
 import { AiTwotoneThunderbolt, AiOutlineDatabase } from "react-icons/ai";
-import SkillCard from "./skillCard";
+import SkillCard from "../../../../components/skillCard";
 
 const Skill = () => {
   const [skillType, setSkillType] = useState("all");
   return (
     <div className="skills">
-      <section className="text-center mb-5">
+      <section className="text-center mb-2">
         <h2 id="skillsHeading">Skills</h2>
       </section>
       <section className="skill_catagory mx-auto d-flex flex-wrap justify-content-between">

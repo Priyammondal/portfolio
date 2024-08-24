@@ -13,9 +13,7 @@ const About = () => {
           <img src={priyam_logo} alt="priyam_logo" />
         </picture>
       </section>
-      <section
-        className="description p-2 p-md-5"
-      >
+      <section className="description p-2 p-md-5">
         <h3 className="d-flex justify-content-center">
           <div className="handWave me-2 pt-2 pt-lg-0">👋</div>
           <div className="d-flex flex-column flex-lg-row">
@@ -28,8 +26,9 @@ const About = () => {
         <p className="text-center">
           Passionate full stack developer from INDIA 🇮🇳 with a specialization in
           MERN stack.
-          <br />I like to solve problems and make user-centric products, Looking
-          forward to honing my skills in a challenging work environment.
+          {window.innerWidth > 992 && <br />}I like to solve problems and make
+          user-centric products, Looking forward to honing my skills in a
+          challenging work environment.
         </p>
         <div className="d-flex flex-column flex-md-row gap-3 align-items-center justify-content-center main_buttons mt-3 mt-lg-0">
           {/* <a target="_blank" href={resume} download title="Resume">
@@ -76,21 +75,14 @@ const About = () => {
               href="https://leetcode.com/priyam_mondal/"
               title="Leetcode"
             >
-              <SiLeetcode
-                title="Leetcode"
-                size={28}
-                color={"white"}
-              />
+              <SiLeetcode title="Leetcode" size={28} color={"white"} />
             </a>
             <a
               target="_blank"
               href="https://medium.com/@priyam_mondal"
               title="Medium"
             >
-              <BsMedium
-                size={30}
-                color={"white"}
-              />
+              <BsMedium size={30} color={"white"} />
             </a>
             <a
               target="_blank"

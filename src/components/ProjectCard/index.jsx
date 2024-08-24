@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const ProjectCard = ({ data }) => {
   return (
     <div className="projectCard">
-      <h2 className="card-title-mobile d-block d-md-none text-light">{data.title}</h2>
+      <h3 className="card-title-mobile d-block d-md-none text-light">{data.title}</h3>
       <img src={data.imgSrc} alt="Card Image" className="card-image" />
       <div className="card-content">
-        <h2 className="card-title">{data.title}</h2>
+        <h3 className="card-title">{data.title}</h3>
         <p className="card-description">
           {data.description || (
             <>

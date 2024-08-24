@@ -4,7 +4,7 @@ import { experiences } from "../../../../assets/data";
 const Experience = ({ theme }) => {
   return (
     <div id="timeline" className="my-5">
-      <section className="text-center mb-5">
+      <section className="text-center mb-2">
         <h2 id="experienceHeading" className="invisible">
           Experiences
         </h2>

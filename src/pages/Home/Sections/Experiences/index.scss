@@ -23,7 +23,6 @@
     }
   }
   .timelineItem {
-    padding: 1rem 3rem;
     position: relative;
     background-color: inherit;
     display: flex;
@@ -73,9 +72,11 @@
   }
 
   .leftTimeLine {
+    padding: 1rem 3rem 1rem 5px;
     left: 0;
   }
   .rightTimeLine {
+    padding: 1rem 5px 1rem 3rem;
     left: 50%;
     &::after {
       left: -11px;
@@ -91,13 +92,18 @@
 
     .timelineItem {
       width: 100%;
-      padding-left: 5rem;
-      padding-right: 2rem;
+      padding-left: 4rem !important;
+      padding-right: 1rem !important;
       &::after {
         left: 18px;
       }
       &:nth-child(odd) {
         text-align: left;
+      }
+      a {
+        div {
+          padding: 15px;
+        }
       }
     }
 
