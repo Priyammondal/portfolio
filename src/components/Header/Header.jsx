@@ -25,6 +25,7 @@ const Header = () => {
           behavior: "smooth",
         });
       } else {
+        setHamburger(true);
         const element = document.getElementById("navbarNav");
         if (element.classList.contains("show")) {
           element.classList.remove("show");
