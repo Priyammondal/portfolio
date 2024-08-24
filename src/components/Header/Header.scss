@@ -12,14 +12,17 @@
     border-radius: 50%;
   }
   .navbar-toggler {
-    border: 1px solid white;
+    border: none;
     &:focus {
       box-shadow: none;
     }
-    .navbar-toggler-icon{
+    .navbar-toggler-icon {
       background-image: none;
+      display: grid;
+      place-items: center;
     }
   }
+
   div section a {
     text-decoration: none;
     color: inherit;

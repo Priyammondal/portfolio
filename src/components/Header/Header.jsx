@@ -3,8 +3,11 @@ import logo from "../../assets/priyam_m.png";
 import resume from "../../assets/resume.pdf";
 import { useLocation, useNavigate } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { IoMdClose } from "react-icons/io";
+import { useState } from "react";
 
 const Header = () => {
+  const [hamburger, setHamburger] = useState(true);
   const location = useLocation();
   const navigate = useNavigate();
   const scrollToSection = (HeadingId) => {
@@ -57,8 +60,19 @@ const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon">
-                <RxHamburgerMenu size={25} color="white" />
+              <span
+                className="navbar-toggler-icon"
+                onClick={() => setHamburger((prev) => !prev)}
+              >
+                {hamburger ? (
+                  <RxHamburgerMenu
+                    size={30}
+                    color="white"
+                    className="hamburgerIcon"
+                  />
+                ) : (
+                  <IoMdClose size={32} color="white" className="closeIcon" />
+                )}
               </span>
             </button>
           </div>
@@ -145,16 +159,7 @@ const Header = () => {
                     Certificates
                   </a>
                 </li>
-                <li className="nav-item px-2" title="Activity">
-                  <a
-                    className="nav-link"
-                    onClick={() => {
-                      scrollToSection("activityHeading");
-                    }}
-                  >
-                    Activity
-                  </a>
-                </li>
+
                 <li className="nav-item px-2" title="Contact Me">
                   <a
                     className="nav-link"

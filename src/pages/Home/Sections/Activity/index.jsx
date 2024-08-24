@@ -8,9 +8,9 @@ const Activity = () => {
       className="activity my-5"
     >
       <section className="text-center mb-5">
-        <h2 id="activityHeading" className="invisible">
+        {/* <h2 id="activityHeading">
           Activity
-        </h2>
+        </h2> */}
       </section>
       <section className="activity_graph">
         <a
