@@ -55,7 +55,7 @@ const Footer = () => {
           <a href="https://twitter.com/priyam_jsx" target="_blank">
             <BsTwitterX size={20} color="#000000" />
           </a>
-          <a href="https://medium.com/@priyam_mondal" target="_blank">
+          <a href="https://medium.com/@thepriyammondal" target="_blank">
             <SiMedium size={25} color="white" />
           </a>
         </article>
