@@ -87,6 +87,7 @@ const Header = () => {
                   <a
                     className="nav-link active px-2"
                     onClick={() => {
+                      setHamburger(true);
                       if (location.pathname !== "/") {
                         navigate("/");
                       }

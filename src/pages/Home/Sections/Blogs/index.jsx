@@ -8,7 +8,7 @@ const Blogs = () => {
     const fetchBlogData = async () => {
       try {
         const response = await fetch(
-          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@priyam_mondal"
+          "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@thepriyammondal"
         );
         const data = await response.json();
         setBlogData(data.items);
@@ -29,7 +29,7 @@ const Blogs = () => {
         ))}
       </section>
       <Link
-        to="https://medium.com/@priyam_mondal"
+        to="https://medium.com/@thepriyammondal"
         target="_blank"
         className="d-flex justify-content-center mt-5 text-decoration-none"
       >

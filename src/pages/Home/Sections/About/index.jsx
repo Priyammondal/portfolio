@@ -79,7 +79,7 @@ const About = () => {
             </a>
             <a
               target="_blank"
-              href="https://medium.com/@priyam_mondal"
+              href="https://medium.com/@thepriyammondal"
               title="Medium"
             >
               <BsMedium size={30} color={"white"} />
