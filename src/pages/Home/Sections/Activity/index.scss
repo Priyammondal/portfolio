@@ -27,12 +27,11 @@
   }
 
   @media screen and (max-width: 767px) {
-    .activity_graph {
-      a {
-        img {
-          width: 90%;
-        }
-      }
+    .activity_graph,
+    .githubStat,
+    .github_push,
+    .contribution_info {
+      width: 100% !important;
     }
     .contribution_info {
       flex-direction: column;
@@ -42,13 +41,10 @@
         display: grid;
         place-items: center;
         img {
-          width: 90%;
+          width: 100%;
           height: unset;
         }
       }
-    }
-    .github_push {
-      width: 90% !important;
     }
   }
 }
