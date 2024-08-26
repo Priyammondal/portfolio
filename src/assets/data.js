@@ -25,6 +25,7 @@ import taskify from "./projects/taskify.png";
 
 // Certificate pictures
 import certificate1 from "./certificates/Javascript Algorithms And Data Structures.png";
+import certificate14 from "./certificates/namaste-javascript-certificate.webp";
 import certificate2 from "./certificates/namaste-react-certificate.png";
 import certificate3 from "./certificates/react_basic.png";
 import certificate4 from "./certificates/javascript_basic.png";
@@ -37,6 +38,8 @@ import certificate10 from "./certificates/Problem_solving_through_C.jpeg";
 import certificate11 from "./certificates/Speaking_efectively.jpeg";
 import certificate13 from "./certificates/kshitij_robotics.png";
 import certificate12 from "./certificates/smartjob.png";
+import certificate15 from "./certificates/programming-with-python-3-x.png";
+import certificate16 from "./certificates/data-visualization-with-python.png";
 
 export const projects = [
   {
@@ -243,35 +246,45 @@ export const certificates = [
     name: "Javascript Algorithms and Data Structures",
     organization: "freeCodeCamp",
     image: certificate1,
-    credential: "",
+    credential:
+      "https://www.freecodecamp.org/certification/priyammondal/javascript-algorithms-and-data-structures",
   },
   {
     id: 2,
     name: "Namaste React",
     organization: "NamasteDev.com",
     image: certificate2,
-    credential: "",
+    credential:
+      "https://namastedev.com/priyammondal096/certificates/namaste-react",
+  },
+  {
+    id: 14,
+    name: "Namaste JavaScript",
+    organization: "NamasteDev.com",
+    image: certificate14,
+    credential:
+      "https://namastedev.com/priyammondal096/certificates/namaste-javascript",
   },
   {
     id: 3,
     name: "React(Basic)",
     organization: "HackarRank",
     image: certificate3,
-    credential: "",
+    credential: "https://www.hackerrank.com/certificates/bfe599bca035",
   },
   {
     id: 4,
     name: "JavaScript(Basic)",
     organization: "HackarRank",
     image: certificate4,
-    credential: "",
+    credential: "https://www.hackerrank.com/certificates/033a6b3f4639",
   },
   {
     id: 5,
     name: "Python(Basic)",
     organization: "HackarRank",
     image: certificate5,
-    credential: "",
+    credential: "https://www.hackerrank.com/certificates/eaff967815ec",
   },
   {
     id: 6,
@@ -300,6 +313,21 @@ export const certificates = [
     organization: "greatlearning",
     image: certificate9,
     credential: "",
+  },
+  {
+    id: 15,
+    name: "Programming with Python 3.X",
+    organization: "SkillUP",
+    image: certificate15,
+    credential:
+      "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxMTY5IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfMzUwNTQ5NV8xNjU0MzI4MTE4LnBuZyIsInVzZXJuYW1lIjoiUHJpeWFtIE1vbmRhbCJ9&utm_source=shared-certificate&utm_medium=app_lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Fcertificates.simplicdn.net%2Fshare%2Fthumb_3505495_1654328118.png&_branch_match_id=1354071839220789069&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1jc1sHSqNEgqcixMAgCpxxlIIwAAAA%3D%3D",
+  },
+  {
+    id: 16,
+    name: "Data Visualization with Python",
+    organization: "Coursera",
+    image: certificate16,
+    credential: "https://www.coursera.org/account/accomplishments/verify/NT5CJF6UDBW6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
   },
   {
     id: 10,

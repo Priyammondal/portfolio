@@ -5,7 +5,7 @@ import { Tooltip as MuiTooltip } from "@mui/material";
 
 const Activity = () => {
   return (
-    <div className="container activity my-5">
+    <div className="activity my-5">
       <section className="activity_graph w-75">
         <a
           href="https://github.com/Priyammondal"

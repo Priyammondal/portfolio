@@ -15,6 +15,7 @@ const BlogCard = ({ data }) => {
       to={data.link}
       target="_blank"
       className="BlogCard text-decoration-none text-light"
+      title={data.title}
     >
       <section className="thumbnail">
         <img src={thumbNail} alt="thumbNail" />
