@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   .text-center {
     p {
       font-size: 18px;
@@ -44,6 +45,15 @@
     align-content: flex-start;
     gap: 15px;
     padding: 5px;
+
+    // don't show scrollbar without hampering the scroll behaviour
+    overflow: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    &::-webkit-scrollbar {
+      display: none; /* For Chrome, Safari, and Opera */
+    }
+    // don't show scrollbar without hampering the scroll behaviour
   }
 }
 
