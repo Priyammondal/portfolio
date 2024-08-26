@@ -10,7 +10,7 @@ const Skill = () => {
   const [skillType, setSkillType] = useState("all");
   return (
     <div className="skills">
-      <section className="text-center mb-2">
+      <section className="text-center mb-4">
         <h2 id="skillsHeading">Skills</h2>
       </section>
       <section className="skill_catagory mx-auto d-flex flex-wrap justify-content-between">

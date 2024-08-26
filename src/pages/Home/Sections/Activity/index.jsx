@@ -6,7 +6,7 @@ import { Tooltip as MuiTooltip } from "@mui/material";
 const Activity = () => {
   return (
     <div className="activity my-5">
-      <section className="activity_graph w-75">
+      <section className="activity_graph w-50">
         <a
           href="https://github.com/Priyammondal"
           target="_blank"
@@ -20,7 +20,7 @@ const Activity = () => {
         </a>
       </section>
 
-      <section className="githubStat my-3 w-75">
+      <section className="githubStat my-3 w-50">
         <a
           href="https://github.com/Priyammondal"
           target="_blank"
@@ -34,7 +34,7 @@ const Activity = () => {
         </a>
       </section>
 
-      <section className="contribution_info mb-3 w-75">
+      <section className="contribution_info mb-5 w-75">
         <a href="https://github.com/Priyammondal">
           <img
             src={`https://streak-stats.demolab.com/?user=Priyammondal&theme=dark`}
@@ -50,7 +50,7 @@ const Activity = () => {
       <section className="github_push w-100">
         <GitHubCalendar
           username="Priyammondal"
-          colorScheme="dark"
+          colorScheme="light"
           renderBlock={(block, activity) => (
             <MuiTooltip
               title={

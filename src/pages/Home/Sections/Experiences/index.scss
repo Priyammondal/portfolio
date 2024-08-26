@@ -3,7 +3,7 @@
   background-color: inherit;
   .timelineBox {
     width: 100%;
-    height: 100%;
+    // height: 100%;
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
@@ -86,10 +86,11 @@
 
 @media screen and (max-width: 767px) {
   #timeline {
+    height: 460px;
+    overflow-y: scroll;
     .timelineBox::after {
       left: 31px;
     }
-
     .timelineItem {
       width: 100%;
       padding-left: 4rem !important;
@@ -106,7 +107,6 @@
         }
       }
     }
-
     .leftTimeLine {
       left: 0;
     }

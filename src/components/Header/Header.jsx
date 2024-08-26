@@ -82,7 +82,13 @@ const Header = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className="d-flex justify-content-end gap-5 flex-column flex-lg-row align-items-start w-100 ps-0 ps-lg-3">
             <section>
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul
+                className="navbar-nav me-auto mb-2 mb-lg-0"
+                onClick={() => {
+                  document.querySelector("#timeline").scrollTop = 0;
+                  document.querySelector(".skill_list").scrollTop = 0;
+                }}
+              >
                 <li className="nav-item" title="About Me">
                   <a
                     className="nav-link active px-2"

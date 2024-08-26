@@ -14,7 +14,6 @@ import express from "./skills/express.png";
 import styledComponents from "./skills/styled-components.svg";
 
 // Project pictures
-
 import XCrypto from "./projects/xcrypto.png";
 import byteJournal from "./projects/bytejournal.png";
 import ecommerceMF from "./projects/ecommerce-mf.png";
@@ -327,7 +326,8 @@ export const certificates = [
     name: "Data Visualization with Python",
     organization: "Coursera",
     image: certificate16,
-    credential: "https://www.coursera.org/account/accomplishments/verify/NT5CJF6UDBW6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
+    credential:
+      "https://www.coursera.org/account/accomplishments/verify/NT5CJF6UDBW6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
   },
   {
     id: 10,

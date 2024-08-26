@@ -26,6 +26,13 @@
     justify-content: center;
   }
 
+  @media screen and (max-width: 992px) {
+    .activity_graph,
+    .githubStat {
+      width: 90% !important;
+    }
+  }
+
   @media screen and (max-width: 767px) {
     .activity_graph,
     .githubStat,
@@ -40,6 +47,7 @@
       a {
         display: grid;
         place-items: center;
+        width: 100%;
         img {
           width: 100%;
           height: unset;

@@ -32,7 +32,7 @@ const Footer = () => {
       </div>
 
       <aside>
-        <hp>Social Media</hp>
+        <p>Social Media</p>
         <article>
           <a href="https://www.instagram.com/thepriyammondal/" target="_blank">
             <AiFillInstagram size={25} color="#E4405F" />
