@@ -47,7 +47,7 @@ export const projects = [
     title: "XCrypto",
     description:
       "A dynamic cryptocurrency tracker and trading interface in React.js. Integrates real-time exchange data from APIs, uses Chakra UI for responsive design, and features interactive coin value graphs for thorough tracking across devices.",
-    url: "https://shiny-treacle-c3eec1.netlify.app",
+    url: "https://xcryptotracker.netlify.app/",
     imgSrc: XCrypto,
     github: "https://github.com/Priyammondal/xcrypto",
   },
@@ -111,7 +111,7 @@ export const projects = [
     title: "TECHY STAR",
     description:
       "A sleek website with modern design aesthetics built using React.js. It employs responsive design principles for seamless adaptability across devices, ensuring a user-friendly experience.",
-    url: "https://zippy-squirrel-c54721.netlify.app",
+    url: "https://techystar-inn.netlify.app/",
     imgSrc: techyStar,
     github: "",
   },
