@@ -40,6 +40,7 @@ import certificate12 from "./certificates/smartjob.png";
 import certificate15 from "./certificates/programming-with-python-3-x.png";
 import certificate16 from "./certificates/data-visualization-with-python.png";
 
+
 export const projects = [
   {
     id: 1,
@@ -146,6 +147,7 @@ export const experiences = [
 
 export const skills = [
   {
+    id: 1,
     name: "Javascript",
     description: "Web development",
     link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
@@ -153,6 +155,7 @@ export const skills = [
     image: javascript,
   },
   {
+    id: 2,
     name: "React",
     description: "Web development",
     link: "https://reactjs.org/",
@@ -160,6 +163,7 @@ export const skills = [
     image: react,
   },
   {
+    id: 3,
     name: "Node",
     description: "Web development",
     link: "https://nodejs.org/en/",
@@ -167,6 +171,7 @@ export const skills = [
     image: nodeJs,
   },
   {
+    id: 4,
     name: "Typescript",
     description: "Web development",
     link: "https://www.typescriptlang.org/",
@@ -174,6 +179,7 @@ export const skills = [
     image: typescript,
   },
   {
+    id: 5,
     name: "Express.js",
     description: "Web development",
     link: "https://expressjs.com/",
@@ -181,6 +187,7 @@ export const skills = [
     image: express,
   },
   {
+    id: 6,
     name: "HTML5",
     description: "Web layouts",
     link: "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5",
@@ -188,6 +195,7 @@ export const skills = [
     image: html5,
   },
   {
+    id: 7,
     name: "CSS3",
     description: "Web design",
     link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
@@ -195,6 +203,7 @@ export const skills = [
     image: css3,
   },
   {
+    id: 8,
     name: "Styled Components",
     description: "Web design",
     link: "https://styled-components.com/",
@@ -202,6 +211,7 @@ export const skills = [
     image: styledComponents,
   },
   {
+    id: 9,
     name: "Bootstrap",
     description: "Web design",
     link: "https://getbootstrap.com/",
@@ -210,6 +220,7 @@ export const skills = [
   },
 
   {
+    id: 10,
     name: "Visual Studio Code",
     description: "Code editor of choice",
     link: "https://code.visualstudio.com/",
@@ -217,6 +228,7 @@ export const skills = [
     image: vscode,
   },
   {
+    id: 11,
     name: "Figma",
     description: "Collaborative Design",
     link: "https://www.figma.com/",
@@ -224,6 +236,7 @@ export const skills = [
     image: figma,
   },
   {
+    id: 12,
     name: "MySql",
     description: "Database",
     link: "https://www.mysql.com/",
@@ -231,6 +244,7 @@ export const skills = [
     image: mysql,
   },
   {
+    id: 13,
     name: "MongoDB",
     description: "Database",
     link: "https://www.mongodb.com/",
@@ -356,5 +370,43 @@ export const certificates = [
     organization: "KSHITIJ, IIT Kharagpur",
     image: certificate13,
     credential: "",
+  },
+];
+
+export const footerSocials = [
+  {
+    id: 1,
+    name: "instagram",
+    link: "https://www.instagram.com/thepriyammondal/",
+  },
+  {
+    id: 2,
+    name: "linkedIn",
+    link: "https://www.linkedin.com/in/priyam-mondal/",
+  },
+  // {
+  //   id: 3,
+  //   name: "facebook",
+  //   link: "https://www.facebook.com/priyam.mondal.9256/",
+  // },
+  {
+    id: 4,
+    name: "github",
+    link: "https://github.com/Priyammondal",
+  },
+  {
+    id: 5,
+    name: "leetcode",
+    link: "https://leetcode.com/priyam_mondal/",
+  },
+  {
+    id: 6,
+    name: "X",
+    link: "https://x.com/priyam_jsx",
+  },
+  {
+    id: 7,
+    name: "medium",
+    link: "https://medium.com/@thepriyammondal",
   },
 ];

@@ -65,8 +65,9 @@ const Skill = () => {
       </section>
       <section className="skill_list mx-auto">
         {skillType === "all" &&
-          skills.map((item, index) => (
+          skills.map((item) => (
             <SkillCard
+              key={item.id}
               name={item.name}
               description={item.description}
               link={item.link}
@@ -76,8 +77,9 @@ const Skill = () => {
           ))}
         {skills
           .filter((each) => each.type === skillType)
-          .map((item, index) => (
+          .map((item) => (
             <SkillCard
+              key={item.id}
               name={item.name}
               description={item.description}
               link={item.link}

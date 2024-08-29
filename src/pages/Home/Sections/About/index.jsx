@@ -1,7 +1,6 @@
 import React from "react";
 import "./index.scss";
 import priyam_logo from "../../../../assets/priyam_m.png";
-import resume from "../../../../assets/resume.pdf";
 import { BsMedium } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
 
@@ -31,10 +30,7 @@ const About = () => {
           challenging work environment.
         </p>
         <div className="d-flex flex-column flex-md-row gap-3 align-items-center justify-content-center main_buttons mt-3 mt-lg-0">
-          {/* <a target="_blank" href={resume} download title="Resume">
-            <button className="btn btn-success">Resume</button>
-          </a> */}
-          <div class="d-flex gap-3 align-items-center">
+          <div className="d-flex gap-3 align-items-center">
             <a
               target="_blank"
               rel="noopener"
@@ -44,7 +40,7 @@ const About = () => {
               <svg
                 stroke="currentColor"
                 fill={"white"}
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 496 512"
                 height="28px"
                 width="28px"
@@ -61,7 +57,7 @@ const About = () => {
               <svg
                 stroke="currentColor"
                 fill="#0A66C2"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 448 512"
                 height="28px"
                 width="28px"
@@ -92,7 +88,7 @@ const About = () => {
               <svg
                 stroke="currentColor"
                 fill="#38a169"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 512 512"
                 height="30px"
                 width="30px"
@@ -105,7 +101,7 @@ const About = () => {
               <svg
                 stroke="currentColor"
                 fill="#c53030"
-                stroke-width="0"
+                strokeWidth="0"
                 viewBox="0 0 24 24"
                 height="34px"
                 width="34px"

@@ -1,3 +1,8 @@
+import "./index.scss";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { footerSocials } from "../../assets/data";
+
 import {
   AiFillFacebook,
   AiFillGithub,
@@ -6,9 +11,6 @@ import {
 } from "react-icons/ai";
 import { BsTwitterX } from "react-icons/bs";
 import { SiMedium, SiLeetcode } from "react-icons/si";
-import "./index.scss";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
 
 const Footer = () => {
   const location = useLocation();
@@ -22,44 +24,50 @@ const Footer = () => {
 
   return (
     <footer className="p-5 footer">
-      <section>
+      <section className="copyright">
         <p>Made with 🧡 and React</p>
         <p>© {new Date().getFullYear()} Priyam Mondal</p>
       </section>
 
-      <div>
-        <p>I have stood on a mountain of no’s for one yes.</p>
+      <div className="quote d-flex flex-column justify-content-center align-items-center gap-3">
+        <img
+          src="https://media1.tenor.com/m/GfSX-u7VGM4AAAAC/coding.gif"
+          alt="coding.gif"
+          height={window.innerWidth > 992 ? "90px" : "150px"}
+        />
+        {/* <q>I have stood on a mountain of no’s for one yes</q> */}
       </div>
 
-      <aside>
+      <section className="socialLinks">
         <p>Social Media</p>
         <article>
-          <a href="https://www.instagram.com/thepriyammondal/" target="_blank">
-            <AiFillInstagram size={25} color="#E4405F" />
-          </a>
-          <a href="https://www.linkedin.com/in/priyam-mondal/" target="_blank">
-            <AiFillLinkedin size={25} color="#0A66C2" />
-          </a>
-          <a
-            href="https://www.facebook.com/priyam.mondal.9256/"
-            target="_blank"
-          >
-            <AiFillFacebook size={25} color="#4267B2" />
-          </a>
-          <a href="https://github.com/Priyammondal" target="_blank">
-            <AiFillGithub size={25} color="white" />
-          </a>
-          <a href="https://leetcode.com/priyam_mondal/" target="_blank">
-            <SiLeetcode size={20} color="white" />
-          </a>
-          <a href="https://twitter.com/priyam_jsx" target="_blank">
-            <BsTwitterX size={20} color="#000000" />
-          </a>
-          <a href="https://medium.com/@thepriyammondal" target="_blank">
-            <SiMedium size={25} color="white" />
-          </a>
+          {footerSocials.map((item) => (
+            <a
+              title={item.name}
+              key={item.id}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {item.name === "instagram" ? (
+                <AiFillInstagram size={25} color="#E4405F" />
+              ) : item.name === "linkedIn" ? (
+                <AiFillLinkedin size={25} color="#0A66C2" />
+              ) : item.name === "facebook" ? (
+                <AiFillFacebook size={25} color="#4267B2" />
+              ) : item.name === "github" ? (
+                <AiFillGithub size={25} color="white" />
+              ) : item.name === "leetcode" ? (
+                <SiLeetcode size={20} color="white" />
+              ) : item.name === "X" ? (
+                <BsTwitterX size={20} color="#000000" />
+              ) : item.name === "medium" ? (
+                <SiMedium size={25} color="white" />
+              ) : null}
+            </a>
+          ))}
         </article>
-      </aside>
+      </section>
     </footer>
   );
 };

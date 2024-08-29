@@ -8,6 +8,11 @@ import toast from "react-hot-toast";
 
 const Contact = () => {
   const form = useRef();
+
+  const SERVICE_ID = "service_0j5s46h";
+  const TEMPLATE_ID = "template_1wq0v2j";
+  const PUBLIC_KEY = "t_LVpotRAv8KfEBgY";
+
   let userDataSchema = yup.object().shape({
     name: yup
       .string()
@@ -33,26 +38,19 @@ const Contact = () => {
   });
 
   const submit = (e) => {
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_SERVICE_ID,
-        import.meta.env.VITE_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          if (result.status === 200) {
-            toast("Your message was successfully sent!✅", {
-              duration: 2000,
-            });
-            reset();
-          }
-        },
-        (error) => {
-          console.log("email.js error-->", error.text);
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+      (result) => {
+        if (result.status === 200) {
+          toast("Your message was successfully sent!✅", {
+            duration: 2000,
+          });
+          reset();
         }
-      );
+      },
+      (error) => {
+        console.log("email.js error-->", error.text);
+      }
+    );
   };
   return (
     <div className="contact pb-5">

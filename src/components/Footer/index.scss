@@ -11,32 +11,34 @@
   justify-content: center;
   text-align: center;
   font-size: 18px;
-  section {
+  .copyright {
     width: 100%;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    p {
+      margin: 0;
+    }
   }
-  div {
+  .quote {
     flex: 2;
     width: 100%;
-    img {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      object-fit: contain;
-    }
-    h2 {
-      margin: 1rem;
-    }
-    p {
-      font: 400 1.2rem "Open Sans", sans-serif;
+    q {
+      font: 400 1.1rem "Open Sans", sans-serif;
       margin: 0px;
     }
   }
 
-  aside {
+  .socialLinks {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    p {
+      margin: 0;
+    }
     article {
-      margin-top: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -57,14 +59,17 @@
   .footer {
     flex-direction: column;
     gap: 30px;
-    div {
+    .quote {
       order: 1;
       border: none;
     }
-    aside {
+    .socialLinks {
       order: 2;
+      p{
+        display: none;
+      }
     }
-    section {
+    .copyright {
       order: 3;
     }
   }
