@@ -1,6 +1,11 @@
 import React from "react";
 import "./index.scss";
-import priyam_logo from "../../../../assets/priyam_m.png";
+// import priyam_logo from "../../../../assets/priyam_m.png";
+// import priyam_logo from "../../../../assets/pm.jpg";
+import priyam_logo from "../../../../assets/pm2.jpg";
+// import priyam_logo from "../../../../assets/pm3.png";
+// import priyam_logo from "../../../../assets/pm4.jpg";
+
 import { BsMedium } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
 

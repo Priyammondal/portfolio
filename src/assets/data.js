@@ -409,4 +409,9 @@ export const footerSocials = [
     name: "medium",
     link: "https://medium.com/@thepriyammondal",
   },
+  {
+    id: 8,
+    name: "NPM",
+    link: "https://www.npmjs.com/~priyammondal",
+  },
 ];

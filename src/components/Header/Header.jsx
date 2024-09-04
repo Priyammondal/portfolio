@@ -1,6 +1,7 @@
 import "./Header.scss";
-import logo from "../../assets/priyam_m.png";
 import resume from "../../assets/resume.pdf";
+import logo from "../../assets/priyam_m.png";
+// import logo from "../../assets/pm2.jpg";
 import { useLocation, useNavigate } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdClose } from "react-icons/io";
