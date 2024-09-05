@@ -12,6 +12,7 @@ import {
 import { BsTwitterX } from "react-icons/bs";
 import { SiMedium, SiLeetcode } from "react-icons/si";
 
+
 const Footer = () => {
   const location = useLocation();
 
