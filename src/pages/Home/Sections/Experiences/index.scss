@@ -1,9 +1,11 @@
 #timeline {
   width: 100%;
   background-color: inherit;
+  #experienceHeading {
+    opacity: 0;
+  }
   .timelineBox {
     width: 100%;
-    // height: 100%;
     position: relative;
     max-width: 1200px;
     margin: 0 auto;

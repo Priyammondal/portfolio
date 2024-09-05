@@ -5,9 +5,9 @@ const Experience = ({ theme }) => {
   return (
     <div id="timeline" className="my-5">
       <section className="text-center mb-2">
-        <h2 id="experienceHeading" className="invisible">
-          Experiences
-        </h2>
+        <h1 id="experienceHeading">
+          Priyam Mondal | Fullstack Developer (MERN Stack)
+        </h1>
       </section>
       <div className="timelineBox">
         {experiences.map((item, index) => (
@@ -26,7 +26,7 @@ const Experience = ({ theme }) => {
   );
 };
 
-const TimeLineItems = ({ company, jobTitle, date, url, index, theme }) => (
+const TimeLineItems = ({ company, jobTitle, date, url, index }) => (
   <div
     className={`timelineItem ${
       index % 2 == 0 ? "leftTimeLine" : "rightTimeLine"
