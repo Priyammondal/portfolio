@@ -4,10 +4,11 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import emailjs from "@emailjs/browser";
-import toast from "react-hot-toast";
+import useToast from "react-flare-toast";
 
 const Contact = () => {
   const form = useRef();
+  const { Toast, triggerToast } = useToast();
 
   const SERVICE_ID = "service_0j5s46h";
   const TEMPLATE_ID = "template_1wq0v2j";
@@ -41,14 +42,23 @@ const Contact = () => {
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
       (result) => {
         if (result.status === 200) {
-          toast("Your message was successfully sent!✅", {
-            duration: 2000,
+          triggerToast({
+            type: "success",
+            message: "Your message was successfully sent!",
+            duration: 3000,
+            animation: "slide",
           });
           reset();
         }
       },
       (error) => {
         console.log("email.js error-->", error.text);
+        triggerToast({
+          type: "error",
+          message: "Sorry, Your message couldn't be sent",
+          duration: 3000,
+          animation: "slide",
+        });
       }
     );
   };
@@ -126,6 +136,7 @@ const Contact = () => {
           </section>
         </form>
       </section>
+      {Toast}
     </div>
   );
 };

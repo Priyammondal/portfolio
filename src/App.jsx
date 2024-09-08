@@ -3,7 +3,6 @@ import "./App.scss";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer/Footer";
-import { Toaster } from "react-hot-toast";
 import { Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects";
 import Certificates from "./pages/Certificates";
@@ -43,14 +42,10 @@ const App = () => {
         <Route path="/certificates" element={<Certificates />} />
       </Routes>
       <Footer />
-      <Toaster position="top-center" />
+
       {showScrollButton && (
-        <div
-          id="scrollToTop"
-          onClick={scrollToTop}
-          title="Scroll To Top"
-        >
-          <AiOutlineArrowUp  />
+        <div id="scrollToTop" onClick={scrollToTop} title="Scroll To Top">
+          <AiOutlineArrowUp />
         </div>
       )}
     </div>

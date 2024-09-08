@@ -3,7 +3,7 @@ import "./index.scss";
 import { experiences } from "../../../../assets/data";
 const Experience = ({ theme }) => {
   return (
-    <div id="timeline" className="my-5">
+    <div id="timeline" className="mb-5">
       <section className="text-center mb-2">
         <h1 id="experienceHeading">
           Priyam Mondal | Fullstack Developer (MERN Stack)
