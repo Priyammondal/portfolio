@@ -4,6 +4,7 @@ import BlogCard from "../../../../components/BlogCard";
 import { Link } from "react-router-dom";
 const Blogs = () => {
   const [blogData, setBlogData] = useState([]);
+  
   useEffect(() => {
     const fetchBlogData = async () => {
       try {
