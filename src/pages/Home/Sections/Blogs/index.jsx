@@ -24,7 +24,7 @@ const Blogs = () => {
         <h2 id="blogsHeading">Blogs</h2>
       </section>
       <section className="blogCardWrapper">
-        {blogData.map((blog) => (
+        {blogData?.map((blog) => (
           <BlogCard key={blog.pubDate} data={blog} />
         ))}
       </section>
