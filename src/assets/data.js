@@ -10,6 +10,7 @@ import vscode from "./skills/vscode.png";
 import figma from "./skills/figma.png";
 import mysql from "./skills/mysql.png";
 import mongodb from "./skills/mongodb.png";
+import redis from "./skills/redis.png";
 import express from "./skills/express.png";
 import styledComponents from "./skills/styled-components.svg";
 
@@ -250,6 +251,14 @@ export const skills = [
     link: "https://www.mongodb.com/",
     type: "database",
     image: mongodb,
+  },
+  {
+    id: 14,
+    name: "Redis",
+    description: "Database",
+    link: "https://redis.io/",
+    type: "database",
+    image: redis,
   },
 ];
 
