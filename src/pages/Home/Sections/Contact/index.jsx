@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { forwardRef, useRef } from "react";
 import "./index.scss";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -6,7 +6,7 @@ import * as yup from "yup";
 import emailjs from "@emailjs/browser";
 import useToast from "react-flare-toast";
 
-const Contact = () => {
+const Contact = forwardRef((props, ref) => {
   const form = useRef();
   const { Toast, triggerToast } = useToast();
 
@@ -63,7 +63,7 @@ const Contact = () => {
     );
   };
   return (
-    <div className="contact pb-5">
+    <div ref={ref} className="contact pb-5">
       <h2 className="text-center mb-2" id="contactHeading">
         Get in Touch
       </h2>
@@ -139,6 +139,6 @@ const Contact = () => {
       {Toast}
     </div>
   );
-};
+});
 
 export default Contact;

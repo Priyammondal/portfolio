@@ -1,17 +1,11 @@
-import React from "react";
 import "./index.scss";
-// import priyam_logo from "../../../../assets/priyam_m.png";
-// import priyam_logo from "../../../../assets/pm.jpg";
 import priyam_logo from "../../../../assets/pm2.jpg";
-// import priyam_logo from "../../../../assets/pm3.png";
-// import priyam_logo from "../../../../assets/pm4.jpg";
-
 import { BsMedium } from "react-icons/bs";
-import { SiLeetcode } from "react-icons/si";
+import { forwardRef } from "react";
 
-const About = () => {
+const About = forwardRef((props, ref) => {
   return (
-    <div className="about d-flex flex-column justify-content-center align-items-center">
+    <div ref={ref} className="about d-flex flex-column justify-content-center align-items-center">
       <section className="dp mt-5">
         <picture>
           <img src={priyam_logo} alt="priyam_logo" />
@@ -38,9 +32,9 @@ const About = () => {
           <div className="d-flex gap-3 align-items-center">
             <a
               target="_blank"
-              rel="noopener"
               href="https://github.com/Priyammondal"
               title="Github"
+              rel="noreferrer"
             >
               <svg
                 stroke="currentColor"
@@ -58,6 +52,7 @@ const About = () => {
               target="_blank"
               href="https://www.linkedin.com/in/priyam-mondal/"
               title="Linkedin"
+              rel="noreferrer"
             >
               <svg
                 stroke="currentColor"
@@ -76,6 +71,7 @@ const About = () => {
               target="_blank"
               href="https://thepriyammondal.medium.com/"
               title="Medium"
+              rel="noreferrer"
             >
               <BsMedium size={30} color={"white"} />
             </a>
@@ -83,6 +79,7 @@ const About = () => {
               target="_blank"
               href="https://api.whatsapp.com/send?phone=8328709274"
               title="Whatsapp"
+              rel="noreferrer"
             >
               <svg
                 stroke="currentColor"
@@ -115,6 +112,6 @@ const About = () => {
       </section>
     </div>
   );
-};
+});
 
 export default About;

@@ -1,0 +1,61 @@
+header {
+  background-color: #2d3748;
+  min-height: 50px;
+  color: white;
+  padding: 5.5px 0px !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 101;
+}
+
+.logo {
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.sideNavHamburger {
+  display: none;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+li.active {
+  border-bottom: 2px solid #fff;
+}
+
+.navbar-nav .nav-link.active {
+  color: inherit;
+}
+
+.mode {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 992px) {
+  header {
+    position: sticky !important;
+    top: 0;
+    z-index: 101;
+  }
+
+  ul:not(.menuItems) li:not(.sideNavHamburger) {
+    display: none;
+  }
+
+  ul:not(.menuItems) li.sideNavHamburger {
+    display: block;
+  }
+
+}

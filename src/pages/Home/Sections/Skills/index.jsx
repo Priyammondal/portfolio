@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { forwardRef, useState } from "react";
 import "./index.scss";
 import { skills } from "../../../../assets/data";
 import { GiSpiderWeb } from "react-icons/gi";
@@ -6,10 +6,10 @@ import { BiDesktop } from "react-icons/bi";
 import { AiTwotoneThunderbolt, AiOutlineDatabase } from "react-icons/ai";
 import SkillCard from "../../../../components/skillCard";
 
-const Skill = () => {
+const Skill = forwardRef((props, ref) => {
   const [skillType, setSkillType] = useState("all");
   return (
-    <div className="skills">
+    <div ref={ref} className="skills">
       <section className="text-center mb-4">
         <h2 id="skillsHeading">Skills</h2>
       </section>
@@ -90,6 +90,6 @@ const Skill = () => {
       </section>
     </div>
   );
-};
+});
 
 export default Skill;

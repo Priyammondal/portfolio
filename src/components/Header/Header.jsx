@@ -1,195 +1,178 @@
-import "./Header.scss";
+import "./Header.css";
 import resume from "../../assets/resume.pdf";
-// import logo from "../../assets/priyam_m.png";
 import logo from "../../assets/pm2.jpg";
 import { useLocation, useNavigate } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { IoMdClose } from "react-icons/io";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import SideNav from "../SideNav"
+import useObserver from "../../hooks/useObserver";
 
-const Header = () => {
+const Header = ({ sectionRefs }) => {
   const [hamburger, setHamburger] = useState(true);
   const location = useLocation();
   const navigate = useNavigate();
+  const [sectionInView] = useObserver(sectionRefs);
   const scrollToSection = (HeadingId) => {
     if (location.pathname !== "/") {
       navigate("/");
     }
     setTimeout(() => {
       if (window.innerWidth > 992) {
-        const navbarHeight = document.querySelector(".navbar").offsetHeight;
+        const navbarHeight = document.querySelector("header").offsetHeight;
         const heading = document.getElementById(HeadingId);
-        const skillsSectionPosition = heading.offsetTop - navbarHeight;
+        const SectionPosition = heading.offsetTop - navbarHeight;
 
         window.scrollTo({
-          top: skillsSectionPosition,
+          top: SectionPosition,
           behavior: "smooth",
         });
       } else {
         setHamburger(true);
-        const element = document.getElementById("navbarNav");
-        if (element.classList.contains("show")) {
-          element.classList.remove("show");
-        }
-        const navbarHeight = document.querySelector(".navbar").offsetHeight;
+        const navbarHeight = document.querySelector("header").offsetHeight;
         const heading = document.getElementById(HeadingId);
-        const skillsSectionPosition = heading.offsetTop - navbarHeight;
+        const SectionPosition = heading.offsetTop - navbarHeight;
 
         window.scrollTo({
-          top: skillsSectionPosition,
+          top: SectionPosition,
           behavior: "smooth",
         });
       }
-    }, 500);
+    }, 1000);
   };
+  useEffect(() => {
+    if (hamburger) {
+      document.querySelector("body").style.overflowY = "auto"
+      document.querySelector("#menuCanvas")?.classList.remove("menu-canvas-open")
+    } else {
+      document.querySelector("body").style.overflowY = "hidden"
+      setTimeout(() => {
+        document.querySelector("#menuCanvas")?.classList.add("menu-canvas-open")
+      }, 100)
+    }
+  }, [hamburger])
+
   return (
-    <nav className="navbar navbar-expand-lg shadow">
+    <header className="shadow">
       <div className="mx-auto d-block d-lg-flex container">
-        <div className="d-flex justify-content-between px-2 px-lg-0">
+        <div className="d-flex justify-content-between px-2 px-lg-0 w-100">
           <a
-            className="navbar-flex justify-content-center align-items-center navbar-brand"
+            className="justify-content-center align-items-center"
             href="/portfolio"
           >
             <img className="logo" src={logo} alt="logo" />
           </a>
-          <div className="d-flex gap-3 align-items-center">
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span
-                className="navbar-toggler-icon"
-                onClick={() => setHamburger((prev) => !prev)}
-              >
-                {hamburger ? (
-                  <RxHamburgerMenu
-                    size={30}
-                    color="white"
-                    className="hamburgerIcon"
-                  />
-                ) : (
-                  <IoMdClose size={32} color="white" className="closeIcon" />
-                )}
-              </span>
-            </button>
-          </div>
-        </div>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <div className="d-flex justify-content-end gap-5 flex-column flex-lg-row align-items-start w-100 ps-0 ps-lg-3">
-            <section>
-              <ul
-                className="navbar-nav me-auto mb-2 mb-lg-0"
+          <ul
+            className="d-flex align-items-center mb-0"
+          >
+            <li title="About Me" className={sectionInView === "about" ? "active px-2" : "px-2"}>
+              <a
+                className="nav-link"
                 onClick={() => {
-                  document.querySelector("#timeline").scrollTop = 0;
-                  document.querySelector(".skill_list").scrollTop = 0;
+                  setHamburger(true);
+                  if (location.pathname !== "/portfolio") {
+                    navigate("/portfolio");
+                  } else {
+                    window.scroll({
+                      top: 0,
+                      behavior: "smooth",
+                    });
+                  }
                 }}
               >
-                <li className="nav-item" title="About Me">
-                  <a
-                    className="nav-link active px-2"
-                    onClick={() => {
-                      setHamburger(true);
-                      if (location.pathname !== "/") {
-                        navigate("/");
-                      }
-                      if (window.innerWidth > 992) {
-                        window.scroll({
-                          top: 0,
-                          behavior: "smooth",
-                        });
-                      } else {
-                        const element = document.getElementById("navbarNav");
-                        if (element.classList.contains("show")) {
-                          element.classList.remove("show");
-                        }
-                        window.scroll({
-                          top: 0,
-                          behavior: "smooth",
-                        });
-                      }
-                    }}
-                  >
-                    About Me
-                  </a>
-                </li>
-                <li className="nav-item px-2" title="Experience">
-                  <a
-                    className="nav-link"
-                    onClick={() => {
-                      scrollToSection("experienceHeading");
-                    }}
-                  >
-                    Experience
-                  </a>
-                </li>
-                <li className="nav-item px-2" title="Skills">
-                  <a
-                    className="nav-link"
-                    onClick={() => {
-                      scrollToSection("skillsHeading");
-                    }}
-                  >
-                    Skills
-                  </a>
-                </li>
-                <li className="nav-item px-2" title="Projects">
-                  <a
-                    className="nav-link"
-                    onClick={() => {
-                      scrollToSection("projectsHeading");
-                    }}
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li className="nav-item px-2" title="Blogs">
-                  <a
-                    className="nav-link"
-                    onClick={() => {
-                      scrollToSection("blogsHeading");
-                    }}
-                  >
-                    Blogs
-                  </a>
-                </li>
-                <li className="nav-item px-2" title="Certificates">
-                  <a
-                    className="nav-link"
-                    onClick={() => {
-                      scrollToSection("certificatesHeading");
-                    }}
-                  >
-                    Certificates
-                  </a>
-                </li>
-
-                <li className="nav-item px-2" title="Contact Me">
-                  <a
-                    className="nav-link"
-                    onClick={() => {
-                      scrollToSection("contactHeading");
-                    }}
-                  >
-                    Contact Me
-                  </a>
-                </li>
-                <li className="nav-item px-2" title="Resume">
-                  <a className="nav-link" href={resume} download>
-                    Resume
-                  </a>
-                </li>
-              </ul>
-            </section>
-          </div>
+                About Me
+              </a>
+            </li>
+            <li title="Experience" className={sectionInView === "experience" ? "active px-2" : "px-2"}>
+              <a
+                className="nav-link"
+                onClick={() => {
+                  scrollToSection("experienceHeading");
+                }}
+              >
+                Experience
+              </a>
+            </li>
+            <li className={sectionInView === "skills" ? "active px-2" : "px-2"} title="Skills">
+              <a
+                className="nav-link"
+                onClick={() => {
+                  scrollToSection("skillsHeading");
+                }}
+              >
+                Skills
+              </a>
+            </li>
+            <li className={location.pathname === "/portfolio/projects" || sectionInView === "projects" ? "active px-2" : "px-2"} title="Projects">
+              <a
+                className="nav-link"
+                onClick={() => {
+                  scrollToSection("projectsHeading");
+                }}
+              >
+                Projects
+              </a>
+            </li>
+            <li className={sectionInView === "blogs" ? "active px-2" : "px-2"} title="Blogs">
+              <a
+                className="nav-link"
+                onClick={() => {
+                  scrollToSection("blogsHeading");
+                }}
+              >
+                Blogs
+              </a>
+            </li>
+            <li className={location.pathname === "/portfolio/certificates" || sectionInView === "certificates" ? "active px-2" : "px-2"} title="Certificates">
+              <a
+                className="nav-link"
+                onClick={() => {
+                  scrollToSection("certificatesHeading");
+                }}
+              >
+                Certificates
+              </a>
+            </li>
+            <li className={sectionInView === "activity" ? "active px-2" : "px-2"} title="activity">
+              <a
+                className="nav-link"
+                onClick={() => {
+                  scrollToSection("activityHeading");
+                }}
+              >
+                Activity
+              </a>
+            </li>
+            <li className={sectionInView === "contact" ? "active px-2" : "px-2"} title="Contact Me">
+              <a
+                className="nav-link"
+                onClick={() => {
+                  scrollToSection("contactHeading");
+                }}
+              >
+                Contact Me
+              </a>
+            </li>
+            <li className="px-2" title="Resume">
+              <a className="nav-link" href={resume} download>
+                Resume
+              </a>
+            </li>
+            <li className="sideNavHamburger"
+              onClick={() => setHamburger((prev) => !prev)}>
+              {hamburger && (
+                <RxHamburgerMenu
+                  size={30}
+                  color="white"
+                  className="hamburgerIcon"
+                />
+              )}
+            </li>
+          </ul>
+          {!hamburger && <SideNav setHamburger={setHamburger} scrollToSection={scrollToSection} sectionRefs={sectionRefs} />}
         </div>
       </div>
-    </nav>
+    </header>
   );
 };
 

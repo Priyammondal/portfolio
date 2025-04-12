@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { forwardRef, useEffect, useState } from "react";
 import "./index.scss";
 import BlogCard from "../../../../components/BlogCard";
 import { Link } from "react-router-dom";
-const Blogs = () => {
+const Blogs = forwardRef((props, ref) => {
   const [blogData, setBlogData] = useState([]);
   
   useEffect(() => {
@@ -20,7 +20,7 @@ const Blogs = () => {
     fetchBlogData();
   }, []);
   return (
-    <div className="blogs mx-auto my-5">
+    <div ref={ref} className="blogs mx-auto my-5">
       <section className="text-center mb-5">
         <h2 id="blogsHeading">Blogs</h2>
       </section>
@@ -38,6 +38,6 @@ const Blogs = () => {
       </Link>
     </div>
   );
-};
+});
 
 export default Blogs;

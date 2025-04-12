@@ -11,3 +11,11 @@
     grid-template-columns: unset !important;
   }
 }
+
+@media (max-width: 767px) {
+  .blogCardWrapper {
+    height: 70vh;
+    overflow: scroll;
+    scrollbar-width: none;
+  }
+}

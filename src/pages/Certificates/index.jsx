@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.scss";
 import { certificates } from "../../assets/data";
 import { Link } from "react-router-dom";

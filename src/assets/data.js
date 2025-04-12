@@ -383,11 +383,11 @@ export const certificates = [
 ];
 
 export const footerSocials = [
-  // {
-  //   id: 1,
-  //   name: "instagram",
-  //   link: "https://www.instagram.com/thepriyammondal/",
-  // },
+  {
+    id: 1,
+    name: "instagram",
+    link: "https://www.instagram.com/thepriyammondal/",
+  },
   {
     id: 2,
     name: "linkedIn",
@@ -406,7 +406,7 @@ export const footerSocials = [
   {
     id: 5,
     name: "leetcode",
-    link: "https://leetcode.com/priyam_mondal/",
+    link: "https://leetcode.com/u/priyammondal/",
   },
   {
     id: 6,

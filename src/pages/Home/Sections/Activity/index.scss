@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  #activityHeading {
+      height: 2px;
+      opacity: 0;
+    }
   .activity_graph {
     a {
       display: flex;

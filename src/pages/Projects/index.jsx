@@ -1,4 +1,3 @@
-import React from "react";
 import "./index.scss";
 import { projects } from "../../assets/data";
 import ProjectCard from "../../components/ProjectCard";

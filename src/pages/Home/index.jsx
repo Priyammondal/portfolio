@@ -10,18 +10,18 @@ import Contact from "./Sections/Contact";
 
 import "aos/dist/aos.css";
 
-const Home = () => {
+const Home = ({ refs }) => {
   return (
     <div className="body-main text-light">
       <div className="container body-wrapper mx-auto">
-        <About />
-        <Experiences />
-        <Skills />
-        <Projects />
-        <Blogs />
-        <Certificates />
-        <Activity />
-        <Contact />
+        <About ref={refs.aboutRef} />
+        <Experiences ref={refs.experienceRef} />
+        <Skills ref={refs.skillsRef} />
+        <Projects ref={refs.projectsRef} />
+        <Blogs ref={refs.blogsRef} />
+        <Certificates ref={refs.certificatesRef} />
+        <Activity ref={refs.activityRef} />
+        <Contact ref={refs.contactRef} />
       </div>
     </div>
   );

@@ -1,16 +1,20 @@
-import React from "react";
 import "./index.scss";
 import GitHubCalendar from "react-github-calendar";
 import { Tooltip as MuiTooltip } from "@mui/material";
+import { forwardRef } from "react";
 
-const Activity = () => {
+const Activity = forwardRef((props, ref) => {
   return (
-    <div className="activity my-5">
+    <div ref={ref} className="activity my-5">
+      <section className="text-center mb-2">
+        <h1 id="activityHeading">Activity</h1>
+      </section>
       <section className="activity_graph w-50">
         <a
           href="https://github.com/Priyammondal"
           target="_blank"
           className="mx-auto"
+          rel="noreferrer"
         >
           <img
             className="w-100"
@@ -25,6 +29,7 @@ const Activity = () => {
           href="https://github.com/Priyammondal"
           target="_blank"
           className="mx-auto"
+          rel="noreferrer"
         >
           <img
             className="w-100"
@@ -60,8 +65,8 @@ const Activity = () => {
                 activity.count > 1
                   ? `${activity.count} contributiona on ${activity.date}`
                   : activity.count === 1
-                  ? `${activity.count} contribution on ${activity.date}`
-                  : `No contributions on ${activity.date}`
+                    ? `${activity.count} contribution on ${activity.date}`
+                    : `No contributions on ${activity.date}`
               }
             >
               {block}
@@ -71,6 +76,6 @@ const Activity = () => {
       </section>
     </div>
   );
-};
+});
 
 export default Activity;

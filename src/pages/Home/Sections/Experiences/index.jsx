@@ -1,9 +1,9 @@
-import React from "react";
 import "./index.scss";
 import { experiences } from "../../../../assets/data";
-const Experience = ({ theme }) => {
+import { forwardRef } from "react";
+const Experience = forwardRef((props, ref) => {
   return (
-    <div id="timeline" className="mb-5">
+    <div ref={ref} id="timeline" className="experience mb-5">
       <section className="text-center mb-2">
         <h1 id="experienceHeading">
           Priyam Mondal | Fullstack Developer (MERN Stack)
@@ -18,13 +18,12 @@ const Experience = ({ theme }) => {
             date={item.date}
             url={item.url}
             index={index}
-            theme={theme}
           />
         ))}
       </div>
     </div>
   );
-};
+});
 
 const TimeLineItems = ({ company, jobTitle, date, url, index }) => (
   <div

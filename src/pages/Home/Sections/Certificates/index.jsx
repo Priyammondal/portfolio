@@ -1,15 +1,28 @@
 import "./index.scss";
 import { certificates } from "../../../../assets/data";
 import { Link } from "react-router-dom";
+import { forwardRef, useEffect, useState } from "react";
 
-const Certificates = ({ theme }) => {
+const Certificates = forwardRef((props, ref) => {
+  const [cardsToShow, setCardsToShow] = useState(
+    window.innerWidth < 767 ? 2 : 4
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCardsToShow(window.innerWidth < 767 ? 2 : 4);
+    };
+
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
   return (
-    <div className="certificates">
+    <div ref={ref} className="certificates">
       <section className="text-center mb-5">
         <h2 id="certificatesHeading">Certificates</h2>
       </section>
       <section className="certificateCardWrapper">
-        {certificates.slice(0, 4).map((certificate) =>
+        {certificates.slice(0, cardsToShow).map((certificate) =>
           certificate.credential ? (
             <Link
               to={certificate.credential}
@@ -41,6 +54,6 @@ const Certificates = ({ theme }) => {
       </Link>
     </div>
   );
-};
+});
 
 export default Certificates;
