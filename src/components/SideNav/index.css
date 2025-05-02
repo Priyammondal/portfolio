@@ -20,12 +20,12 @@
     transition: right 0.4s ease-in-out;
     padding: 20px;
     z-index: 1001;
+}
 
-    .closeIcon {
-        display: block;
-        margin-left: auto;
-        cursor: pointer;
-    }
+#menuCanvas .closeIcon {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
 }
 
 .menuItems>li>a {

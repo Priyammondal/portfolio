@@ -3,7 +3,7 @@ import { experiences } from "../../../../assets/data";
 import { forwardRef } from "react";
 const Experience = forwardRef((props, ref) => {
   return (
-    <div ref={ref} id="timeline" className="experience mb-5">
+    <div ref={ref} id="timeline" className="experience my-5">
       <section className="text-center mb-2">
         <h1 id="experienceHeading">
           Priyam Mondal | Fullstack Developer (MERN Stack)

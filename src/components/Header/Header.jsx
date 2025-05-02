@@ -1,7 +1,7 @@
 import "./Header.css";
 import resume from "../../assets/resume.pdf";
 import logo from "../../assets/pm2.jpg";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useEffect, useState } from "react";
 import SideNav from "../SideNav"
@@ -20,7 +20,7 @@ const Header = ({ sectionRefs }) => {
       if (window.innerWidth > 992) {
         const navbarHeight = document.querySelector("header").offsetHeight;
         const heading = document.getElementById(HeadingId);
-        const SectionPosition = heading.offsetTop - navbarHeight;
+        const SectionPosition = heading?.offsetTop - navbarHeight;
 
         window.scrollTo({
           top: SectionPosition,
@@ -30,7 +30,7 @@ const Header = ({ sectionRefs }) => {
         setHamburger(true);
         const navbarHeight = document.querySelector("header").offsetHeight;
         const heading = document.getElementById(HeadingId);
-        const SectionPosition = heading.offsetTop - navbarHeight;
+        const SectionPosition = heading?.offsetTop - navbarHeight;
 
         window.scrollTo({
           top: SectionPosition,
@@ -51,16 +51,17 @@ const Header = ({ sectionRefs }) => {
     }
   }, [hamburger])
 
+
   return (
     <header className="shadow">
       <div className="mx-auto d-block d-lg-flex container">
         <div className="d-flex justify-content-between px-2 px-lg-0 w-100">
-          <a
+          <Link
             className="justify-content-center align-items-center"
-            href="/portfolio"
+            to="/"
           >
             <img className="logo" src={logo} alt="logo" />
-          </a>
+          </Link>
 
           <ul
             className="d-flex align-items-center mb-0"
@@ -70,8 +71,8 @@ const Header = ({ sectionRefs }) => {
                 className="nav-link"
                 onClick={() => {
                   setHamburger(true);
-                  if (location.pathname !== "/portfolio") {
-                    navigate("/portfolio");
+                  if (location.pathname !== "/") {
+                    navigate("/");
                   } else {
                     window.scroll({
                       top: 0,
@@ -103,7 +104,7 @@ const Header = ({ sectionRefs }) => {
                 Skills
               </a>
             </li>
-            <li className={location.pathname === "/portfolio/projects" || sectionInView === "projects" ? "active px-2" : "px-2"} title="Projects">
+            <li className={location.pathname === "/projects" || sectionInView === "projects" ? "active px-2" : "px-2"} title="Projects">
               <a
                 className="nav-link"
                 onClick={() => {
@@ -123,7 +124,7 @@ const Header = ({ sectionRefs }) => {
                 Blogs
               </a>
             </li>
-            <li className={location.pathname === "/portfolio/certificates" || sectionInView === "certificates" ? "active px-2" : "px-2"} title="Certificates">
+            <li className={location.pathname === "/certificates" || sectionInView === "certificates" ? "active px-2" : "px-2"} title="Certificates">
               <a
                 className="nav-link"
                 onClick={() => {

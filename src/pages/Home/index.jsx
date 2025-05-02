@@ -8,7 +8,6 @@ import Certificates from "./Sections/Certificates";
 import Activity from "./Sections/Activity";
 import Contact from "./Sections/Contact";
 
-import "aos/dist/aos.css";
 
 const Home = ({ refs }) => {
   return (

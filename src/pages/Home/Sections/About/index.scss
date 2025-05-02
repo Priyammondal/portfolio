@@ -1,48 +1,54 @@
 .about {
   gap: 30px;
   transition: all 0.5s ease-in-out;
+
   .dp {
     display: flex;
     align-items: center;
-    width: 20%;
+    justify-content: center;
     picture {
       display: flex;
       justify-content: start;
       align-items: center;
+      height: 300px;
+        width: 300px;
       img {
         width: 100%;
         border-radius: 50%;
       }
     }
   }
+
   .description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-radius: 0.375rem;
     font-size: 18px;
+
     .handWave {
       display: inline-block;
-      animation: 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s infinite normal
-        both running hellow_animation;
+      animation: 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s infinite normal both running hellow_animation;
     }
+
     .hellow {
-      background-image: linear-gradient(
-        to left,
-        rgb(252, 103, 158),
-        rgb(6, 105, 179)
-      );
+      background-image: linear-gradient(to left,
+            rgb(252, 103, 158),
+          rgb(6, 105, 179));
       color: transparent;
       background-clip: text;
       -webkit-background-clip: text;
       font-weight: 400;
+
       span {
         font-weight: 100;
       }
     }
+
     .main_buttons {
       a {
         transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
         &:hover {
           transform: translateY(-5px);
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -54,51 +60,50 @@
 
   @media screen and (max-width: 992px) {
     .dp {
-      picture {
-        justify-content: center;
-        width: 100%;
-        img {
-          width: 45%;
-          border-radius: 50%;
-        }
-      }
       width: 100%;
       height: unset;
-    }
+      picture {
+          height: 250px;
+          width: 250px;
+      
+        }
+                                                                                                }
     .description {
       width: 90%;
       margin: auto;
       margin-top: 0px;
+
       .hellow {
         margin-bottom: 0px;
       }
+
       .name {
         margin-bottom: 0.3rem;
       }
     }
   }
+
   @media screen and (max-width: 767px) {
     .dp {
-      picture {
-        justify-content: center;
-        width: 100%;
-        img {
-          width: 60%;
-          border-radius: 50%;
-        }
-      }
       width: 100%;
       height: unset;
-    }
+      picture {
+          height: 200px;
+          width: 200px;
+      
+        }
+            }
     .description {
       height: unset;
       width: 95%;
       margin: auto;
       margin-top: 0px;
       font-size: 15px;
+
       .hellow {
         margin-bottom: 0px;
       }
+
       .name {
         margin-bottom: 0.3rem;
       }
@@ -107,24 +112,29 @@
 }
 
 @keyframes hellow_animation {
+
   0%,
   100% {
     transform: rotate(0deg);
     transform-origin: 100% 100%;
   }
+
   10% {
     transform: rotate(2deg);
   }
+
   20%,
   40%,
   60% {
     transform: rotate(-4deg);
   }
+
   30%,
   50%,
   70% {
     transform: rotate(4deg);
   }
+
   80% {
     transform: rotate(-2deg);
   }

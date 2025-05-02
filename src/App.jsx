@@ -6,7 +6,6 @@ import Footer from "./components/Footer/Footer";
 import { Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects";
 import Certificates from "./pages/Certificates";
-import AOS from "aos";
 import { AiOutlineArrowUp } from "react-icons/ai";
 
 const App = () => {
@@ -20,7 +19,6 @@ const App = () => {
   };
 
   useEffect(() => {
-    AOS.init();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
