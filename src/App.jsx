@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.scss";
+import MainLayout from "./components/Layout/MainLayout";
 import Header from "./components/Header/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer/Footer";
@@ -7,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import Projects from "./pages/Projects";
 import Certificates from "./pages/Certificates";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import NotFound from "./notFound";
 
 const App = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -54,9 +56,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header sectionRefs={sectionRefs} />
       <Routes>
-        <Route path="/" element={<Home refs={{
+        <Route index element={<MainLayout sectionRefs={sectionRefs}><Home refs={{
           aboutRef,
           activityRef,
           blogsRef,
@@ -65,11 +66,11 @@ const App = () => {
           experienceRef,
           projectsRef,
           skillsRef,
-        }} />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/certificates" element={<Certificates />} />
+        }} /> </MainLayout>} />
+        <Route path="projects" element={<MainLayout sectionRefs={sectionRefs}><Projects /></MainLayout>} />
+        <Route path="certificates" element={<MainLayout sectionRefs={sectionRefs}><Certificates /></MainLayout>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
 
       {showScrollButton && (
         <div id="scrollToTop" onClick={scrollToTop} title="Scroll To Top">
