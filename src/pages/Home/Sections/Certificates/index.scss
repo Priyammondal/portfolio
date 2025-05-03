@@ -3,17 +3,20 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+
     .certificateCard {
       img {
         width: 90%;
         height: 350px;
       }
+
       &:nth-child(odd) {
         display: flex;
         justify-content: flex-end;
       }
     }
   }
+
   @media (max-width: 992px) {
     .certificateCardWrapper {
       .certificateCard {
@@ -27,10 +30,14 @@
   @media (max-width: 767px) {
     .certificateCardWrapper {
       grid-template-columns: unset;
+
       .certificateCard {
         display: flex;
         justify-content: center;
         align-items: center;
+img {
+    height: 250px;
+  }
         &:nth-child(odd) {
           display: flex;
           justify-content: center;

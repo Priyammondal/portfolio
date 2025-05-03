@@ -1,17 +1,17 @@
-import { useEffect, useRef, useState } from "react";
-import "./App.scss";
-import MainLayout from "./components/Layout/MainLayout";
-import Header from "./components/Header/Header";
-import Home from "./pages/Home";
-import Footer from "./components/Footer/Footer";
+import { useEffect, useRef, useState, lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import Projects from "./pages/Projects";
-import Certificates from "./pages/Certificates";
 import { AiOutlineArrowUp } from "react-icons/ai";
-import NotFound from "./notFound";
+import "./App.scss";
+const MainLayout = lazy(() => import("./components/Layout/MainLayout"));
+const Home = lazy(() => import("./pages/Home"));
+const Projects = lazy(() => import("./pages/Projects"));
+const Certificates = lazy(() => import("./pages/Certificates"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+import Loader from "./components/Loader";
 
 const App = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
+
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setShowScrollButton(true);
@@ -56,21 +56,23 @@ const App = () => {
 
   return (
     <div className="App">
-      <Routes>
-        <Route index element={<MainLayout sectionRefs={sectionRefs}><Home refs={{
-          aboutRef,
-          activityRef,
-          blogsRef,
-          certificatesRef,
-          contactRef,
-          experienceRef,
-          projectsRef,
-          skillsRef,
-        }} /> </MainLayout>} />
-        <Route path="projects" element={<MainLayout sectionRefs={sectionRefs}><Projects /></MainLayout>} />
-        <Route path="certificates" element={<MainLayout sectionRefs={sectionRefs}><Certificates /></MainLayout>} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route index element={<MainLayout sectionRefs={sectionRefs}><Home refs={{
+            aboutRef,
+            activityRef,
+            blogsRef,
+            certificatesRef,
+            contactRef,
+            experienceRef,
+            projectsRef,
+            skillsRef,
+          }} /> </MainLayout>} />
+          <Route path="projects" element={<MainLayout sectionRefs={sectionRefs}><Projects /></MainLayout>} />
+          <Route path="certificates" element={<MainLayout sectionRefs={sectionRefs}><Certificates /></MainLayout>} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Suspense>
 
       {showScrollButton && (
         <div id="scrollToTop" onClick={scrollToTop} title="Scroll To Top">

@@ -1,5 +1,6 @@
 import "./index.scss";
-import priyam_logo from "../../../../assets/pm2.jpg";
+// import priyam_logo from "../../../../assets/pm2.jpg";
+import priyam_logo from "../../../../assets/pm_ghibli.png";
 import { BsMedium } from "react-icons/bs";
 import { forwardRef } from "react";
 
@@ -22,11 +23,11 @@ const About = forwardRef((props, ref) => {
           </div>
         </h3>
         <p className="text-center">
-          Passionate full stack developer from INDIA 🇮🇳 with a specialization in
-          MERN stack.
-          {window.innerWidth > 992 && <br />}I like to solve problems and make
+          Software Engineer from INDIA 🇮🇳 <br />
+          Absolute learner | Obsessed with "Why" & "How"<br />
+          I like to solve problems and make
           user-centric products, Looking forward to honing my skills in a
-          challenging work environment.
+          challenging work environment
         </p>
         <div className="d-flex flex-column flex-md-row gap-3 align-items-center justify-content-center main_buttons mt-3 mt-lg-0">
           <div className="d-flex gap-3 align-items-center">

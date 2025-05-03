@@ -12,6 +12,7 @@ header {
   height: 35px;
   overflow: hidden;
   border-radius: 50%;
+  border: 2px solid #ccc;
 }
 
 .sideNavHamburger {

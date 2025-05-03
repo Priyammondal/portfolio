@@ -59,6 +59,12 @@ const Header = ({ sectionRefs }) => {
           <Link
             className="justify-content-center align-items-center"
             to="/"
+            onClick={() => {
+              window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+              });
+            }}
           >
             <img className="logo" src={logo} alt="logo" />
           </Link>
@@ -66,7 +72,7 @@ const Header = ({ sectionRefs }) => {
           <ul
             className="d-flex align-items-center mb-0"
           >
-            <li title="About Me" className={sectionInView === "about" ? "active px-2" : "px-2"}>
+            <li title="About Me" className={sectionInView === "about" ? "active px-2 pb-1" : "px-2 pb-1"}>
               <a
                 className="nav-link"
                 onClick={() => {
@@ -84,7 +90,7 @@ const Header = ({ sectionRefs }) => {
                 About Me
               </a>
             </li>
-            <li title="Experience" className={sectionInView === "experience" ? "active px-2" : "px-2"}>
+            <li title="Experience" className={sectionInView === "experience" ? "active px-2 pb-1" : "px-2 pb-1"}>
               <a
                 className="nav-link"
                 onClick={() => {
@@ -94,7 +100,7 @@ const Header = ({ sectionRefs }) => {
                 Experience
               </a>
             </li>
-            <li className={sectionInView === "skills" ? "active px-2" : "px-2"} title="Skills">
+            <li className={sectionInView === "skills" ? "active px-2 pb-1" : "px-2 pb-1"} title="Skills">
               <a
                 className="nav-link"
                 onClick={() => {
@@ -104,7 +110,7 @@ const Header = ({ sectionRefs }) => {
                 Skills
               </a>
             </li>
-            <li className={location.pathname === "/projects" || sectionInView === "projects" ? "active px-2" : "px-2"} title="Projects">
+            <li className={location.pathname === "/projects" || sectionInView === "projects" ? "active px-2 pb-1" : "px-2 pb-1"} title="Projects">
               <a
                 className="nav-link"
                 onClick={() => {
@@ -114,7 +120,7 @@ const Header = ({ sectionRefs }) => {
                 Projects
               </a>
             </li>
-            <li className={sectionInView === "blogs" ? "active px-2" : "px-2"} title="Blogs">
+            <li className={sectionInView === "blogs" ? "active px-2 pb-1" : "px-2 pb-1"} title="Blogs">
               <a
                 className="nav-link"
                 onClick={() => {
@@ -124,7 +130,7 @@ const Header = ({ sectionRefs }) => {
                 Blogs
               </a>
             </li>
-            <li className={location.pathname === "/certificates" || sectionInView === "certificates" ? "active px-2" : "px-2"} title="Certificates">
+            <li className={location.pathname === "/certificates" || sectionInView === "certificates" ? "active px-2 pb-1" : "px-2 pb-1"} title="Certificates">
               <a
                 className="nav-link"
                 onClick={() => {
@@ -134,7 +140,7 @@ const Header = ({ sectionRefs }) => {
                 Certificates
               </a>
             </li>
-            <li className={sectionInView === "activity" ? "active px-2" : "px-2"} title="activity">
+            <li className={sectionInView === "activity" ? "active px-2 pb-1" : "px-2 pb-1"} title="activity">
               <a
                 className="nav-link"
                 onClick={() => {
@@ -144,7 +150,7 @@ const Header = ({ sectionRefs }) => {
                 Activity
               </a>
             </li>
-            <li className={sectionInView === "contact" ? "active px-2" : "px-2"} title="Contact Me">
+            <li className={sectionInView === "contact" ? "active px-2 pb-1" : "px-2 pb-1"} title="Contact Me">
               <a
                 className="nav-link"
                 onClick={() => {
@@ -154,7 +160,7 @@ const Header = ({ sectionRefs }) => {
                 Contact Me
               </a>
             </li>
-            <li className="px-2" title="Resume">
+            <li className="px-2 pb-1" title="Resume">
               <a className="nav-link" href={resume} download>
                 Resume
               </a>

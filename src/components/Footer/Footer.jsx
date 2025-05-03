@@ -10,7 +10,8 @@ import {
   AiFillLinkedin,
 } from "react-icons/ai";
 import { BsTwitterX } from "react-icons/bs";
-import { SiMedium, SiLeetcode } from "react-icons/si";
+import { SiLeetcode } from "react-icons/si";
+import { FaMedium } from "react-icons/fa6";
 
 
 const Footer = () => {
@@ -63,7 +64,7 @@ const Footer = () => {
               ) : item.name === "X" ? (
                 <BsTwitterX size={20} color="#000000" />
               ) : item.name === "medium" ? (
-                <SiMedium size={25} color="white" />
+                            <FaMedium size={25} color="white" />
               ) : item.name === "NPM" ? (
                 <img
                   src="https://static-production.npmjs.com/58a19602036db1daee0d7863c94673a4.png"
