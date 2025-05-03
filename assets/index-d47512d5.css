@@ -1,0 +1,1 @@
+.projectsPage{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}@media (max-width: 992px){.projectsPage{grid-template-columns:repeat(2,1fr)}}@media (max-width: 767px){.projectsPage{grid-template-columns:unset}}
