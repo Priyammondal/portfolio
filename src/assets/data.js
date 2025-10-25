@@ -13,6 +13,8 @@ import mongodb from "./skills/mongodb.png";
 import redis from "./skills/redis.png";
 import express from "./skills/express.png";
 import styledComponents from "./skills/styled-components.svg";
+import dotNet from "./skills/NET_Core_Logo.svg"
+import cSharp from "./skills/Logo_C_sharp.svg";
 
 // Project pictures
 import XCrypto from "./projects/xcrypto.png";
@@ -121,9 +123,15 @@ export const projects = [
 
 export const experiences = [
   {
-    date: "16/09/2024 - Present",
+    date: "22/09/2025 - Present",
+    company: "Esyasoft",
+    jobTitle: "Senior Software Engineer",
+    url: "https://www.esyasoft.com/",
+  },
+  {
+    date: "16/09/2024 - 18/09/2025",
     company: "Rebel Foods",
-    jobTitle: "Software Development Engineer - I ",
+    jobTitle: "Software Development Engineer - I",
     url: "https://www.rebelfoods.com/",
   },
   {
@@ -259,6 +267,22 @@ export const skills = [
     link: "https://redis.io/",
     type: "database",
     image: redis,
+  },
+  {
+    id: 14,
+    name: "C#",
+    description: "Web development",
+    link: "https://dotnet.microsoft.com/en-us/languages/csharp",
+    type: "development",
+    image: cSharp,
+  },
+  {
+    id: 14,
+    name: ".NET Core",
+    description: "Web development",
+    link: "https://dotnet.microsoft.com/",
+    type: "development",
+    image: dotNet,
   },
 ];
 

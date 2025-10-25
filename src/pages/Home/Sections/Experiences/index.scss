@@ -89,8 +89,6 @@
 
 @media screen and (max-width: 767px) {
   #timeline {
-    // height: 460px;
-    // don't show scrollbar without hampering the scroll behaviour
     overflow: auto;
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
@@ -100,13 +98,16 @@
     // don't show scrollbar without hampering the scroll behaviour
     .timelineBox::after {
       left: 31px;
+      width: 5px;
     }
     .timelineItem {
       width: 100%;
       padding-left: 4rem !important;
       padding-right: 1rem !important;
       &::after {
-        left: 20px;
+        height: 14px;
+        width: 15px;
+        left: 22px;
       }
       &:nth-child(odd) {
         text-align: left;
@@ -114,6 +115,7 @@
       a {
         div {
           padding: 15px;
+          box-shadow: none;
         }
       }
     }

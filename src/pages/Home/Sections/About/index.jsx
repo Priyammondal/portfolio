@@ -1,12 +1,16 @@
 import "./index.scss";
 // import priyam_logo from "../../../../assets/pm2.jpg";
-import priyam_logo from "../../../../assets/pm_ghibli.png";
+// import priyam_logo from "../../../../assets/pm_ghibli.png";
+import priyam_logo from "../../../../assets/priyam.jpg";
 import { BsMedium } from "react-icons/bs";
 import { forwardRef } from "react";
 
 const About = forwardRef((props, ref) => {
   return (
-    <div ref={ref} className="about d-flex flex-column justify-content-center align-items-center">
+    <div
+      ref={ref}
+      className="about d-flex flex-column justify-content-center align-items-center"
+    >
       <section className="dp mt-5">
         <picture>
           <img src={priyam_logo} alt="priyam_logo" />
@@ -24,10 +28,9 @@ const About = forwardRef((props, ref) => {
         </h3>
         <p className="text-center">
           Software Engineer from INDIA 🇮🇳 <br />
-          Absolute learner | Obsessed with "Why" & "How"<br />
-          I like to solve problems and make
-          user-centric products, Looking forward to honing my skills in a
-          challenging work environment
+          Absolute learner | Obsessed with "Why" & "How"
+          <br />I love solving real-world problems and crafting user-centric
+          digital experiences
         </p>
         <div className="d-flex flex-column flex-md-row gap-3 align-items-center justify-content-center main_buttons mt-3 mt-lg-0">
           <div className="d-flex gap-3 align-items-center">

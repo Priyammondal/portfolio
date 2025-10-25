@@ -1,6 +1,7 @@
 import "./index.scss";
 import GitHubCalendar from "react-github-calendar";
-import { Tooltip as MuiTooltip } from "@mui/material";
+import Tooltip from "@mui/material/Tooltip";
+
 import { forwardRef } from "react";
 
 const Activity = forwardRef((props, ref) => {
@@ -60,7 +61,7 @@ const Activity = forwardRef((props, ref) => {
           username="Priyammondal"
           colorScheme="light"
           renderBlock={(block, activity) => (
-            <MuiTooltip
+            <Tooltip
               title={
                 activity.count > 1
                   ? `${activity.count} contributiona on ${activity.date}`
@@ -70,7 +71,7 @@ const Activity = forwardRef((props, ref) => {
               }
             >
               {block}
-            </MuiTooltip>
+            </Tooltip>
           )}
         ></GitHubCalendar>
       </section>

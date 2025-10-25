@@ -10,9 +10,9 @@ const Contact = forwardRef((props, ref) => {
   const form = useRef();
   const { Toast, triggerToast } = useToast();
 
-  const SERVICE_ID = "service_0j5s46h";
+  const SERVICE_ID = "service_br18frk";
   const TEMPLATE_ID = "template_1wq0v2j";
-  const PUBLIC_KEY = "t_LVpotRAv8KfEBgY";
+  const PUBLIC_KEY = "CjOTtILlF4iXvs_Ei";
 
   let userDataSchema = yup.object().shape({
     name: yup
