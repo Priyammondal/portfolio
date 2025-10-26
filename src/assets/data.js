@@ -1,70 +1,50 @@
 // Skill pictures
-import javascript from "./skills/javascript.png";
-import react from "./skills/react.png";
-import nodeJs from "./skills/nodeJs.png";
-import typescript from "./skills/typescript.png";
-import html5 from "./skills/html-5.png";
-import css3 from "./skills/css3.png";
-import bootstrap from "./skills/bootstrap.png";
-import vscode from "./skills/vscode.png";
-import figma from "./skills/figma.png";
-import mysql from "./skills/mysql.png";
-import mongodb from "./skills/mongodb.png";
-import redis from "./skills/redis.png";
-import express from "./skills/express.png";
-import styledComponents from "./skills/styled-components.svg";
-import dotNet from "./skills/NET_Core_Logo.svg"
-import cSharp from "./skills/Logo_C_sharp.svg";
+import javascript from "./images/skills/javascript.png";
+import react from "./images/skills/react.png";
+import nodeJs from "./images/skills/nodeJs.png";
+import typescript from "./images/skills/typescript.png";
+import html5 from "./images/skills/html-5.png";
+import css3 from "./images/skills/css3.png";
+import bootstrap from "./images/skills/bootstrap.png";
+import vscode from "./images/skills/vscode.png";
+import figma from "./images/skills/figma.png";
+import mysql from "./images/skills/mysql.png";
+import mongodb from "./images/skills/mongodb.png";
+import redis from "./images/skills/redis.png";
+import express from "./images/skills/express.png";
+import styledComponents from "./images/skills/styled-components.svg";
+import dotNet from "./images/skills/NET_Core_Logo.svg";
+import cSharp from "./images/skills/Logo_C_sharp.svg";
+import postgreSQL from "./images/skills/Postgresql_elephant.svg";
 
 // Project pictures
-import XCrypto from "./projects/xcrypto.png";
-import byteJournal from "./projects/bytejournal.png";
-import ecommerceMF from "./projects/ecommerce-mf.png";
-import employeeManagement from "./projects/employe-management.png";
-import techyStar from "./projects/techyStar.png";
-import delta from "./projects/delta.png";
-import taskify from "./projects/taskify.png";
+import XCrypto from "./images/projects/xcrypto.png";
+import byteJournal from "./images/projects/bytejournal.png";
+import ecommerceMF from "./images/projects/ecommerce-mf.png";
+import employeeManagement from "./images/projects/employe-management.png";
+import techyStar from "./images/projects/techyStar.png";
+import delta from "./images/projects/delta.png";
+import taskify from "./images/projects/taskify.png";
 
 // Certificate pictures
-import certificate1 from "./certificates/Javascript Algorithms And Data Structures.png";
-import certificate14 from "./certificates/namaste-javascript-certificate.webp";
-import certificate2 from "./certificates/namaste-react-certificate.png";
-import certificate3 from "./certificates/react_basic.png";
-import certificate4 from "./certificates/javascript_basic.png";
-import certificate5 from "./certificates/python_basic.png";
-import certificate6 from "./certificates/fullstack_greycampus.png";
-import certificate7 from "./certificates/datascience_greycampus.png";
-import certificate8 from "./certificates/html_greatlearning.jpg";
-import certificate9 from "./certificates/css_greatlearning.jpg";
-import certificate10 from "./certificates/Problem_solving_through_C.jpeg";
-import certificate11 from "./certificates/Speaking_efectively.jpeg";
-import certificate13 from "./certificates/kshitij_robotics.png";
-import certificate12 from "./certificates/smartjob.png";
-import certificate15 from "./certificates/programming-with-python-3-x.png";
-import certificate16 from "./certificates/data-visualization-with-python.png";
-
+import certificate1 from "./images/certificates/Javascript Algorithms And Data Structures.png";
+import certificate14 from "./images/certificates/namaste-javascript-certificate.webp";
+import certificate2 from "./images/certificates/namaste-react-certificate.png";
+import certificate3 from "./images/certificates/react_basic.png";
+import certificate4 from "./images/certificates/javascript_basic.png";
+import certificate5 from "./images/certificates/python_basic.png";
+import certificate6 from "./images/certificates/fullstack_greycampus.png";
+import certificate7 from "./images/certificates/datascience_greycampus.png";
+import certificate8 from "./images/certificates/html_greatlearning.jpg";
+import certificate9 from "./images/certificates/css_greatlearning.jpg";
+import certificate10 from "./images/certificates/Problem_solving_through_C.jpeg";
+import certificate11 from "./images/certificates/Speaking_efectively.jpeg";
+import certificate13 from "./images/certificates/kshitij_robotics.png";
+import certificate12 from "./images/certificates/smartjob.png";
+import certificate15 from "./images/certificates/programming-with-python-3-x.png";
+import certificate16 from "./images/certificates/data-visualization-with-python.png";
 
 export const projects = [
-  {
-    id: 1,
-    date: "",
-    title: "XCrypto",
-    description:
-      "A dynamic cryptocurrency tracker and trading interface in React.js. Integrates real-time exchange data from APIs, uses Chakra UI for responsive design, and features interactive coin value graphs for thorough tracking across devices.",
-    url: "https://xcryptotracker.netlify.app/",
-    imgSrc: XCrypto,
-    github: "https://github.com/Priyammondal/xcrypto",
-  },
-  {
-    id: 2,
-    date: "",
-    title: "ByteJournal",
-    description:
-      "ByteJournal is a MERN stack blog application featuring a Reach Editor for creating posts. It includes a login and registration system with JWT authentication, providing secure access and a seamless user experience.",
-    url: "https://bytejournal.netlify.app/",
-    imgSrc: byteJournal,
-    github: "https://github.com/Priyammondal/ByteJournal",
-  },
   {
     id: 3,
     date: "",
@@ -77,17 +57,15 @@ export const projects = [
       "https://github.com/Priyammondal/e-commerce-micro-frontend-react-application",
   },
   {
-    id: 4,
+    id: 2,
     date: "",
-    title: "Employee Directory",
+    title: "ByteJournal",
     description:
-      "An employee DB management project using pure HTML, CSS, and JS. Features a clean interface for efficient employee data handling and management.",
-    url: "https://employee-database-management-js.netlify.app/",
-    imgSrc: employeeManagement,
-    github:
-      "https://github.com/Priyammondal/Frontend-machine-coding/tree/main/Employee%20Database%20Management",
+      "ByteJournal is a MERN stack blog application featuring a Reach Editor for creating posts. It includes a login and registration system with JWT authentication, providing secure access and a seamless user experience.",
+    url: "https://bytejournal.netlify.app/",
+    imgSrc: byteJournal,
+    github: "https://github.com/Priyammondal/ByteJournal",
   },
-
   {
     id: 5,
     date: "29/03/2024",
@@ -98,7 +76,27 @@ export const projects = [
     imgSrc: taskify,
     github: "https://github.com/Priyammondal/taskify",
   },
-
+  {
+    id: 1,
+    date: "",
+    title: "XCrypto",
+    description:
+      "A dynamic cryptocurrency tracker and trading interface in React.js. Integrates real-time exchange data from APIs, uses Chakra UI for responsive design, and features interactive coin value graphs for thorough tracking across devices.",
+    url: "https://xcryptotracker.netlify.app/",
+    imgSrc: XCrypto,
+    github: "https://github.com/Priyammondal/xcrypto",
+  },
+  {
+    id: 4,
+    date: "",
+    title: "Employee Directory",
+    description:
+      "An employee DB management project using pure HTML, CSS, and JS. Features a clean interface for efficient employee data handling and management.",
+    url: "https://employee-database-management-js.netlify.app/",
+    imgSrc: employeeManagement,
+    github:
+      "https://github.com/Priyammondal/Frontend-machine-coding/tree/main/Employee%20Database%20Management",
+  },
   {
     id: 6,
     date: "16/09/2023",
@@ -269,7 +267,7 @@ export const skills = [
     image: redis,
   },
   {
-    id: 14,
+    id: 15,
     name: "C#",
     description: "Web development",
     link: "https://dotnet.microsoft.com/en-us/languages/csharp",
@@ -277,12 +275,20 @@ export const skills = [
     image: cSharp,
   },
   {
-    id: 14,
+    id: 16,
     name: ".NET Core",
     description: "Web development",
     link: "https://dotnet.microsoft.com/",
     type: "development",
     image: dotNet,
+  },
+  {
+    id: 17,
+    name: "PostgreSQL",
+    description: "Database",
+    link: "https://www.postgresql.org/",
+    type: "database",
+    image: postgreSQL,
   },
 ];
 

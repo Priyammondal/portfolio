@@ -58,18 +58,41 @@ const App = () => {
     <div className="App">
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route index element={<MainLayout sectionRefs={sectionRefs}><Home refs={{
-            aboutRef,
-            activityRef,
-            blogsRef,
-            certificatesRef,
-            contactRef,
-            experienceRef,
-            projectsRef,
-            skillsRef,
-          }} /> </MainLayout>} />
-          <Route path="projects" element={<MainLayout sectionRefs={sectionRefs}><Projects /></MainLayout>} />
-          <Route path="certificates" element={<MainLayout sectionRefs={sectionRefs}><Certificates /></MainLayout>} />
+          <Route
+            index
+            element={
+              <MainLayout sectionRefs={sectionRefs}>
+                <Home
+                  refs={{
+                    aboutRef,
+                    activityRef,
+                    blogsRef,
+                    certificatesRef,
+                    contactRef,
+                    experienceRef,
+                    projectsRef,
+                    skillsRef,
+                  }}
+                />{" "}
+              </MainLayout>
+            }
+          />
+          <Route
+            path="projects"
+            element={
+              <MainLayout sectionRefs={sectionRefs}>
+                <Projects />
+              </MainLayout>
+            }
+          />
+          <Route
+            path="certificates"
+            element={
+              <MainLayout sectionRefs={sectionRefs}>
+                <Certificates />
+              </MainLayout>
+            }
+          />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
