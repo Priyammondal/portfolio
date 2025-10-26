@@ -1,0 +1,147 @@
+.about {
+  gap: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+.about .dp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .dp picture {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.about .dp picture img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.about .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.375rem;
+  font-size: 18px;
+}
+
+.about .description .handWave {
+  display: inline-block;
+  animation: 2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 0s infinite normal both
+    running hellow_animation;
+}
+
+.about .description .hellow {
+  background-image: linear-gradient(
+    to left,
+    rgb(252, 103, 158),
+    rgb(6, 105, 179)
+  );
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 400;
+}
+
+.about .description .hellow span {
+  font-weight: 100;
+}
+
+.about .description .main_buttons a {
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about .description .main_buttons a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@media screen and (max-width: 992px) {
+  .about .dp {
+    width: 100%;
+    height: unset;
+  }
+
+  .about .dp picture {
+    height: 250px;
+    width: 250px;
+  }
+
+  .about .description {
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+  }
+
+  .about .description .hellow {
+    margin-bottom: 0px;
+  }
+
+  .about .description .name {
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about .dp {
+    width: 100%;
+    height: unset;
+  }
+
+  .about .dp picture {
+    height: 200px;
+    width: 200px;
+  }
+
+  .about .description {
+    height: unset;
+    width: 95%;
+    margin: auto;
+    margin-top: 0px;
+    font-size: 15px;
+  }
+
+  .about .description .hellow {
+    margin-bottom: 0px;
+  }
+
+  .about .description .name {
+    margin-bottom: 0.3rem;
+  }
+}
+
+@keyframes hellow_animation {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 100% 100%;
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20%,
+  40%,
+  60% {
+    transform: rotate(-4deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(2deg);
+  }
+}

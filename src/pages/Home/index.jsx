@@ -1,4 +1,4 @@
-import "./index.scss";
+import "./index.css";
 import About from "./Sections/About";
 import Experiences from "./Sections/Experiences";
 import Skills from "./Sections/Skills";
@@ -7,7 +7,6 @@ import Blogs from "./Sections/Blogs";
 import Certificates from "./Sections/Certificates";
 import Activity from "./Sections/Activity";
 import Contact from "./Sections/Contact";
-
 
 const Home = ({ refs }) => {
   return (

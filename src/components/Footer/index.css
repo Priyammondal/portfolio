@@ -1,0 +1,88 @@
+.footer {
+  background-color: #1a202c;
+  color: #fff;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border-top: 1px solid #ccc;
+  position: relative;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer .copyright {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer .copyright p {
+  margin: 0;
+}
+
+.footer .quote {
+  flex: 2;
+  width: 100%;
+}
+
+.footer .quote q {
+  font: 400 1.1rem "Open Sans", sans-serif;
+  margin: 0px;
+}
+
+.footer .socialLinks {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer .socialLinks p {
+  margin: 0;
+}
+
+.footer .socialLinks article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.footer .socialLinks article a {
+  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer .socialLinks article a:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@media screen and (max-width: 992px) {
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer .quote {
+    order: 1;
+    border: none;
+  }
+
+  .footer .socialLinks {
+    order: 2;
+  }
+
+  .footer .socialLinks p {
+    display: none;
+  }
+
+  .footer .copyright {
+    order: 3;
+  }
+}

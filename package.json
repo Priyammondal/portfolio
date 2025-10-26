@@ -12,7 +12,7 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "push": "git add . && git commit -m \"fix\" && git push && npm run build"
+    "push": "git add . && git commit -m \"fix\" && git push && npm run build && npm run deploy"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",

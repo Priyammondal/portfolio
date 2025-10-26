@@ -1,9 +1,9 @@
-.blogs {
-  .blogCardWrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
+.blogs .blogCardWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 90% !important;
+  margin: auto;
 }
 
 @media (max-width: 992px) {
@@ -17,5 +17,6 @@
     height: 70vh;
     overflow: scroll;
     scrollbar-width: none;
+    width: 100% !important;
   }
 }

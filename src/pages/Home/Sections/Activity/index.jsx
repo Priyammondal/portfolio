@@ -1,4 +1,4 @@
-import "./index.scss";
+import "./index.css";
 import GitHubCalendar from "react-github-calendar";
 import Tooltip from "@mui/material/Tooltip";
 
@@ -66,8 +66,8 @@ const Activity = forwardRef((props, ref) => {
                 activity.count > 1
                   ? `${activity.count} contributiona on ${activity.date}`
                   : activity.count === 1
-                    ? `${activity.count} contribution on ${activity.date}`
-                    : `No contributions on ${activity.date}`
+                  ? `${activity.count} contribution on ${activity.date}`
+                  : `No contributions on ${activity.date}`
               }
             >
               {block}

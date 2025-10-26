@@ -27,7 +27,7 @@ import delta from "./images/projects/delta.png";
 import taskify from "./images/projects/taskify.png";
 
 // Certificate pictures
-import certificate1 from "./images/certificates/Javascript Algorithms And Data Structures.png";
+import js_algo_ds_freecodecamp from "./images/certificates/Javascript Algorithms And Data Structures.png";
 import certificate14 from "./images/certificates/namaste-javascript-certificate.webp";
 import certificate2 from "./images/certificates/namaste-react-certificate.png";
 import certificate3 from "./images/certificates/react_basic.png";
@@ -43,6 +43,162 @@ import certificate13 from "./images/certificates/kshitij_robotics.png";
 import certificate12 from "./images/certificates/smartjob.png";
 import certificate15 from "./images/certificates/programming-with-python-3-x.png";
 import certificate16 from "./images/certificates/data-visualization-with-python.png";
+import front_end_developer_react_hackerrank from "./images/certificates/front-end-developer-react-hackerrank.png";
+import introduction_to_ai_google from "./images/certificates/introduction-to-ai-google.jpg";
+import introduction_to_frontend_development_meta from "./images/certificates/introduction-to-frontend-development-meta.jpg";
+import programming_with_js_meta from "./images/certificates/programming-with-js-meta.jpg";
+
+export const certificates = [
+  {
+    id: 19,
+    name: "Introduction to Front-End Development",
+    organization: "Meta",
+    image: introduction_to_frontend_development_meta,
+    credential:
+      "https://www.coursera.org/account/accomplishments/verify/YKYEBAFU4VRE",
+  },
+  {
+    id: 20,
+    name: "Programming with JavaScript",
+    organization: "Meta",
+    image: programming_with_js_meta,
+    credential:
+      "https://www.coursera.org/account/accomplishments/verify/E71CHTQFQLYX",
+  },
+  {
+    id: 18,
+    name: "Introduction to AI",
+    organization: "Google",
+    image: introduction_to_ai_google,
+    credential:
+      "https://www.coursera.org/account/accomplishments/verify/YNUYR8X9OTT8",
+  },
+  {
+    id: 1,
+    name: "Javascript Algorithms and Data Structures",
+    organization: "freeCodeCamp",
+    image: js_algo_ds_freecodecamp,
+    credential:
+      "https://www.freecodecamp.org/certification/priyammondal/javascript-algorithms-and-data-structures",
+  },
+
+  {
+    id: 2,
+    name: "Namaste React",
+    organization: "NamasteDev.com",
+    image: certificate2,
+    credential:
+      "https://namastedev.com/priyammondal096/certificates/namaste-react",
+  },
+  {
+    id: 14,
+    name: "Namaste JavaScript",
+    organization: "NamasteDev.com",
+    image: certificate14,
+    credential:
+      "https://namastedev.com/priyammondal096/certificates/namaste-javascript",
+  },
+  {
+    id: 17,
+    name: "Frontend Developer (React)",
+    organization: "HackarRank",
+    image: front_end_developer_react_hackerrank,
+    credential: "https://www.hackerrank.com/certificates/379e5cbe497c",
+  },
+  {
+    id: 3,
+    name: "React(Basic)",
+    organization: "HackarRank",
+    image: certificate3,
+    credential: "https://www.hackerrank.com/certificates/bfe599bca035",
+  },
+  {
+    id: 4,
+    name: "JavaScript(Basic)",
+    organization: "HackarRank",
+    image: certificate4,
+    credential: "https://www.hackerrank.com/certificates/033a6b3f4639",
+  },
+  {
+    id: 5,
+    name: "Python(Basic)",
+    organization: "HackarRank",
+    image: certificate5,
+    credential: "https://www.hackerrank.com/certificates/eaff967815ec",
+  },
+  {
+    id: 6,
+    name: "A Foundation Program in full Stack",
+    organization: "GreyCampus",
+    image: certificate6,
+    credential: "",
+  },
+  {
+    id: 7,
+    name: "A Foundation Program in data science",
+    organization: "GreyCampus",
+    image: certificate7,
+    credential: "",
+  },
+  {
+    id: 8,
+    name: "Front end Development - HTML",
+    organization: "greatlearning",
+    image: certificate8,
+    credential: "",
+  },
+  {
+    id: 9,
+    name: "Front end Development - CSS",
+    organization: "greatlearning",
+    image: certificate9,
+    credential: "",
+  },
+  {
+    id: 15,
+    name: "Programming with Python 3.X",
+    organization: "SkillUP",
+    image: certificate15,
+    credential:
+      "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxMTY5IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfMzUwNTQ5NV8xNjU0MzI4MTE4LnBuZyIsInVzZXJuYW1lIjoiUHJpeWFtIE1vbmRhbCJ9",
+  },
+  {
+    id: 16,
+    name: "Data Visualization with Python",
+    organization: "Coursera",
+    image: certificate16,
+    credential:
+      "https://www.coursera.org/account/accomplishments/verify/NT5CJF6UDBW6",
+  },
+  {
+    id: 10,
+    name: "Problem Solving Through Programming in C",
+    organization: "NPTEL",
+    image: certificate10,
+    credential: "",
+  },
+  {
+    id: 11,
+    name: "Speaking Effectively",
+    organization: "NPTEL",
+    image: certificate11,
+    credential: "",
+  },
+  {
+    id: 12,
+    name: "Aptitude, Verbal Ability and Technical tests",
+    organization: "IEM America",
+    image: certificate12,
+    credential: "",
+  },
+  {
+    id: 13,
+    name: "Robotics Workshop",
+    organization: "KSHITIJ, IIT Kharagpur",
+    image: certificate13,
+    credential: "",
+  },
+];
 
 export const projects = [
   {
@@ -289,126 +445,6 @@ export const skills = [
     link: "https://www.postgresql.org/",
     type: "database",
     image: postgreSQL,
-  },
-];
-
-export const certificates = [
-  {
-    id: 1,
-    name: "Javascript Algorithms and Data Structures",
-    organization: "freeCodeCamp",
-    image: certificate1,
-    credential:
-      "https://www.freecodecamp.org/certification/priyammondal/javascript-algorithms-and-data-structures",
-  },
-  {
-    id: 2,
-    name: "Namaste React",
-    organization: "NamasteDev.com",
-    image: certificate2,
-    credential:
-      "https://namastedev.com/priyammondal096/certificates/namaste-react",
-  },
-  {
-    id: 14,
-    name: "Namaste JavaScript",
-    organization: "NamasteDev.com",
-    image: certificate14,
-    credential:
-      "https://namastedev.com/priyammondal096/certificates/namaste-javascript",
-  },
-  {
-    id: 3,
-    name: "React(Basic)",
-    organization: "HackarRank",
-    image: certificate3,
-    credential: "https://www.hackerrank.com/certificates/bfe599bca035",
-  },
-  {
-    id: 4,
-    name: "JavaScript(Basic)",
-    organization: "HackarRank",
-    image: certificate4,
-    credential: "https://www.hackerrank.com/certificates/033a6b3f4639",
-  },
-  {
-    id: 5,
-    name: "Python(Basic)",
-    organization: "HackarRank",
-    image: certificate5,
-    credential: "https://www.hackerrank.com/certificates/eaff967815ec",
-  },
-  {
-    id: 6,
-    name: "A Foundation Program in full Stack",
-    organization: "GreyCampus",
-    image: certificate6,
-    credential: "",
-  },
-  {
-    id: 7,
-    name: "A Foundation Program in data science",
-    organization: "GreyCampus",
-    image: certificate7,
-    credential: "",
-  },
-  {
-    id: 8,
-    name: "Front end Development - HTML",
-    organization: "greatlearning",
-    image: certificate8,
-    credential: "",
-  },
-  {
-    id: 9,
-    name: "Front end Development - CSS",
-    organization: "greatlearning",
-    image: certificate9,
-    credential: "",
-  },
-  {
-    id: 15,
-    name: "Programming with Python 3.X",
-    organization: "SkillUP",
-    image: certificate15,
-    credential:
-      "https://www.simplilearn.com/skillup-certificate-landing?token=eyJjb3Vyc2VfaWQiOiIxMTY5IiwiY2VydGlmaWNhdGVfdXJsIjoiaHR0cHM6XC9cL2NlcnRpZmljYXRlcy5zaW1wbGljZG4ubmV0XC9zaGFyZVwvdGh1bWJfMzUwNTQ5NV8xNjU0MzI4MTE4LnBuZyIsInVzZXJuYW1lIjoiUHJpeWFtIE1vbmRhbCJ9&utm_source=shared-certificate&utm_medium=app_lms&utm_campaign=shared-certificate-promotion&referrer=https%3A%2F%2Fcertificates.simplicdn.net%2Fshare%2Fthumb_3505495_1654328118.png&_branch_match_id=1354071839220789069&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL87MLcjJ1EssKNDLyczL1jc1sHSqNEgqcixMAgCpxxlIIwAAAA%3D%3D",
-  },
-  {
-    id: 16,
-    name: "Data Visualization with Python",
-    organization: "Coursera",
-    image: certificate16,
-    credential:
-      "https://www.coursera.org/account/accomplishments/verify/NT5CJF6UDBW6?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project",
-  },
-  {
-    id: 10,
-    name: "Problem Solving Through Programming in C",
-    organization: "NPTEL",
-    image: certificate10,
-    credential: "",
-  },
-  {
-    id: 11,
-    name: "Speaking Effectively",
-    organization: "NPTEL",
-    image: certificate11,
-    credential: "",
-  },
-  {
-    id: 12,
-    name: "Aptitude, Verbal Ability and Technical tests",
-    organization: "IEM America",
-    image: certificate12,
-    credential: "",
-  },
-  {
-    id: 13,
-    name: "Robotics Workshop",
-    organization: "KSHITIJ, IIT Kharagpur",
-    image: certificate13,
-    credential: "",
   },
 ];
 

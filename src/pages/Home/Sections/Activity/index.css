@@ -1,0 +1,69 @@
+.activity {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.activity #activityHeading {
+  height: 2px;
+  opacity: 0;
+}
+
+.activity .activity_graph a {
+  display: flex;
+  justify-content: center;
+}
+
+.activity .activity_graph a img {
+  width: 70%;
+}
+
+.activity .contribution_info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.activity .contribution_info img {
+  height: 150px;
+}
+
+.activity .github_push {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .activity .activity_graph,
+  .activity .githubStat {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .activity .activity_graph,
+  .activity .githubStat,
+  .activity .github_push,
+  .activity .contribution_info {
+    width: 100% !important;
+  }
+
+  .activity .contribution_info {
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .activity .contribution_info a {
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+
+  .activity .contribution_info a img {
+    width: 100%;
+    height: unset;
+  }
+}

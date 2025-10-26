@@ -3,6 +3,36 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react({ jsxRuntime: "automatic" })],
+  
   base: "https://Priyammondal.github.io/portfolio",
+
+  build: {
+    target: "esnext",
+    minify: "terser",
+    terserOptions: {
+      compress: {
+        drop_console: true, // remove console logs
+        drop_debugger: true,
+      },
+    },
+    cssCodeSplit: true, // split CSS per component
+    sourcemap: false,
+    chunkSizeWarningLimit: 600,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom"],
+        },
+      },
+    },
+  },
+
+  optimizeDeps: {
+    include: ["react", "react-dom"],
+  },
+
+  server: {
+    open: true,
+  },
 });

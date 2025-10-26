@@ -1,4 +1,4 @@
-import "./index.scss";
+import "./index.css";
 import { certificates } from "../../../../assets/data";
 import { Link } from "react-router-dom";
 import { forwardRef, useEffect, useState } from "react";

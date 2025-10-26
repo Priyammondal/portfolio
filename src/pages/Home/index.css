@@ -1,0 +1,25 @@
+.body-main {
+  background-color: #2d3748;
+}
+
+.body-main #sideNav {
+  border-radius: 999px;
+  padding: 25px 10px;
+  position: fixed;
+  top: 30vh;
+  right: 2px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 100;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.body-main #sideNav a svg {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.body-main #sideNav a svg:hover {
+  transform: translateY(-5px);
+}

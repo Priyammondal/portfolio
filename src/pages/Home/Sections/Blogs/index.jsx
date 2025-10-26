@@ -1,5 +1,5 @@
 import { forwardRef, useEffect, useState } from "react";
-import "./index.scss";
+import "./index.css";
 import BlogCard from "../../../../components/BlogCard";
 import { Link } from "react-router-dom";
 const Blogs = forwardRef((props, ref) => {

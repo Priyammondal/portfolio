@@ -1,5 +1,5 @@
 import { forwardRef, useState } from "react";
-import "./index.scss";
+import "./index.css";
 import { skills } from "../../../../assets/data";
 import { GiSpiderWeb } from "react-icons/gi";
 import { BiDesktop } from "react-icons/bi";

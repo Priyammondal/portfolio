@@ -1,0 +1,68 @@
+.notFound {
+  height: 100vh;
+}
+
+.notFound .mainbox {
+  background-color: #95c2de;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.notFound .mainbox .digit404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.notFound .err {
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 11rem;
+}
+
+.notFound .far {
+  font-size: 7.8rem;
+  color: #ffffff;
+}
+
+.notFound .err2 {
+  color: #ffffff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 11rem;
+}
+
+.notFound .msg {
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  width: 90%;
+  margin: auto;
+}
+
+.notFound a {
+  text-decoration: none;
+  color: white;
+}
+
+.notFound a:hover {
+  text-decoration: underline;
+}
+
+.notFound .fa-spin {
+  animation: spin 5s linear infinite;
+}
+
+@media screen and (max-width: 768px) {
+  .notFound .msg {
+    font-size: 1rem;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}

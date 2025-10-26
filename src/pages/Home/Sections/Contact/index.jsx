@@ -1,5 +1,5 @@
 import { forwardRef, useRef } from "react";
-import "./index.scss";
+import "./index.css";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";

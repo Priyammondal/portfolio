@@ -1,4 +1,4 @@
-import "./index.scss";
+import "./index.css";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { footerSocials } from "../../assets/data";

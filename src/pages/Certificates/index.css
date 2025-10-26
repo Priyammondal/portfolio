@@ -1,0 +1,45 @@
+.certificatesPage {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.certificatesPage .certificateCard img {
+  width: 90%;
+  height: 360px;
+}
+
+.certificatesPage .certificateCard:nth-child(odd) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 992px) {
+  .certificatesPage .certificateCard img {
+    width: 100%;
+    height: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+  .certificatesPage {
+    grid-template-columns: unset;
+  }
+
+  .certificatesPage .certificateCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .certificatesPage .certificateCard img {
+    height: 300px;
+  }
+
+  .certificatesPage .certificateCard:nth-child(odd) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

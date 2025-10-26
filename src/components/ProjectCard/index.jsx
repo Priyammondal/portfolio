@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.scss";
+import "./index.css";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 

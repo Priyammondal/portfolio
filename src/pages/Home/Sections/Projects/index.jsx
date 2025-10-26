@@ -1,4 +1,4 @@
-import "./index.scss";
+import "./index.css";
 import { projects } from "../../../../assets/data";
 import ProjectCard from "../../../../components/ProjectCard";
 import { Link } from "react-router-dom";

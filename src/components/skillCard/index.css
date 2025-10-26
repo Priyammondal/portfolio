@@ -10,20 +10,24 @@
   text-decoration: none;
   color: white;
   transition: all 0.5s ease-in-out;
-  background-color: #2D3748;
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  }
-  img {
-    width: 26px;
-    height: 26px;
-  }
-  p {
-    margin: 0;
-  }
+  background-color: #2d3748;
 }
+
+.skillCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.skillCard img {
+  width: 26px;
+  height: 26px;
+}
+
+.skillCard p {
+  margin: 0;
+}
+
 @media screen and (max-width: 767px) {
   .skillCard {
     width: 100%;

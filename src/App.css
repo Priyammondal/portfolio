@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
 .main-component {
   color: white;
   font-family: "Roboto", sans-serif;
@@ -11,7 +12,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  // background: #1a202c;
+  /* background: #1a202c; */
 }
 
 /* Handle */
@@ -39,13 +40,15 @@
   right: 20px;
   opacity: 1;
   z-index: 100;
-  &:hover {
-    opacity: 0.8;
-  }
-  svg {
-    font-size: 1.5rem;
-    color: #fff;
-  }
+}
+
+#scrollToTop:hover {
+  opacity: 0.8;
+}
+
+#scrollToTop svg {
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 @keyframes upanddown {
@@ -53,17 +56,19 @@
     transform: translateY(-5px);
   }
 }
+
 .App {
   min-height: 100vh;
   background-color: #1a202c;
-  #skillsHeading,
-  #projectsHeading,
-  #blogsHeading,
-  #certificatesHeading,
-  #contactHeading {
-    border-bottom: 2px solid white;
-    width: fit-content;
-    margin: auto;
-    padding-bottom: 5px;
-  }
+}
+
+.App #skillsHeading,
+.App #projectsHeading,
+.App #blogsHeading,
+.App #certificatesHeading,
+.App #contactHeading {
+  border-bottom: 2px solid white;
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 5px;
 }

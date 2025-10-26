@@ -1,9 +1,15 @@
 import React from "react";
-import "./index.scss";
+import "./index.css";
 
-const index = ({ name, description, link, type, image }) => {
+const index = ({ name, link, image }) => {
   return (
-    <a href={link} target="_blank" className="skillCard" title={name}>
+    <a
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+      className="skillCard"
+      title={name}
+    >
       <img src={image} alt={name} />
       <p>{name}</p>
     </a>

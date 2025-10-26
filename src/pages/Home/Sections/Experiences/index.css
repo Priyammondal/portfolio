@@ -1,0 +1,150 @@
+#timeline {
+  width: 90%;
+  margin: auto;
+  background-color: inherit;
+}
+
+#timeline #experienceHeading {
+  height: 2px;
+  opacity: 0;
+}
+
+#timeline .timelineBox {
+  width: 100%;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#timeline .timelineBox::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  background-color: inherit;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  top: 0%;
+  bottom: 0%;
+  left: 50%;
+  margin-left: -3px;
+}
+
+#timeline .timelineItem {
+  position: relative;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+
+#timeline .timelineItem:nth-child(odd) {
+  text-align: right;
+}
+
+#timeline .timelineItem:nth-child(odd)::after {
+  animation: upanddown 0.7s infinite ease-in alternate;
+}
+
+#timeline .timelineItem:nth-child(even) {
+  text-align: left;
+}
+
+#timeline .timelineItem:nth-child(even)::after {
+  animation: upanddown 0.8s infinite ease-in alternate;
+}
+
+#timeline .timelineItem::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  background-color: inherit;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#timeline .timelineItem a {
+  text-decoration: none;
+  color: white;
+}
+
+#timeline .timelineItem a div {
+  padding: 20px;
+  background-color: inherit;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgb(45, 55, 72);
+  transition: all 0.5s ease;
+}
+
+#timeline .timelineItem a div:hover {
+  transform: translateY(-5px);
+}
+
+#timeline .leftTimeLine {
+  padding: 1rem 3rem 1rem 5px;
+  left: 0;
+}
+
+#timeline .rightTimeLine {
+  padding: 1rem 5px 1rem 3rem;
+  left: 50%;
+}
+
+#timeline .rightTimeLine::after {
+  left: -11px;
+}
+
+@media screen and (max-width: 767px) {
+  #timeline {
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: 100%;
+  }
+
+  #timeline::-webkit-scrollbar {
+    display: none;
+  }
+
+  #timeline .timelineBox::after {
+    left: 31px;
+    width: 5px;
+  }
+
+  #timeline .timelineItem {
+    width: 100%;
+    padding-left: 4rem !important;
+    padding-right: 1rem !important;
+  }
+
+  #timeline .timelineItem::after {
+    height: 14px;
+    width: 15px;
+    left: 22px;
+  }
+
+  #timeline .timelineItem:nth-child(odd) {
+    text-align: left;
+  }
+
+  #timeline .timelineItem a div {
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  #timeline .leftTimeLine {
+    left: 0;
+  }
+
+  #timeline .rightTimeLine {
+    left: 0;
+  }
+}
