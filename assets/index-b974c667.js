@@ -1,1 +1,0 @@
-import{j as a}from"./index-e92efd59.js";import{p as s}from"./data-826d871f.js";import{P as r}from"./index-36236145.js";import"./react-be83bd97.js";import"./index-1e611213.js";const t=()=>a.jsx("div",{className:"projectsPage container my-5",children:s.map(s=>a.jsx(r,{data:s},s.id))});export{t as default};
