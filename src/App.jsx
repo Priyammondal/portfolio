@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import "./App.css";
-const MainLayout = lazy(() => import("./components/Layout/MainLayout"));
+const MainLayout = lazy(() => import("./Layout/MainLayout"));
 const Home = lazy(() => import("./pages/Home"));
 const Projects = lazy(() => import("./pages/Projects"));
 const Certificates = lazy(() => import("./pages/Certificates"));

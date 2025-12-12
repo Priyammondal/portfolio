@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react({ jsxRuntime: "automatic" })],
   
@@ -12,11 +11,11 @@ export default defineConfig({
     minify: "terser",
     terserOptions: {
       compress: {
-        drop_console: true, // remove console logs
+        drop_console: true,
         drop_debugger: true,
       },
     },
-    cssCodeSplit: true, // split CSS per component
+    cssCodeSplit: true,
     sourcemap: false,
     chunkSizeWarningLimit: 600,
     rollupOptions: {

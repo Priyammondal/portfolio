@@ -13,9 +13,6 @@ import mongodb from "./images/skills/mongodb.png";
 import redis from "./images/skills/redis.png";
 import express from "./images/skills/express.png";
 import styledComponents from "./images/skills/styled-components.svg";
-import dotNet from "./images/skills/NET_Core_Logo.svg";
-import cSharp from "./images/skills/Logo_C_sharp.svg";
-import postgreSQL from "./images/skills/Postgresql_elephant.svg";
 
 // Project pictures
 import XCrypto from "./images/projects/xcrypto.png";
@@ -25,6 +22,7 @@ import employeeManagement from "./images/projects/employe-management.png";
 import techyStar from "./images/projects/techyStar.png";
 import delta from "./images/projects/delta.png";
 import taskify from "./images/projects/taskify.png";
+import Notoora from "./images/projects/Notoora.png";
 
 // Certificate pictures
 import js_algo_ds_freecodecamp from "./images/certificates/Javascript Algorithms And Data Structures.png";
@@ -222,15 +220,15 @@ export const projects = [
     imgSrc: byteJournal,
     github: "https://github.com/Priyammondal/ByteJournal",
   },
-  {
-    id: 5,
-    date: "29/03/2024",
-    title: "Taskify",
+   {
+    id: 8,
+    date: "",
+    title: "Notoora",
     description:
-      "An advanced to-do application built with React and TypeScript. Features drag-and-drop functionality, enabling users to easily organize tasks by dragging them, showcasing the seamless integration of these technologies for a robust user experience.",
-    url: "https://taskify123.netlify.app/",
-    imgSrc: taskify,
-    github: "https://github.com/Priyammondal/taskify",
+      "📝 Notoora — A Modern & Intuitive Note-Taking Application",
+    url: "https://notoora.netlify.app/",
+    imgSrc: Notoora,
+    github: "https://github.com/Priyammondal/notoora",
   },
   {
     id: 1,
@@ -241,6 +239,16 @@ export const projects = [
     url: "https://xcryptotracker.netlify.app/",
     imgSrc: XCrypto,
     github: "https://github.com/Priyammondal/xcrypto",
+  },
+  {
+    id: 5,
+    date: "29/03/2024",
+    title: "Taskify",
+    description:
+      "An advanced to-do application built with React and TypeScript. Features drag-and-drop functionality, enabling users to easily organize tasks by dragging them, showcasing the seamless integration of these technologies for a robust user experience.",
+    url: "https://taskify123.netlify.app/",
+    imgSrc: taskify,
+    github: "https://github.com/Priyammondal/taskify",
   },
   {
     id: 4,
@@ -421,31 +429,7 @@ export const skills = [
     link: "https://redis.io/",
     type: "database",
     image: redis,
-  },
-  {
-    id: 15,
-    name: "C#",
-    description: "Web development",
-    link: "https://dotnet.microsoft.com/en-us/languages/csharp",
-    type: "development",
-    image: cSharp,
-  },
-  {
-    id: 16,
-    name: ".NET Core",
-    description: "Web development",
-    link: "https://dotnet.microsoft.com/",
-    type: "development",
-    image: dotNet,
-  },
-  {
-    id: 17,
-    name: "PostgreSQL",
-    description: "Database",
-    link: "https://www.postgresql.org/",
-    type: "database",
-    image: postgreSQL,
-  },
+  }
 ];
 
 export const footerSocials = [

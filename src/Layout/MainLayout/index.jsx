@@ -1,6 +1,5 @@
-import React from "react";
-import Header from "../../Header/Header";
-import Footer from "../../Footer/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 const MainLayout = ({ children, sectionRefs }) => {
   return (

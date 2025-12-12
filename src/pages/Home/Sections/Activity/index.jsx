@@ -25,7 +25,7 @@ const Activity = forwardRef((props, ref) => {
         </a>
       </section>
 
-      <section className="githubStat my-3 w-50">
+      {/* <section className="githubStat my-3 w-50">
         <a
           href="https://github.com/Priyammondal"
           target="_blank"
@@ -39,8 +39,8 @@ const Activity = forwardRef((props, ref) => {
             src="https://github-readme-stats.vercel.app/api?username=Priyammondal&show_icons=true&theme=dark&locale=en&count_private=true&hide=stars"
           />
         </a>
-      </section>
-
+      </section> */}
+      {/* 
       <section className="contribution_info mb-5 w-75">
         <a href="https://github.com/Priyammondal">
           <img
@@ -54,9 +54,9 @@ const Activity = forwardRef((props, ref) => {
             alt="most used languages"
           />
         </a>
-      </section>
+      </section> */}
 
-      <section className="github_push w-100">
+      <section className="github_push w-100 my-5">
         <GitHubCalendar
           username="Priyammondal"
           colorScheme="light"
