@@ -14,16 +14,6 @@ import redis from "./images/skills/redis.png";
 import express from "./images/skills/express.png";
 import styledComponents from "./images/skills/styled-components.svg";
 
-// Project pictures
-import XCrypto from "./images/projects/xcrypto.png";
-import byteJournal from "./images/projects/bytejournal.png";
-import ecommerceMF from "./images/projects/ecommerce-mf.png";
-import employeeManagement from "./images/projects/employe-management.png";
-import techyStar from "./images/projects/techyStar.png";
-import delta from "./images/projects/delta.png";
-import taskify from "./images/projects/taskify.png";
-import Notoora from "./images/projects/Notoora.png";
-
 // Certificate pictures
 import js_algo_ds_freecodecamp from "./images/certificates/Javascript Algorithms And Data Structures.png";
 import certificate14 from "./images/certificates/namaste-javascript-certificate.webp";
@@ -205,8 +195,7 @@ export const projects = [
     title: "ResumeIQ",
     description:
       "An AI-powered resume analysis platform that helps job seekers improve their resumes with ATS scoring, smart insights, and personalized, actionable feedback.",
-    url: "https://zapstock.netlify.app",
-    imgSrc: "",
+    url: "https://resumeeiq.netlify.app",
     thumbnail: "https://api.iconify.design/mdi:brain.svg?color=%237c3aed",
     github: "https://github.com/PriyamMondal/resumeiq",
   },
@@ -216,8 +205,7 @@ export const projects = [
     title: "ZapStock",
     description:
       "A frontend-focused product dashboard built using React and Vite, featuring localStorage-based data handling and interactive charts powered by Recharts.",
-    url: "https://notoora.netlify.app",
-    imgSrc: "",
+    url: "https://zapstock.netlify.app",
     thumbnail: "https://cdn-icons-png.flaticon.com/512/1828/1828673.png",
     github: "https://github.com/Priyammondal/zapstock",
   },
@@ -228,7 +216,6 @@ export const projects = [
     description:
       "A modern and intuitive note-taking application designed for speed and simplicity, enabling users to manage, organize, and access notes efficiently.",
     url: "https://notoora.netlify.app",
-    imgSrc: Notoora,
     thumbnail: "https://cdn-icons-png.flaticon.com/512/5301/5301915.png",
     github: "https://github.com/Priyammondal/notoora",
   },
@@ -239,8 +226,7 @@ export const projects = [
     description:
       "An e-commerce application built with React using microfrontend architecture and module federation for scalable, independent, and maintainable modules.",
     url: "https://e-commerce-module-federation.netlify.app/",
-    imgSrc: ecommerceMF,
-    thumbnail: "",
+    thumbnail: "https://api.iconify.design/mdi:image-outline.svg",
     github:
       "https://github.com/Priyammondal/e-commerce-micro-frontend-react-application",
   },
@@ -251,7 +237,6 @@ export const projects = [
     description:
       "A full-stack MERN blog platform featuring rich text editing, JWT-based authentication, and a secure, seamless experience for content creation.",
     url: "https://bytejournal.netlify.app",
-    imgSrc: byteJournal,
     thumbnail: "https://bytejournal.netlify.app/favicon/apple-touch-icon.png",
     github: "https://github.com/Priyammondal/ByteJournal",
   },
@@ -262,8 +247,7 @@ export const projects = [
     description:
       "A cryptocurrency tracking interface built with React, integrating real-time market data, responsive UI, and interactive charts for detailed analysis.",
     url: "https://xcryptotracker.netlify.app",
-    imgSrc: XCrypto,
-    thumbnail: "",
+    thumbnail: "https://api.iconify.design/mdi:image-outline.svg",
     github: "https://github.com/Priyammondal/xcrypto",
   },
   {
@@ -273,8 +257,7 @@ export const projects = [
     description:
       "A TypeScript-based task management application with drag-and-drop functionality, allowing users to efficiently organize and prioritize tasks.",
     url: "https://taskify123.netlify.app",
-    imgSrc: taskify,
-    thumbnail: "",
+    thumbnail: "https://api.iconify.design/mdi:image-outline.svg",
     github: "https://github.com/Priyammondal/taskify",
   },
   {
@@ -284,8 +267,7 @@ export const projects = [
     description:
       "A lightweight employee database management system built with HTML, CSS, and JavaScript, offering a clean UI for efficient data handling.",
     url: "https://employee-database-management-js.netlify.app",
-    imgSrc: employeeManagement,
-    thumbnail: "",
+    thumbnail: "https://api.iconify.design/mdi:image-outline.svg",
     github:
       "https://github.com/Priyammondal/Frontend-machine-coding/tree/main/Employee%20Database%20Management",
   },
@@ -296,8 +278,7 @@ export const projects = [
     description:
       "A responsive React website built with Styled Components, leveraging modular components and modern design principles for better accessibility.",
     url: "https://delta123.netlify.app",
-    imgSrc: delta,
-    thumbnail: "",
+    thumbnail: "https://api.iconify.design/mdi:image-outline.svg",
     github: "https://github.com/Priyammondal/delta",
   },
   {
@@ -307,8 +288,7 @@ export const projects = [
     description:
       "A modern React-based website with a sleek design and responsive layout, ensuring a smooth and user-friendly experience across devices.",
     url: "https://techystar-inn.netlify.app",
-    imgSrc: techyStar,
-    thumbnail: "",
+    thumbnail: "https://api.iconify.design/mdi:image-outline.svg",
     github: "",
   },
 ];

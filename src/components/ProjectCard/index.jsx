@@ -18,7 +18,7 @@ const ProjectCard = ({ data }) => {
       {/* LEFT */}
       <div className="project-thumb">
         <img
-          src={data.thumbnail || data.imgSrc}
+          src={data.thumbnail}
           alt={data.title}
           loading="lazy"
         />
