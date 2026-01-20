@@ -200,88 +200,119 @@ export const certificates = [
 
 export const projects = [
   {
-    id: 3,
+    id: 10,
     date: "",
-    title: "Shop.",
+    title: "ResumeIQ",
     description:
-      "An e-commerce application utilizing React with a microfrontend architecture and module federation. This approach ensures scalable, independent modules, enhancing flexibility and maintainability throughout the application.",
-    url: "https://e-commerce-module-federation.netlify.app/",
-    imgSrc: ecommerceMF,
-    github:
-      "https://github.com/Priyammondal/e-commerce-micro-frontend-react-application",
+      "An AI-powered resume analysis platform that helps job seekers improve their resumes with ATS scoring, smart insights, and personalized, actionable feedback.",
+    url: "https://zapstock.netlify.app",
+    imgSrc: "",
+    thumbnail: "https://api.iconify.design/mdi:brain.svg?color=%237c3aed",
+    github: "https://github.com/PriyamMondal/resumeiq",
   },
   {
-    id: 2,
+    id: 9,
     date: "",
-    title: "ByteJournal",
+    title: "ZapStock",
     description:
-      "ByteJournal is a MERN stack blog application featuring a Reach Editor for creating posts. It includes a login and registration system with JWT authentication, providing secure access and a seamless user experience.",
-    url: "https://bytejournal.netlify.app/",
-    imgSrc: byteJournal,
-    github: "https://github.com/Priyammondal/ByteJournal",
+      "A frontend-focused product dashboard built using React and Vite, featuring localStorage-based data handling and interactive charts powered by Recharts.",
+    url: "https://notoora.netlify.app",
+    imgSrc: "",
+    thumbnail: "https://cdn-icons-png.flaticon.com/512/1828/1828673.png",
+    github: "https://github.com/Priyammondal/zapstock",
   },
-   {
+  {
     id: 8,
     date: "",
     title: "Notoora",
     description:
-      "📝 Notoora — A Modern & Intuitive Note-Taking Application",
-    url: "https://notoora.netlify.app/",
+      "A modern and intuitive note-taking application designed for speed and simplicity, enabling users to manage, organize, and access notes efficiently.",
+    url: "https://notoora.netlify.app",
     imgSrc: Notoora,
+    thumbnail: "https://cdn-icons-png.flaticon.com/512/5301/5301915.png",
     github: "https://github.com/Priyammondal/notoora",
   },
   {
-    id: 1,
+    id: 7,
     date: "",
-    title: "XCrypto",
+    title: "Shop.",
     description:
-      "A dynamic cryptocurrency tracker and trading interface in React.js. Integrates real-time exchange data from APIs, uses Chakra UI for responsive design, and features interactive coin value graphs for thorough tracking across devices.",
-    url: "https://xcryptotracker.netlify.app/",
-    imgSrc: XCrypto,
-    github: "https://github.com/Priyammondal/xcrypto",
+      "An e-commerce application built with React using microfrontend architecture and module federation for scalable, independent, and maintainable modules.",
+    url: "https://e-commerce-module-federation.netlify.app/",
+    imgSrc: ecommerceMF,
+    thumbnail: "",
+    github:
+      "https://github.com/Priyammondal/e-commerce-micro-frontend-react-application",
+  },
+  {
+    id: 6,
+    date: "",
+    title: "ByteJournal",
+    description:
+      "A full-stack MERN blog platform featuring rich text editing, JWT-based authentication, and a secure, seamless experience for content creation.",
+    url: "https://bytejournal.netlify.app",
+    imgSrc: byteJournal,
+    thumbnail: "https://bytejournal.netlify.app/favicon/apple-touch-icon.png",
+    github: "https://github.com/Priyammondal/ByteJournal",
   },
   {
     id: 5,
-    date: "29/03/2024",
-    title: "Taskify",
+    date: "",
+    title: "XCrypto",
     description:
-      "An advanced to-do application built with React and TypeScript. Features drag-and-drop functionality, enabling users to easily organize tasks by dragging them, showcasing the seamless integration of these technologies for a robust user experience.",
-    url: "https://taskify123.netlify.app/",
-    imgSrc: taskify,
-    github: "https://github.com/Priyammondal/taskify",
+      "A cryptocurrency tracking interface built with React, integrating real-time market data, responsive UI, and interactive charts for detailed analysis.",
+    url: "https://xcryptotracker.netlify.app",
+    imgSrc: XCrypto,
+    thumbnail: "",
+    github: "https://github.com/Priyammondal/xcrypto",
   },
   {
     id: 4,
+    date: "29/03/2024",
+    title: "Taskify",
+    description:
+      "A TypeScript-based task management application with drag-and-drop functionality, allowing users to efficiently organize and prioritize tasks.",
+    url: "https://taskify123.netlify.app",
+    imgSrc: taskify,
+    thumbnail: "",
+    github: "https://github.com/Priyammondal/taskify",
+  },
+  {
+    id: 3,
     date: "",
     title: "Employee Directory",
     description:
-      "An employee DB management project using pure HTML, CSS, and JS. Features a clean interface for efficient employee data handling and management.",
-    url: "https://employee-database-management-js.netlify.app/",
+      "A lightweight employee database management system built with HTML, CSS, and JavaScript, offering a clean UI for efficient data handling.",
+    url: "https://employee-database-management-js.netlify.app",
     imgSrc: employeeManagement,
+    thumbnail: "",
     github:
       "https://github.com/Priyammondal/Frontend-machine-coding/tree/main/Employee%20Database%20Management",
   },
   {
-    id: 6,
+    id: 2,
     date: "16/09/2023",
     title: "Delta",
     description:
-      "A streamlined website built with React and Styled Components. It leverages React's component-based architecture for modular code and implements responsive design principles to ensure enhanced accessibility across devices.",
-    url: "https://delta123.netlify.app/",
+      "A responsive React website built with Styled Components, leveraging modular components and modern design principles for better accessibility.",
+    url: "https://delta123.netlify.app",
     imgSrc: delta,
+    thumbnail: "",
     github: "https://github.com/Priyammondal/delta",
   },
   {
-    id: 7,
+    id: 1,
     date: "07/10/2022",
     title: "TECHY STAR",
     description:
-      "A sleek website with modern design aesthetics built using React.js. It employs responsive design principles for seamless adaptability across devices, ensuring a user-friendly experience.",
-    url: "https://techystar-inn.netlify.app/",
+      "A modern React-based website with a sleek design and responsive layout, ensuring a smooth and user-friendly experience across devices.",
+    url: "https://techystar-inn.netlify.app",
     imgSrc: techyStar,
+    thumbnail: "",
     github: "",
   },
 ];
+
 
 export const experiences = [
   {

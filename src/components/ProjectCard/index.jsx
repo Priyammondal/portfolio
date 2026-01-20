@@ -1,45 +1,56 @@
-import React from "react";
 import "./index.css";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const ProjectCard = ({ data }) => {
+  const openLive = () => {
+    window.open(data.url, "_blank", "noopener,noreferrer");
+  };
+
+  const stop = (e) => e.stopPropagation();
+
   return (
-    <div className="projectCard">
-      <h3 className="card-title-mobile d-block d-md-none text-light">{data.title}</h3>
-      <img src={data.imgSrc} alt="Card Image" className="card-image" />
-      <div className="card-content">
-        <h3 className="card-title">{data.title}</h3>
-        <p className="card-description">
-          {data.description || (
-            <>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-              ratione rem sint, qui libero quibusdam dolorem distinctio eligendi
-              repellat hic.
-            </>
+    <div
+      className="project-card"
+      onClick={openLive}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => e.key === "Enter" && openLive()}
+    >
+      {/* LEFT */}
+      <div className="project-thumb">
+        <img
+          src={data.thumbnail || data.imgSrc}
+          alt={data.title}
+          loading="lazy"
+        />
+      </div>
+
+      {/* RIGHT */}
+      <div className="project-info">
+        <h3>{data.title}</h3>
+        <p>{data.description}</p>
+
+        <div className="project-actions">
+          <a
+            href={data.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={stop}
+            className="btn-live"
+          >
+            Live
+          </a>
+
+          {data.github && (
+            <a
+              href={data.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={stop}
+              className="btn-source"
+            >
+              Source
+            </a>
           )}
-        </p>
-        <div className="card-buttons">
-          <Link
-            className="input-group text-decoration-none"
-            to={data.github}
-            target="_blank"
-          >
-            <button className="input-group-text">
-              <FaGithub />
-            </button>
-            <button className="btn btn-outline-light">Github</button>
-          </Link>
-          <Link
-            className="input-group text-decoration-none"
-            to={data.url}
-            target="_blank"
-          >
-            <button className="input-group-text">
-              <FaExternalLinkAlt />
-            </button>
-            <button className="btn btn-outline-light">Demo</button>
-          </Link>
         </div>
       </div>
     </div>

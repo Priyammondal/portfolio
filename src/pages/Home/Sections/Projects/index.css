@@ -17,6 +17,6 @@
   }
 
   .projectCardWrapper {
-    grid-template-columns: unset;
+    grid-template-columns: 1fr;
   }
 }
