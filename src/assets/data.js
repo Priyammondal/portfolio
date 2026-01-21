@@ -190,7 +190,7 @@ export const certificates = [
 
 export const projects = [
   {
-    id: 10,
+    id: 8,
     date: "",
     title: "ResumeIQ",
     description:
@@ -200,7 +200,7 @@ export const projects = [
     github: "https://github.com/PriyamMondal/resumeiq",
   },
   {
-    id: 9,
+    id: 7,
     date: "",
     title: "ZapStock",
     description:
@@ -210,7 +210,7 @@ export const projects = [
     github: "https://github.com/Priyammondal/zapstock",
   },
   {
-    id: 8,
+    id: 6,
     date: "",
     title: "Notoora",
     description:
@@ -220,7 +220,7 @@ export const projects = [
     github: "https://github.com/Priyammondal/notoora",
   },
   {
-    id: 7,
+    id: 5,
     date: "",
     title: "Shop.",
     description:
@@ -231,7 +231,7 @@ export const projects = [
       "https://github.com/Priyammondal/e-commerce-micro-frontend-react-application",
   },
   {
-    id: 6,
+    id: 4,
     date: "",
     title: "ByteJournal",
     description:
@@ -241,7 +241,7 @@ export const projects = [
     github: "https://github.com/Priyammondal/ByteJournal",
   },
   {
-    id: 5,
+    id: 3,
     date: "",
     title: "XCrypto",
     description:
@@ -251,7 +251,7 @@ export const projects = [
     github: "https://github.com/Priyammondal/xcrypto",
   },
   {
-    id: 4,
+    id: 2,
     date: "29/03/2024",
     title: "Taskify",
     description:
@@ -261,7 +261,7 @@ export const projects = [
     github: "https://github.com/Priyammondal/taskify",
   },
   {
-    id: 3,
+    id: 1,
     date: "",
     title: "Employee Directory",
     description:
@@ -270,29 +270,8 @@ export const projects = [
     thumbnail: "https://api.iconify.design/mdi:image-outline.svg",
     github:
       "https://github.com/Priyammondal/Frontend-machine-coding/tree/main/Employee%20Database%20Management",
-  },
-  {
-    id: 2,
-    date: "16/09/2023",
-    title: "Delta",
-    description:
-      "A responsive React website built with Styled Components, leveraging modular components and modern design principles for better accessibility.",
-    url: "https://delta123.netlify.app",
-    thumbnail: "https://api.iconify.design/mdi:image-outline.svg",
-    github: "https://github.com/Priyammondal/delta",
-  },
-  {
-    id: 1,
-    date: "07/10/2022",
-    title: "TECHY STAR",
-    description:
-      "A modern React-based website with a sleek design and responsive layout, ensuring a smooth and user-friendly experience across devices.",
-    url: "https://techystar-inn.netlify.app",
-    thumbnail: "https://api.iconify.design/mdi:image-outline.svg",
-    github: "",
-  },
+  }
 ];
-
 
 export const experiences = [
   {
