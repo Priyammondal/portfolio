@@ -2,17 +2,35 @@ import { forwardRef, useEffect, useState } from "react";
 import "./index.css";
 import BlogCard from "../../../../components/BlogCard";
 import { Link } from "react-router-dom";
+
 const Blogs = forwardRef(({ blogData }, ref) => {
+  const getCardsCount = () => {
+    return window.innerWidth < 767 ? 5 : Infinity;
+  };
+
+  const [cardsToShow, setCardsToShow] = useState(getCardsCount());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setCardsToShow(getCardsCount());
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div ref={ref} className="blogs mx-auto my-5">
       <section className="text-center mb-5">
         <h2 id="blogsHeading">Blogs</h2>
       </section>
+
       <section className="blogCardWrapper">
-        {blogData?.map((blog) => (
+        {blogData?.slice(0, cardsToShow).map((blog) => (
           <BlogCard key={blog.pubDate} data={blog} />
         ))}
       </section>
+
       <Link
         to="https://medium.com/@thepriyammondal"
         target="_blank"

@@ -1,45 +1,111 @@
 .certificatesPage {
-  min-height: 100vh;
+  color: white;
+}
+
+.certificateGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-.certificatesPage .certificateCard img {
-  width: 90%;
-  height: 360px;
-}
-
-.certificatesPage .certificateCard:nth-child(odd) {
-  display: flex;
-  justify-content: flex-end;
-}
-
 @media (max-width: 992px) {
-  .certificatesPage .certificateCard img {
-    width: 100%;
-    height: 280px;
-  }
-}
-
-@media (max-width: 767px) {
-  .certificatesPage {
+  .certificateGrid {
     grid-template-columns: unset;
   }
+}
 
-  .certificatesPage .certificateCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.certificateHeading {
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
 
-  .certificatesPage .certificateCard img {
-    height: 300px;
-  }
+/* Main heading */
+.certificateHeading h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  /* responsive size */
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
 
-  .certificatesPage .certificateCard:nth-child(odd) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/* Decorative underline */
+.certificateHeading h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  /* length of underline */
+  height: 3px;
+  /* thickness */
+  background: #7c3aed;
+  /* accent color */
+  margin: 0.5rem auto 0;
+  /* center under heading */
+  border-radius: 2px;
+}
+
+/* Subheading */
+.certificateHeading p {
+  color: #9ca3af;
+  /* muted gray */
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0.5rem auto 0;
+  line-height: 1.5;
+}
+
+.certificateCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  background: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.06),
+      rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* Image */
+.certificateCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+/* Hover effect */
+.certificateCard:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.45),
+    inset 0 0 0 1px rgba(124, 58, 237, 0.4);
+  border-color: rgba(124, 58, 237, 0.5);
+}
+
+.certificateCard:hover img {
+  transform: scale(1.05);
+}
+
+/* Subtle glow overlay */
+.certificateCard::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top,
+      rgba(124, 58, 237, 0.18),
+      transparent 60%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.certificateCard:hover::after {
+  opacity: 1;
 }

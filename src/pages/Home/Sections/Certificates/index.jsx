@@ -13,14 +13,16 @@ const Certificates = forwardRef((props, ref) => {
       setCardsToShow(window.innerWidth < 767 ? 2 : 4);
     };
 
-      window.addEventListener("resize", handleResize);
-      return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div ref={ref} className="certificates">
       <section className="text-center mb-5">
         <h2 id="certificatesHeading">Certificates</h2>
       </section>
+
       <section className="certificateCardWrapper">
         {certificates.slice(0, cardsToShow).map((certificate) =>
           certificate.credential ? (
@@ -44,6 +46,7 @@ const Certificates = forwardRef((props, ref) => {
           )
         )}
       </section>
+
       <Link className="d-flex text-decoration-none" to="/certificates">
         <button
           title="View More Certificates"

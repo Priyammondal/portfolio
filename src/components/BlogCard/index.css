@@ -1,41 +1,77 @@
 .BlogCard {
   display: flex;
-  gap: 10px;
+  gap: 14px;
+  align-items: center;
+  padding: 14px;
+  border-radius: 14px;
+  background: linear-gradient(145deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e5e7eb;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  border-radius: 10px;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
 }
 
+/* Thumbnail */
 .BlogCard .thumbnail {
-  flex: 1;
+  flex-shrink: 0;
+  width: 90px;
+  height: 70px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #111827;
 }
 
 .BlogCard .thumbnail img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  height: 70px;
+  transition: transform 0.45s ease;
+}
+
+/* Content */
+.BlogCard .content {
+  flex: 1;
 }
 
 .BlogCard .title {
-  flex: 4;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+  color: #f9fafb;
 }
 
+/* Hover */
 .BlogCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  border-color: rgba(124, 58, 237, 0.45);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.45),
+    inset 0 0 0 1px rgba(124, 58, 237, 0.25);
 }
 
+.BlogCard:hover .thumbnail img {
+  transform: scale(1.08);
+}
+
+/* Mobile polish */
 @media (max-width: 767px) {
-  .BlogCard .thumbnail {
-    flex: 2;
+  .BlogCard {
+    padding: 12px;
+    gap: 12px;
   }
 
-  .BlogCard .thumbnail img {
-    height: 90px;
+  .BlogCard .thumbnail {
+    width: 110px;
+    height: 85px;
   }
 
   .BlogCard .title {
-    flex: 3;
-    font-size: 15px;
+    font-size: 0.9rem;
   }
 }

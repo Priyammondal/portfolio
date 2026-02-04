@@ -190,6 +190,16 @@ export const certificates = [
 
 export const projects = [
   {
+    id: 9,
+    date: "",
+    title: "SnapLnk",
+    description:
+      "A modern link shortening platform that helps creators share smarter links with real-time tracking, clean analytics, and audience insights",
+    url: "https://snaplnk.netlify.app",
+    thumbnail: "https://snaplnk.netlify.app/favicon-32x32.png",
+    github: "https://github.com/Priyammondal/SnapLnk",
+  },
+  {
     id: 8,
     date: "",
     title: "ResumeIQ",
