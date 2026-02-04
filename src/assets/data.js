@@ -196,7 +196,7 @@ export const projects = [
     description:
       "A modern link shortening platform that helps creators share smarter links with real-time tracking, clean analytics, and audience insights",
     url: "https://snaplnk.netlify.app",
-    thumbnail: "https://snaplnk.netlify.app/favicon-32x32.png",
+    thumbnail: "https://snaplnk.netlify.app/favicon-512x512.png",
     github: "https://github.com/Priyammondal/SnapLnk",
   },
   {

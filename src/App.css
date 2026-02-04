@@ -72,3 +72,42 @@
   margin: auto;
   padding-bottom: 5px;
 }
+
+
+/* button */
+.btn-live,
+.btn-source {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-live {
+  background: #7c3aed;
+  color: white;
+}
+
+.btn-live:hover {
+  background: #6d28d9;
+}
+
+.btn-source {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: white;
+}
+
+.btn-source:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 767px) {
+  .btn-live,
+  .btn-source {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.85rem;
+  }
+}

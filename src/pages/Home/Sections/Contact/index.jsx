@@ -64,7 +64,7 @@ const Contact = forwardRef((props, ref) => {
   };
   return (
     <div ref={ref} className="contact pb-5">
-      <h2 className="text-center mb-2" id="contactHeading">
+      <h2 className="text-center mb-5" id="contactHeading">
         Get in Touch
       </h2>
       <section className="contact_body mx-auto">
@@ -110,28 +110,20 @@ const Contact = forwardRef((props, ref) => {
           <button
             title="Send Mail Directly"
             type="submit"
-            className="btn btn-outline-warning w-100"
+            className="contact-btn primary w-100"
           >
-            Send Mail Directly
+            Send Message
           </button>
-          <section className="d-flex justify-content-between">
-            <a href="tel:+918328709274">
-              <button
-                title="Call Me"
-                type="button"
-                className="btn btn-success callme"
-              >
-                Call Me
-              </button>
+
+          <section className="contact-actions">
+            <a href="tel:+918328709274" className="contact-btn secondary">
+              Call
             </a>
-            <a href="mailto:priyammondal096@gmail.com">
-              <button
-                title="Mail Me"
-                type="button"
-                className="btn btn-danger mailme"
-              >
-                Mail Me
-              </button>
+            <a
+              href="mailto:priyammondal096@gmail.com"
+              className="contact-btn secondary"
+            >
+              Email
             </a>
           </section>
         </form>
