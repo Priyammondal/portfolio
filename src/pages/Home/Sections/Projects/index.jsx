@@ -6,7 +6,7 @@ import { forwardRef, useEffect, useState } from "react";
 
 const Project = forwardRef((props, ref) => {
   const [cardsToShow, setCardsToShow] = useState(
-    window.innerWidth < 767 ? 2 : 4
+    window.innerWidth < 767 ? 2 : 4,
   );
 
   useEffect(() => {
@@ -30,13 +30,13 @@ const Project = forwardRef((props, ref) => {
         ))}
       </section>
 
-      <Link to="/projects" className="mx-auto mt-5">
-        <button
-          title="View More Projects"
-          className="btn btn-outline-light"
-        >
+      <Link
+        to="/projects"
+        className="d-flex justify-content-center mt-5 text-decoration-none"
+      >
+        <a role="button" title="View More Projects" className="btn-more">
           View More
-        </button>
+        </a>
       </Link>
     </div>
   );

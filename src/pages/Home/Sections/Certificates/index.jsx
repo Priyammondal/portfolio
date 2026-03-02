@@ -5,7 +5,7 @@ import { forwardRef, useEffect, useState } from "react";
 
 const Certificates = forwardRef((props, ref) => {
   const [cardsToShow, setCardsToShow] = useState(
-    window.innerWidth < 767 ? 2 : 4
+    window.innerWidth < 767 ? 2 : 4,
   );
 
   useEffect(() => {
@@ -43,17 +43,18 @@ const Certificates = forwardRef((props, ref) => {
             >
               <img src={certificate.image} alt={certificate.name} />
             </div>
-          )
+          ),
         )}
       </section>
 
       <Link className="d-flex text-decoration-none" to="/certificates">
-        <button
+        <a
+          role="button"
           title="View More Certificates"
-          className="mt-5 btn btn-outline-light mx-auto"
+          className="btn-more mt-5 mx-auto"
         >
           View More
-        </button>
+        </a>
       </Link>
     </div>
   );

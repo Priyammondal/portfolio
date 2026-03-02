@@ -36,9 +36,9 @@ const Blogs = forwardRef(({ blogData }, ref) => {
         target="_blank"
         className="d-flex justify-content-center mt-5 text-decoration-none"
       >
-        <button title="View More Blogs" className="btn btn-outline-light">
+        <a role="button" title="View More Blogs" className="btn-more">
           View More
-        </button>
+        </a>
       </Link>
     </div>
   );

@@ -3,17 +3,13 @@
   gap: 14px;
   align-items: center;
   padding: 14px;
-  border-radius: 14px;
-  background: linear-gradient(145deg,
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0.02));
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   color: #e5e7eb;
   cursor: pointer;
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease,
-    border-color 0.35s ease;
+  transition: all 0.3s ease;
+  will-change: transform;
 }
 
 /* Thumbnail */
@@ -48,11 +44,8 @@
 
 /* Hover */
 .BlogCard:hover {
-  transform: translateY(-4px);
-  border-color: rgba(124, 58, 237, 0.45);
-  box-shadow:
-    0 10px 25px rgba(0, 0, 0, 0.45),
-    inset 0 0 0 1px rgba(124, 58, 237, 0.25);
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.07);
 }
 
 .BlogCard:hover .thumbnail img {

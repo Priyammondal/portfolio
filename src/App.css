@@ -73,10 +73,10 @@
   padding-bottom: 5px;
 }
 
-
 /* button */
 .btn-live,
-.btn-source {
+.btn-source,
+.btn-more {
   padding: 6px 14px;
   font-size: 0.8rem;
   border-radius: 999px;
@@ -93,12 +93,14 @@
   background: #6d28d9;
 }
 
-.btn-source {
+.btn-source,
+.btn-more {
   border: 1px solid rgba(255, 255, 255, 0.25);
   color: white;
 }
 
-.btn-source:hover {
+.btn-source:hover,
+.btn-more:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -111,3 +113,12 @@
     font-size: 0.85rem;
   }
 }
+@media (max-width: 767px) {
+  .btn-more {
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+

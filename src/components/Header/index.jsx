@@ -161,7 +161,7 @@ const Header = ({ sectionRefs }) => {
               </a>
             </li>
             <li className="px-2 pb-1" title="Resume">
-              <a className="nav-link" href={resume} download>
+              <a className="nav-link" href={resume} target="_blank" rel="noreferrer">
                 Resume
               </a>
             </li>
