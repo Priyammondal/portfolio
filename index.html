@@ -1,73 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: light)"
+      content="#ffffff"
+    />
+    <meta
+      name="theme-color"
+      media="(prefers-color-scheme: dark)"
+      content="#1a202c"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="theme-color" content="#1a202c" />
-  <!-- og -->
-  <meta property="og:title" content="Priyam Mondal | Software Engineer" />
-  <meta property="og:description"
-    content="Priyam Mondal is a software engineer — a curious learner driven by 'why' and 'how,' constantly growing and building innovative web solutions." />
-  <meta property="og:site_name" content="Priyam Mondal Portfolio" />
-  <meta property="og:type" content="profile" />
-  <meta property="og:url" content="https://priyammondal.github.io/portfolio" />
-  <meta property="og:image" content="https://priyammondal.github.io/portfolio/priyam.png" />
-  <meta property="og:image:alt" content="Priyam Mondal Profile Picture" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:locale" content="en_US" />
-  <!-- og -->
+    <link
+      rel="preload"
+      href="/priyam.png"
+      as="image"
+      type="image/png"
+      fetchpriority="high"
+    />
+    <!-- og -->
+    <meta property="og:title" content="Priyam Mondal | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Priyam Mondal is a software engineer — a curious learner driven by 'why' and 'how,' constantly growing and building innovative web solutions."
+    />
+    <meta property="og:site_name" content="Priyam Mondal Portfolio" />
+    <meta property="og:type" content="profile" />
+    <meta property="profile:first_name" content="Priyam" />
+    <meta property="profile:last_name" content="Mondal" />
+    <meta property="og:image:type" content="image/png" />
+    <meta
+      property="og:url"
+      content="https://priyammondal.github.io/portfolio/"
+    />
+    <meta
+      property="og:image"
+      content="https://priyammondal.github.io/portfolio/priyam.png"
+    />
+    <meta property="og:image:alt" content="Priyam Mondal Profile Picture" />
+    <meta property="og:locale" content="en_US" />
+    <!-- og -->
 
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Priyam Mondal | Software Engineer" />
-  <meta name="twitter:description"
-    content="Priyam Mondal is a software engineer — a curious learner driven by 'why' and 'how,' constantly growing and building innovative web solutions." />
-  <meta name="twitter:image" content="https://priyammondal.github.io/portfolio/priyam.png" />
-  <!-- Twitter Cards -->
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Priyam Mondal | Software Engineer" />
+    <meta name="twitter:creator" content="@priyam_jsx" />
+    <meta name="twitter:site" content="@priyam_jsx" />
+    <meta
+      name="twitter:description"
+      content="Priyam Mondal is a software engineer — a curious learner driven by 'why' and 'how,' constantly growing and building innovative web solutions."
+    />
+    <meta
+      name="twitter:image"
+      content="https://priyammondal.github.io/portfolio/priyam.png"
+    />
+    <meta name="twitter:image:alt" content="Priyam Mondal Portfolio Preview" />
+    <!-- Twitter Cards -->
 
-  <link rel="canonical" href="https://priyammondal.github.io/portfolio" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="description"
-    content="Priyam Mondal is a software engineer — a curious learner driven by 'why' and 'how,' constantly growing and building innovative web solutions." />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Priyam Mondal" />
-  <meta name="keywords" content="Priyam Mondal, Software Engineer, Frontend Developer, React, JavaScript, Web Developer, Portfolio" />
+    <link rel="canonical" href="https://priyammondal.github.io/portfolio/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <meta
+      name="description"
+      content="Priyam Mondal is a software engineer — a curious learner driven by 'why' and 'how,' constantly growing and building innovative web solutions."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Priyam Mondal" />
 
-  <link rel="alternate" href="https://priyammondal.github.io/portfolio" hreflang="en-us" />
-  <script type="application/ld+json">
+    <link
+      rel="alternate"
+      href="https://priyammondal.github.io/portfolio/"
+      hreflang="en-us"
+    />
+    <title>Priyam Mondal | React Developer & Software Engineer</title>
+
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
+        "description": "Software Engineer specializing in React, JavaScript and full-stack web development.",
         "name": "Priyam Mondal",
-        "url": "https://priyammondal.github.io/portfolio",
+        "url": "https://priyammondal.github.io/portfolio/",
         "image": "https://priyammondal.github.io/portfolio/priyam.png",
         "jobTitle": "Software Engineer",
         "worksFor": {
-        "@type": "Organization",
-        "name": "Esyasoft Smart Research Private Limited"
+          "@type": "Organization",
+          "name": "Esyasoft Smart Research Private Limited"
         },
         "sameAs": [
           "https://github.com/Priyammondal",
-          "https://www.linkedin.com/in/priyam-mondal",
+          "https://www.linkedin.com/in/priyam-mondal/",
           "https://www.instagram.com/thepriyammondal",
           "https://x.com/priyam_jsx",
           "https://thepriyammondal.medium.com",
           "https://www.npmjs.com/~priyammondal",
           "https://leetcode.com/u/priyammondal"
-        ]
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://priyammondal.github.io/portfolio/"
+        }
       }
-      </script>
-  <title>Priyam Mondal | Software Engineer & Absolute Learner</title>
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Priyam Mondal Portfolio",
+        "url": "https://priyammondal.github.io/portfolio/"
+      }
+    </script>
   </head>
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-</body>
-
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

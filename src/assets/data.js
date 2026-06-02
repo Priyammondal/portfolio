@@ -190,6 +190,16 @@ export const certificates = [
 
 export const projects = [
   {
+    id: 10,
+    date: "",
+    title: "CodeCraft AI",
+    description:
+      "An AI-powered coding platform that helps developers write better code with intelligent generation, debugging assistance, and code explanations",
+    url: "https://code-craft-ai-cyan.vercel.app/",
+    thumbnail: "https://code-craft-ai-cyan.vercel.app/og-image.png",
+    github: "https://github.com/Priyammondal/code-craft-ai",
+  },
+  {
     id: 9,
     date: "",
     title: "SnapLnk",
@@ -280,12 +290,12 @@ export const projects = [
     thumbnail: "https://api.iconify.design/mdi:image-outline.svg",
     github:
       "https://github.com/Priyammondal/Frontend-machine-coding/tree/main/Employee%20Database%20Management",
-  }
+  },
 ];
 
 export const experiences = [
   {
-    date: "22/09/2025 - Present",
+    date: "22/09/2025 - 30/06/2026",
     company: "Esyasoft",
     jobTitle: "Senior Software Engineer",
     url: "https://www.esyasoft.com/",
@@ -429,7 +439,7 @@ export const skills = [
     link: "https://redis.io/",
     type: "database",
     image: redis,
-  }
+  },
 ];
 
 export const footerSocials = [

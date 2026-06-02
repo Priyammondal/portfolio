@@ -32,10 +32,10 @@ const TimeLineItems = ({ company, jobTitle, date, url, index }) => (
     }`}
   >
     <a href={url} target="blank">
-      <div title={company}>
-        <h4>{company}</h4>
+      <div title={company} className={index === 0 ? "text-info" : "text-white"}>
+        <h4 className="mb-1">{company}</h4>
         <p className="m-0">{jobTitle}</p>
-        <p className="m-0">{date}</p>
+        {/* <p className="m-0">{date}</p> */}
       </div>
     </a>
   </div>

@@ -1,6 +1,7 @@
 import "./index.css";
 import { BsMedium } from "react-icons/bs";
 import { forwardRef } from "react";
+import profileImage from "/priyam.png";
 
 const About = forwardRef((props, ref) => {
   return (
@@ -10,7 +11,14 @@ const About = forwardRef((props, ref) => {
     >
       <section className="dp mt-5">
         <picture>
-          <img src="https://priyammondal.github.io/portfolio/priyam.png" alt="Profile Picture" />
+          <img
+            src={profileImage}
+            alt="Priyam Mondal"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+          />
+          {/* <img src="/priyam.png" alt="Profile Picture" /> */}
         </picture>
       </section>
       <section className="description p-2 p-md-5">
