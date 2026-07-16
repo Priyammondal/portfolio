@@ -17,21 +17,20 @@ const Contact = forwardRef((props, ref) => {
   let userDataSchema = yup.object().shape({
     name: yup
       .string()
-      .required("Required")
-      .min(3, "name must be atleast 3 characters long"),
+      .required("Please enter your name")
+      .min(3, "Name must be atleast 3 characters long"),
     email: yup
       .string()
       .email("Please enter a valid email address")
-      .required("Required"),
+      .required("Please enter your email"),
     message: yup
       .string()
-      .required("Required")
-      .min(3, "message must be atleast 5 characters long"),
+      .required("Please enter your message")
+      .min(3, "Message must be atleast 5 characters long"),
   });
   const {
     register,
     handleSubmit,
-    watch,
     formState: { errors },
     reset,
   } = useForm({
@@ -52,7 +51,7 @@ const Contact = forwardRef((props, ref) => {
         }
       },
       (error) => {
-        console.log("email.js error-->", error.text);
+        console.error("email.js error-->", error.text);
         triggerToast({
           type: "error",
           message: "Sorry, Your message couldn't be sent",
@@ -83,7 +82,7 @@ const Contact = forwardRef((props, ref) => {
             )}
           </section>
           <section>
-            <label htmlFor="email">Email Address</label>
+            <label htmlFor="email">Email</label>
             <input
               className="form-control"
               id="email"

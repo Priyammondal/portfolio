@@ -1,4 +1,5 @@
 // Skill pictures
+import aws from "./images/skills/aws.svg";
 import javascript from "./images/skills/javascript.png";
 import react from "./images/skills/react.png";
 import nodeJs from "./images/skills/nodeJs.png";
@@ -295,6 +296,12 @@ export const projects = [
 
 export const experiences = [
   {
+    date: "2/07/2026",
+    company: "L&T Technology Services",
+    jobTitle: "Senior Engineer",
+    url: "https://www.ltts.com/",
+  },
+  {
     date: "22/09/2025 - 30/06/2026",
     company: "Esyasoft",
     jobTitle: "Senior Software Engineer",
@@ -439,6 +446,14 @@ export const skills = [
     link: "https://redis.io/",
     type: "database",
     image: redis,
+  },
+  {
+    id: 1,
+    name: "aws",
+    description: "Cloud",
+    link: "https://aws.amazon.com/",
+    type: "",
+    image: aws,
   },
 ];
 
