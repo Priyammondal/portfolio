@@ -15,7 +15,6 @@ const Experience = forwardRef((props, ref) => {
             key={index}
             company={item.company}
             jobTitle={item.jobTitle}
-            date={item.date}
             url={item.url}
             index={index}
           />
@@ -25,17 +24,16 @@ const Experience = forwardRef((props, ref) => {
   );
 });
 
-const TimeLineItems = ({ company, jobTitle, date, url, index }) => (
+const TimeLineItems = ({ company, jobTitle, url, index }) => (
   <div
     className={`timelineItem ${
       index % 2 == 0 ? "leftTimeLine" : "rightTimeLine"
     }`}
   >
     <a href={url} target="blank">
-      <div title={company} className={index === 0 ? "text-info" : "text-white"}>
-        <h4 className="mb-1">{company}</h4>
+      <div title={company} className="text-white">
+        <h4 className={`mb-1 ${index === 0 && "text-danger"}`}>{company}</h4>
         <p className="m-0">{jobTitle}</p>
-        {/* <p className="m-0">{date}</p> */}
       </div>
     </a>
   </div>

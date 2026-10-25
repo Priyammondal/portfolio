@@ -10,7 +10,7 @@ const Activity = forwardRef((props, ref) => {
       <section className="text-center mb-2">
         <h1 id="activityHeading">Activity</h1>
       </section>
-      <section className="activity_graph w-50">
+      {/* <section className="activity_graph w-50">
         <a
           href="https://github.com/Priyammondal"
           target="_blank"
@@ -23,7 +23,7 @@ const Activity = forwardRef((props, ref) => {
             src={`https://github-readme-activity-graph.vercel.app/graph?username=Priyammondal&bg_color=000000&color=ae9f37&line=578e62&point=137000&area=true&hide_border=true`}
           />
         </a>
-      </section>
+      </section> */}
 
       {/* <section className="githubStat my-3 w-50">
         <a

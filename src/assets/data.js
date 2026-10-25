@@ -295,8 +295,14 @@ export const projects = [
 ];
 
 export const experiences = [
+   {
+    date: "1/10/2026",
+    company: "TotalEnergies",
+    jobTitle: "Senior Engineer",
+    url: "https://totalenergies.com/",
+  },
   {
-    date: "2/07/2026",
+    date: "2/07/2026 - 30/09/2026",
     company: "L&T Technology Services",
     jobTitle: "Senior Engineer",
     url: "https://www.ltts.com/",
